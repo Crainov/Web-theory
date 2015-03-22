@@ -123,6 +123,12 @@ a{
 	background:         linear-gradient(top, #6a91cc 0%, #6a9dcc 100%);
 }
 
+.home-sidebar-nav,
+.home-sidebar-nav li a{
+  list-style: none;
+  text-decoration: none;
+}
+
 /*==============*/
 /* HEADER */
 /*==============*/
@@ -464,14 +470,37 @@ a{
 /*SIDEBAR*/
 /*==============*/
 
-.home-sidebar{
+.home-sidebar {
 	height: 100%;
 	width: 220px;
 	float: right;
-	/* temporary styles */
-	font-size: 24px;
-	color: #292929;
-	line-height: 55px;
-	padding-left: 20px;
-	background: rgba(255,255,50,.2);
+	background: #ffffff;
+}
+
+/*--------NAVIGATION------*/
+
+.home-sidebar-nav {
+  margin-top: 30px;
+  color: #5b5b5b;
+}
+
+.home-sidebar-nav li:first-child {
+  margin-top: 11px;
+}
+
+.home-sidebar-nav li {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.home-sidebar-nav li a {
+  display: block;
+  font-family: Arial, sans-serif;
+  color: #666666;
+  font-size: 13px;
+  line-height: 35px;
+  padding-left: 15px;
+}
+
+.home-sidebar-nav li a:hover {
+  opacity: 0.7;
 }
