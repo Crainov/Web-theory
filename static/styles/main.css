@@ -1,8 +1,15 @@
-body {
-<<<<<<< HEAD
-  background: green;
+/******************** MAIN STYLES ********************/
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
-=======
+
+body {
+  background: green;
   background: #ccc;
 }
 
@@ -37,7 +44,10 @@ body {
 }
 
 /* temporary styles */
-
+.header .wrapper{
+	padding-left: 20px;
+	background: rgba(255,50,50,.2);
+}
 
 /******************** SUBHEADER ********************/
 
@@ -84,4 +94,3 @@ body {
 	padding-left: 20px;
 	background: rgba(255,255,50,.2);
 }
->>>>>>> 10337281c388a2a04a4c468092688ae121d3b2a6
