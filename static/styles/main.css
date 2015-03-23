@@ -123,7 +123,6 @@ a {
 /*==============*/
 
 .header {
-<<<<<<< HEAD
     height: 60px;
     background: url(../img/temp_icons/top-bar-bckgr.png);
 }
@@ -395,31 +394,12 @@ a {
   border-radius: 3px;
 }
 
-
-=======
-  height: 60px;
-  background: -webkit-linear-gradient(#3e5f8b 0%, #496ea0 100%);
-  background: -o-linear-gradient(#3e5f8b 0%, #496ea0 100%);
-  background: linear-gradient(#3e5f8b 0%, #496ea0 100%);
-  /* temporary styles */
-
-  font-size: 24px;
-  color: #fff;
-  line-height: 55px;
-}
-/* temporary styles */
-
-.header .wrapper {
-  padding-left: 20px;
-  background: rgba(255, 50, 50, .2);
-}
->>>>>>> origin/index-commit
 /*==============*/
 /*SUBHEADER*/
 /*==============*/
 
 .subheader {
-<<<<<<< HEAD
+
     height: 250px;
     background: url(../img/temp_icons/subheader-pattern.png);
 }
@@ -452,10 +432,10 @@ a {
 .slider-row-second {
   width: 100%;
 }
-.slider-top-graphics {
+.slider-top-graphic {
   width: 710px;
 }
-.slider-top-graphics a {
+.slider-top-graphic a {
   display: inline-block;
   width: 185px;
   height: 140px;
@@ -465,22 +445,7 @@ a {
 .slider-next {
   position: absolute;
 }
-=======
-  height: 250px;
-  /* temporary styles */
 
-  background-color: #2a3645;
-  font-size: 24px;
-  color: #fff;
-  line-height: 55px;
-}
-/* temporary styles */
-
-.subheader .wrapper {
-  padding-left: 20px;
-  background: rgba(50, 255, 50, .2);
-}
->>>>>>> origin/index-commit
 /*==============*/
 /*CONTENT*/
 /*==============*/
