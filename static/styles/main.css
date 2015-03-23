@@ -649,7 +649,7 @@ a {
   width: 16px;
   height: 16px;
   margin-right: 12px;
-  background: url(/static/img/social-icons.png);
+  background: url(../img/social-icons.png);
   margin-bottom: -3px;
 }
 
