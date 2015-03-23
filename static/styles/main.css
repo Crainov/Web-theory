@@ -135,20 +135,276 @@ a {
 
 .header {
     height: 60px;
-    background: -webkit-linear-gradient(#3e5f8b 0%, #496ea0 100%);
-    background: -o-linear-gradient(#3e5f8b 0%, #496ea0 100%);
-    background: linear-gradient(#3e5f8b 0%, #496ea0 100%);
-    /* temporary styles */
-    font-size: 24px;
-    color: #fff;
-    line-height: 55px;
+    background: url(../img/temp_icons/top-bar-bckgr.png);
 }
 
-/* temporary styles */
-.header .wrapper {
-    padding-left: 20px;
-    background: rgba(255,50,50,.2);
+/*Top-Nav*/
+
+.top-nav {
+  height: 60px;
+  position: relative;
 }
+
+/*Logo*/
+
+.logo {
+  display: inline-block;
+  height: 100%;
+}
+
+.logo img {
+  padding-bottom: 18px;
+}
+
+/*Top-menu*/
+
+.top-menu {
+  display: inline-block;
+  margin-left: 30px;
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  height: 100%;
+  position: relative;
+}
+
+.top-menu ul {
+  list-style: none;
+}
+
+.top-menu ul li {
+  float: left;
+  position: relative;
+}
+
+.top-menu ul li a {
+  padding: 0 10px;
+  display: block;
+  line-height: 60px;
+  color: #bcd3e6;
+}
+
+.top-menu ul li a:hover {
+  color: #fff;
+}
+
+/*User-menu*/
+
+.user-actions {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  overflow: hidden;
+  margin-left: 165px;
+  margin-bottom: 22px;
+  cursor: pointer;
+}
+
+.user-actions:hover {
+  width: 200px;
+  height: 60px;
+  margin-left: 75px;
+  overflow: visible;
+  position: absolute;
+}
+
+.user-actions:before {
+  content: "";
+  position: absolute;
+  background: url(../img/temp_icons/top-menu-icon.png);
+  height: 16px;
+  width: 16px;
+}
+
+.user-actions:hover:before {
+  background: url(../img/temp_icons/top-menu-icon-hover.png);
+  top: 22px;
+  left: 95px;
+}
+
+.user-actions:after {
+  position: absolute;
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  top: 55px;
+  left: 98px;
+  visibility: hidden;
+}
+
+.user-actions:hover:after {
+  visibility: visible;
+}
+
+.user-actions nav {
+  top: 60px;
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  -webkit-box-shadow: 3px 3px 19px 8px rgba(0,0,0,0.07);
+  -moz-box-shadow: 3px 3px 19px 8px rgba(0,0,0,0.07);
+  box-shadow: 3px 3px 19px 8px rgba(0,0,0,0.07);
+}
+
+.user-actions nav ul {
+  padding-top: 5px;
+  list-style: none;
+}
+
+/*User-actions-icons*/
+
+.user-actions nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 35px;
+  color: #000;
+  padding-left: 45px;
+  position: relative;
+}
+
+.user-actions nav ul li a:hover {
+  background: #547db5;
+  color: #fff;
+}
+
+.open-book:before {
+  content: "";
+  position: absolute;
+  background: url(../img/temp_icons/open-book.png);
+  width: 18px;
+  height: 18px;
+  left: 15px;
+  top: 8px;
+}
+
+.open-book:hover:before {
+  background: url(../img/temp_icons/open-book-hover.png);
+}
+
+.upload-cloud:before {
+  content: "";
+  position: absolute;
+  background: url(../img/temp_icons/upload-cloud.png);
+  width: 18px;
+  height: 12px;
+  left: 15px;
+  top: 11px;
+}
+
+.upload-cloud:hover:before {
+  background: url(../img/temp_icons/upload-cloud-hover.png);
+}
+
+.thumbs-up:before {
+  content: "";
+  position: absolute;
+  background: url(../img/temp_icons/thumb-up.png);
+  width: 16px;
+  height: 18px;
+  left: 15px;
+  top: 8px;
+}
+
+.thumbs-up:hover:before {
+  background: url(../img/temp_icons/thumb-up-hover.png);
+}
+
+.project-help:before {
+  content: "";
+  position: absolute;
+  background: url(../img/temp_icons/project-help.png);
+  width: 19px;
+  height: 19px;
+  left: 15px;
+  top: 8px;
+}
+
+.project-help:hover:before {
+  background: url(../img/temp_icons/project-help-hover.png);
+}
+
+/*User-block*/
+
+.user-block {
+  position: absolute;
+  height: 100%;
+  width: 210px;
+  top: 0;
+  right: 0;
+}
+
+/*User-mail*/
+
+.user-mail {
+  width: 22px;
+  height: 100%;
+  display: inline-block;
+}
+
+.user-mail:before {
+  content: "";
+  position: absolute;
+  background: url(../img/temp_icons/menu-mail-icon.png);
+  width: 22px;
+  height: 16px;
+  top: 22px;
+}
+
+.user-mail:after {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  content: attr(data-tooltip);
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  background: #e14c64;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  top: 21px;
+  left: 28px;
+}
+
+/*User-profile*/
+.user-profile {
+  width: 150px;
+  height: 100%;
+  float: right;
+  display: inline-block;
+  position: relative;
+  background: url(../img/temp_icons/user-profile-bckgr.png);
+}
+
+.user-profile a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.user-profile a:before {
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  content: attr(data-tooltip);
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 15px;
+}
+
+.user-profile a img {
+  margin-top: 10px;
+  margin-left: 95px;
+  border-radius: 3px;
+}
+
 
 /*==============*/
 /*SUBHEADER*/
@@ -156,19 +412,50 @@ a {
 
 .subheader {
     height: 250px;
-    /* temporary styles */
-    background-color: #2a3645;
-    font-size: 24px;
-    color: #fff;
-    line-height: 55px;
+    background: url(../img/temp_icons/subheader-pattern.png);
 }
 
-/* temporary styles */
-.subheader .wrapper {
-    padding-left: 20px;
-    background: rgba(50,255,50,.2);
+.slider {
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
 }
 
+.slider-row-first {
+  width: 100%;
+  line-height: 16px;
+  margin-bottom: 20px;
+  font-family: OpenSans, sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  color: #fff;
+}
+
+.top-of-the-week span {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.top-of-the-month {
+  padding-right: 10px;
+  float: right;
+}
+.slider-row-second {
+  width: 100%;
+}
+.slider-top-graphics {
+  width: 710px;
+}
+.slider-top-graphics a {
+  display: inline-block;
+  width: 185px;
+  height: 140px;
+  margin: 0;
+}
+
+.slider-next {
+  position: absolute;
+}
 /*==============*/
 /*CONTENT*/
 /*==============*/
