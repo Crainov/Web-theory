@@ -254,6 +254,9 @@ a {
   color: #000;
   padding-left: 45px;
   position: relative;
+  -webkit-transition: background, .3s, ease;
+  -o-transition: background, .3s, ease;
+  transition: background, .3s, ease;
 }
 
 .user-actions nav ul li a:hover {
@@ -269,6 +272,9 @@ a {
   height: 18px;
   left: 15px;
   top: 8px;
+  -webkit-transition: background, .3s, ease;
+  -o-transition: background, .3s, ease;
+  transition: background, .3s, ease;
 }
 
 .open-book:hover:before {
@@ -283,6 +289,9 @@ a {
   height: 12px;
   left: 15px;
   top: 11px;
+  -webkit-transition: background, .3s, ease;
+  -o-transition: background, .3s, ease;
+  transition: background, .3s, ease;;
 }
 
 .upload-cloud:hover:before {
@@ -297,6 +306,9 @@ a {
   height: 18px;
   left: 15px;
   top: 8px;
+  -webkit-transition: background, .3s, ease;
+  -o-transition: background, .3s, ease;
+  transition: background, .3s, ease;
 }
 
 .thumbs-up:hover:before {
@@ -311,6 +323,9 @@ a {
   height: 19px;
   left: 15px;
   top: 8px;
+  -webkit-transition: background, .3s, ease;
+  -o-transition: background, .3s, ease;
+  transition: background, .3s, ease;
 }
 
 .project-help:hover:before {
@@ -436,6 +451,9 @@ a {
   width: 50px;
   background: #202a37;
   position: relative;
+  -webkit-transition: background, .2s, ease;
+  -o-transition: background, .2s, ease;
+  transition: background, .2s, ease;
 }
 
 .what-to-show a:hover {
@@ -452,6 +470,9 @@ a {
   height: 20px;
   top: 15px;
   left: 14px;
+  -webkit-transition: background, .2s, ease;
+  -o-transition: background, .2s, ease;
+  transition: background, .2s, ease;
 }
 
 .slider-show-posts:hover:before {background: url(../img/temp_icons/slider-graphics-hover.png)}
@@ -482,6 +503,9 @@ a {
   height: 28px;
   top: 11px;
   left: 13px;
+  -webkit-transition: background, .2s, ease;
+  -o-transition: background, .2s, ease;
+  transition: background, .2s, ease;
 }
 
 .slider-show-articles:hover:before {background: url(../img/temp_icons/slider-article-hover.png)}
