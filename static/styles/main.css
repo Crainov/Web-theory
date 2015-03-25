@@ -107,11 +107,12 @@ a {
 }
 
 .common-aside,
-.aside-footer li {
+.aside-footer li,
+.aside-activity {
   list-style: none;
 }
 
-.aside-activity div,
+.aside-activ,
 .aside-help,
 .aside-follow,
 .aside-footer a {
@@ -1042,25 +1043,31 @@ a {
 
 /*--------ACTIVITY-------*/
 
-.aside-activity div {
+.aside-activ {
   padding-bottom: 17px;
   border-bottom: 1px solid #e3e3e3;
 }
 
-.aside-activity div a {
-  display: inline-block;
+.aside-activ a {
   font-size: 12px;
   color: #666;
 }
 
-.aside-activity div a:first-child {
-  font-size: 13px;
-  color: #3676b1;
-  text-decoration: underline;
+.aside-activ li {
+  display: block;
+}
+
+.aside-activ li:first-child {
   margin-bottom: 8px;
 }
 
-.aside-activity img {
+.aside-activ li:first-child a {
+  font-size: 13px;
+  color: #3676b1;
+  text-decoration: underline;
+}
+
+.aside-activ img {
   display: inline-block;
   margin-right: 10px;
   margin-bottom: -4px;
@@ -1072,21 +1079,22 @@ a {
   margin-left: 30px;
 }
 
-.activity-second,
-.activity-third {
+.aside-activ:nth-last-child(2),
+.aside-activ:last-child {
   padding-top: 20px;
   position: relative;
 }
 
-.aside-activity div:last-child {
+.aside-activ:last-child {
   border-style: none;
+  padding-bottom: 0;
 }
 
-.activity-third a {
+.aside-activ:last-child li {
   margin-bottom: 10px;
 }
 
-.activity-third a:after {
+.aside-activ:last-child a:after {
   content: " ";
   display: inline-block;
   position: absolute;
@@ -1098,22 +1106,20 @@ a {
   background-position: 0 -63px;
 }
 
-.activity-third .after:after {
+.aside-activ:last-child .after:after {
   content: none;
 }
 
 /*----HELP---*/
 
-.aside-help h3 {
-  padding-top: 0;
-}
-
 .aside-help a {
   color: #666;
 }
 
-.aside-help img {
-  margin-top: 20px;
+.aside-help a:after {
+  content: url(../img/help.png);
+  display: block;
+  margin-top: 10px;
 }
 
 /*------SOCIAL------*/
