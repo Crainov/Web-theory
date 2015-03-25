@@ -202,13 +202,13 @@ a {
 .user-actions:before {
   content: "";
   position: absolute;
-  background: url(../img/temp_icons/top-menu-icon.png);
+  background: url(../img/sprites.png);
   height: 16px;
   width: 16px;
 }
 
 .user-actions:hover:before {
-  background: url(../img/temp_icons/top-menu-icon-hover.png);
+  background: url(../img/sprites.png) -16px 0;
   top: 22px;
   left: 95px;
 }
@@ -216,8 +216,8 @@ a {
 .user-actions:after {
   position: absolute;
   content: "";
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
+  border-left: 5px solid rgba(0,0,0,0);
+  border-right: 5px solid rgba(0,0,0,0);
   border-bottom: 5px solid #fff;
   top: 55px;
   left: 98px;
@@ -226,10 +226,6 @@ a {
 
 .user-actions:hover:after {
   visibility: visible;
-}
-
-.user-actions nav {
-  
 }
 
 .user-menu {
@@ -269,69 +265,57 @@ a {
 .open-book:before {
   content: "";
   position: absolute;
-  background: url(../img/temp_icons/open-book.png);
+  background: url(../img/sprites.png) 0 -16px;
   width: 18px;
   height: 18px;
   left: 15px;
   top: 8px;
-  -webkit-transition: background, .3s, ease;
-  -o-transition: background, .3s, ease;
-  transition: background, .3s, ease;
 }
 
 .open-book:hover:before {
-  background: url(../img/temp_icons/open-book-hover.png);
+  background: url(../img/sprites.png) -18px -16px;
 }
 
 .upload-cloud:before {
   content: "";
   position: absolute;
-  background: url(../img/temp_icons/upload-cloud.png);
+  background: url(../img/sprites.png) -36px -16px;
   width: 18px;
   height: 12px;
   left: 15px;
   top: 11px;
-  -webkit-transition: background, .3s, ease;
-  -o-transition: background, .3s, ease;
-  transition: background, .3s, ease;;
 }
 
 .upload-cloud:hover:before {
-  background: url(../img/temp_icons/upload-cloud-hover.png);
+  background: url(../img/sprites.png) -96px -35px;
 }
 
 .thumbs-up:before {
   content: "";
   position: absolute;
-  background: url(../img/temp_icons/thumb-up.png);
+  background: url(../img/sprites.png) -114px -35px;
   width: 16px;
   height: 18px;
   left: 15px;
   top: 8px;
-  -webkit-transition: background, .3s, ease;
-  -o-transition: background, .3s, ease;
-  transition: background, .3s, ease;
 }
 
 .thumbs-up:hover:before {
-  background: url(../img/temp_icons/thumb-up-hover.png);
+  background: url(../img/sprites.png) -87px -16px;
 }
 
 .project-help:before {
   content: "";
   position: absolute;
-  background: url(../img/temp_icons/project-help.png);
+  background: url(../img/sprites.png) -103px -16px;
   width: 19px;
   height: 19px;
   left: 15px;
   top: 8px;
-  -webkit-transition: background, .3s, ease;
-  -o-transition: background, .3s, ease;
-  transition: background, .3s, ease;
 }
 
 .project-help:hover:before {
-  background: url(../img/temp_icons/project-help-hover.png);
+  background: url(../img/sprites.png) -122px -16px;
 }
 
 /*User-block*/
@@ -355,7 +339,7 @@ a {
 .user-mail:before {
   content: "";
   position: absolute;
-  background: url(../img/temp_icons/menu-mail-icon.png);
+  background: url(../img/sprites.png) -32px 0;
   width: 22px;
   height: 16px;
   top: 22px;
@@ -470,17 +454,14 @@ a {
 .slider-show-posts:before {
   content: "";
   position: absolute;
-  background: url(../img/temp_icons/slider-graphics.png);
+  background: url(../img/sprites.png) 0 -35px;
   width: 23px;
   height: 20px;
   top: 15px;
   left: 14px;
-  -webkit-transition: background, .2s, ease;
-  -o-transition: background, .2s, ease;
-  transition: background, .2s, ease;
 }
 
-.slider-show-posts:hover:before {background: url(../img/temp_icons/slider-graphics-hover.png)}
+.slider-show-posts:hover:before {background: url(../img/sprites.png) -23px -35px}
 
 .slider-show-posts:after {
   content: attr(data-post-count);
@@ -503,17 +484,14 @@ a {
 .slider-show-articles:before {
   content: "";
   position: absolute;
-  background: url(../img/temp_icons/slider-article.png);
+  background: url(../img/sprites.png) -46px -35px;
   width: 25px;
   height: 28px;
   top: 11px;
   left: 13px;
-  -webkit-transition: background, .2s, ease;
-  -o-transition: background, .2s, ease;
-  transition: background, .2s, ease;
 }
 
-.slider-show-articles:hover:before {background: url(../img/temp_icons/slider-article-hover.png)}
+.slider-show-articles:hover:before {background: url(../img/sprites.png) -71px -35px}
 
 .slider-show-articles:after {
   content: attr(data-article-count);
@@ -534,7 +512,7 @@ a {
 /*Fist row (text)*/
 
 .slider-range-image select, .slider-range-user select {
-  background: transparent;
+  background: rgba(0,0,0,0);
   border: 0;
   border-bottom: 1px dashed #fff;
   -moz-appearance: none;
@@ -544,12 +522,36 @@ a {
   font-size: 16px;
   color: #fff;
 }
+
 .slider-range-image select > option, .slider-range-user select > option {
   color: #000;
 }
 
+.slider-range-image span, .slider-range-user span {
+  border-bottom: 1px dashed #fff;
+}
+
+.slider-range-image span[data-state="hidden"], 
+.slider-range-user span[data-state="hidden"] 
+{
+  display: none;
+}
+
+.slider-range-image select[data-state="visible"], 
+.slider-range-user select[data-state="visible"] 
+{
+  display: inline-block;
+}
+
+.slider-range-image select[data-state="hidden"], 
+.slider-range-user select[data-state="hidden"] 
+{
+  display: none;
+}
+
 .slider-range-user {
   float: right;
+  margin-right: 10px;
 }
 
 /*Second row (slider-content)*/
