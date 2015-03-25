@@ -229,6 +229,10 @@ a {
 }
 
 .user-actions nav {
+  
+}
+
+.user-menu {
   top: 60px;
   position: relative;
   background: #fff;
@@ -238,16 +242,13 @@ a {
   -moz-box-shadow: 3px 3px 19px 8px rgba(0,0,0,0.07);
   box-shadow: 3px 3px 19px 8px rgba(0,0,0,0.07);
   z-index: 5;
-}
-
-.user-actions nav ul {
   padding-top: 5px;
   list-style: none;
 }
 
 /*User-actions-icons*/
 
-.user-actions nav ul li a {
+.user-menu li a {
   display: block;
   width: 100%;
   height: 100%;
@@ -260,7 +261,7 @@ a {
   transition: background, .3s, ease;
 }
 
-.user-actions nav ul li a:hover {
+.user-menu li a:hover {
   background: #547db5;
   color: #fff;
 }
@@ -364,7 +365,7 @@ a {
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 11px;
-  content: attr(data-tooltip);
+  content: attr(data-messages-counter);
   line-height: 18px;
   text-align: center;
   color: #fff;
@@ -391,23 +392,26 @@ a {
   display: block;
   width: 100%;
   height: 100%;
+  position: absolute;
+  z-index: 4;
 }
 
-.user-profile a:before {
+.user-name {
   font-family: OpenSans, sans-serif;
   font-size: 13px;
-  content: attr(data-tooltip);
-  line-height: 18px;
-  text-align: center;
   color: #fff;
-  position: absolute;
-  top: 21px;
-  left: 15px;
+  line-height: 60px;
+  display: inline-block;
+  margin-left: 15px;
 }
 
-.user-profile a img {
-  margin-top: 10px;
+.user-photo {
+  position: relative;
+  top: -50px;
   margin-left: 95px;
+}
+
+.user-photo  img{
   border-radius: 3px;
 }
 
@@ -479,7 +483,7 @@ a {
 .slider-show-posts:hover:before {background: url(../img/temp_icons/slider-graphics-hover.png)}
 
 .slider-show-posts:after {
-  content: attr(post-count);
+  content: attr(data-post-count);
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 11px;
@@ -512,7 +516,7 @@ a {
 .slider-show-articles:hover:before {background: url(../img/temp_icons/slider-article-hover.png)}
 
 .slider-show-articles:after {
-  content: attr(article-count);
+  content: attr(data-article-count);
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 11px;
@@ -529,13 +533,22 @@ a {
 
 /*Fist row (text)*/
 
-.top-of-the-week a, .top-of-the-month a {
+.slider-range-image select, .slider-range-user select {
+  background: transparent;
+  border: 0;
   border-bottom: 1px dashed #fff;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none; 
+  font-weight: lighter;
+  font-size: 16px;
   color: #fff;
 }
+.slider-range-image select > option, .slider-range-user select > option {
+  color: #000;
+}
 
-.top-of-the-month {
-  padding-right: 10px;
+.slider-range-user {
   float: right;
 }
 
@@ -616,27 +629,30 @@ a {
   top: 0;
 }
 
-.slider-user-link:before {
-  position: absolute;
-  content: attr(user-name);
+/*Subheader-Top-user-info-block*/
+
+.top-user-info {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.top-user-name {
+  display: block;
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 13px;
   color: #fff;
-  left: 55px;
-  top: 3px;
+  margin-bottom: 5px;
 }
 
-.slider-user-link:after {
-  position: absolute;
-  content: attr(likes-count);
+.user-likes-counter {
   font-family: Arial, sans-serif;
   font-size: 12px;
   color: #9199a5;
-  left: 55px;
-  width: 90px;
-  bottom: 8px;
+  position: relative;
+  bottom: 7px;
 }
+
 /*==============*/
 /*CONTENT*/
 /*==============*/
