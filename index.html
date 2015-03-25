@@ -23,21 +23,19 @@
           </ul>
         </nav>
         <div class="user-actions"><!-- Top User menu -->
-          <nav>
-            <ul>
+            <ul class="user-menu">
               <li><a class="open-book" href="#">Список чтения</a></li>
               <li><a class="upload-cloud" href="#">Добавить работу</a></li>
               <li><a class="thumbs-up" href="#">Понравилось</a></li>
               <li><a class="project-help" href="#">Помочь проекту</a></li>
             </ul>
-          </nav>
         </div>
         <div class="user-block"> <!-- User mail and profile -->
-          <a class="user-mail" href="#" data-tooltip="2"></a>
+          <a class="user-mail" href="#" data-messages-counter="2"></a>
           <div class="user-profile">
-            <a href="#" data-tooltip="webtheory">
-              <img src="upload/user-photo.png" alt="user-photo">
-            </a>
+            <a href="#"></a>
+            <div class="user-name">webtheory</div>
+            <div class="user-photo"><img src="upload/user-photo.png" alt="user-photo"></div>
           </div>
         </div><!--  End of User mail and profile -->
       </div>
@@ -48,12 +46,25 @@
       <div class="slider"> <!-- Slider -->
         <div class="slider-row-first">
           <div class="what-to-show"> <!-- What to show -->
-            <a class="slider-show-posts" href="#" post-count="2"></a>
-            <a class="slider-show-articles" href="#" article-count="8"></a>
+            <a class="slider-show-posts" href="#" data-post-count="2"></a>
+            <a class="slider-show-articles" href="#" data-article-count="8"></a>
           </div> <!-- End of "What to show" -->
           <!-- Text row of the slider -->
-          <span class="top-of-the-week">Лучшее за <a href="#">неделю</a></span>
-          <span class="top-of-the-month">Топ публикующих за <a href="#">месяц:</a></span>
+          <span class="slider-range-image">
+            Лучшее за 
+            <select>
+              <option value="today">сегодня:</option>
+              <option value="week">неделю:</option>
+              <option value="month">месяц:</option>
+              <option value="year">год:</option>
+            </select>
+          </span>
+          <span class="slider-range-user">Топ публикующих за 
+            <select>
+              <option value="month">месяц:</option>
+              <option value="year">год:</option>
+            </select>
+          </span>
           <!-- End Text row of the slider -->
         </div>
         <div class="slider-row-second">
@@ -67,15 +78,27 @@
           <div class="slider-top-users"> <!-- Top user block -->
             <div class="slider-top-user">
               <img src="upload/user-slider-thumb-3.png">
-              <a class="slider-user-link" href="#" user-name="desmoond" likes-count="1 273 лайка"></a>
+              <div class="top-user-info">
+                <span class="top-user-name">desmood</span>
+                <span class="user-likes-counter">1 273 лайка</span>
+              </div>
+              <a class="slider-user-link" href="#"></a>
             </div>
             <div class="slider-top-user">
               <img src="upload/user-slider-thumb-2.png">
-              <a class="slider-user-link" href="#" user-name="Th.Gleb" likes-count="1 269 лайков"></a>
+              <div class="top-user-info">
+                <span class="top-user-name">Th. Gleb</span>
+                <span class="user-likes-counter">1 269 лайков</span>
+              </div>
+              <a class="slider-user-link" href="#"></a>
             </div>
             <div class="slider-top-user">
               <img src="upload/user-slider-thumb-1.png">
-              <a class="slider-user-link" href="#" user-name="Smeet" likes-count="842 лайка"></a>
+              <div class="top-user-info">
+                <span class="top-user-name">Smeet</span>
+                <span class="user-likes-counter">842 лайка</span>
+              </div>
+              <a class="slider-user-link" href="#"></a>
             </div>
           </div><!-- End of Top user block -->
         </div>
