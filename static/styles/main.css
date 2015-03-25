@@ -950,10 +950,13 @@ a {
   width: 220px;
   float: right;
 }
+
+.common-aside div {
+  padding-top: 30px;
+}
 /*--------NAVIGATION------*/
 
 .common-aside h3 {
-  padding-top: 30px;
   padding-bottom: 13px;
   font-family: OpenSans, sans-serif;
   font-weight: lighter;
