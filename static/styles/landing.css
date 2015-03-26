@@ -1,0 +1,184 @@
+
+/*==============*/
+/*MAIN STYLES*/
+/*==============*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: OpenSans, Arial, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  /* for graphics preview headers */
+
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  height: 100%;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.gradient-button {
+  color: #f4f6f8;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 2px;
+  background: -webkit-linear-gradient(top, #719bda 0%, #71a7da 100%);
+  background: -o-linear-gradient(top, #719bda 0%, #71a7da 100%);
+  background: linear-gradient(top, #719bda 0%, #71a7da 100%);
+}
+
+.gradient-button:hover {
+  background: -webkit-linear-gradient(top, #6a91cc 0%, #6a9dcc 100%);
+  background: -o-linear-gradient(top, #6a91cc 0%, #6a9dcc 100%);
+  background: linear-gradient(top, #6a91cc 0%, #6a9dcc 100%);
+}
+
+.landing-header {
+    height: 60px;
+    background: url(../img/temp_icons/top-bar-bckgr.png);
+}
+
+/*Top-Nav*/
+
+.top-nav {
+  height: 60px;
+  position: relative;
+}
+
+/*Logo*/
+
+.logo {
+  display: inline-block;
+  height: 100%;
+}
+
+.logo img {
+  padding-bottom: 18px;
+}
+
+/*Top-site-menu*/
+
+.landing-menu {
+  display: inline-block;
+  margin-left: 30px;
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  height: 100%;
+  position: relative;
+}
+
+.landing-menu ul {
+  list-style: none;
+}
+
+.landing-menu ul li {
+  float: left;
+  position: relative;
+}
+
+.landing-menu ul li a {
+  padding: 0 10px;
+  display: block;
+  line-height: 60px;
+  color: #bcd3e6;
+}
+
+.landing-menu ul li a:hover {
+  color: #fff;
+}
+
+.landing-user {
+  display: inline-block;
+  float: right;
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+}
+
+.landing-user li {
+  float: left;
+}
+
+.landing-user a {
+  display: inline-block;
+  line-height: 60px;
+  margin-left: 13px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*==============*/
+/*SUBHEADER*/
+/*==============*/
+
+.landing-subheader {
+  background: url(../img/temp_icons/subheader-pattern.png);
+  height: 500px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.landing-title {
+  position: absolute;
+  width: 960px;
+  margin: 0 auto;
+  top: 25%;
+}
+
+.landing-subheader:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  box-shadow: inset 0 -6px 10px 2px rgba(0, 0, 0, .1);
+}
+
+.landing-h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  font-size: 26px;
+  top: 25%;
+}
+
+.landing-h2 {
+  color: #8b95a6;
+  margin-top: 7px;
+}
+
+.landing-title:after {
+  content: url(../img/example-landing.png);
+  display: block;
+  margin-top: 100px;
+}
