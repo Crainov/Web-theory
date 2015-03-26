@@ -186,6 +186,11 @@ a {
   color: #fff;
 }
 
+.current-nav-item {
+  font-weight: 600;
+  color: #fff !important;
+}
+
 /*Top-User-menu*/
 
 .user-actions {
