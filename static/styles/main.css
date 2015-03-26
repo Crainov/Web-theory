@@ -806,7 +806,7 @@ a {
 .graphics-likes:before {
   width: 15px;
   height: 13px;
-  background: url('../img/content-icons.png') 0 0;
+  background: url('../img/sailorkoto-temp-sprite.png') 0 0;
 }
 
 .graphics-views {
@@ -816,7 +816,7 @@ a {
 .graphics-views:before {
   width: 19px;
   height: 13px;
-  background: url('../img/content-icons.png') -15px 0;
+  background: url('../img/sailorkoto-temp-sprite.png') -15px 0;
 }
 
 .graphics-comments {
@@ -826,7 +826,7 @@ a {
 .graphics-comments:before {
   width: 15px;
   height: 13px;
-  background: url('../img/content-icons.png') -34px 0;
+  background: url('../img/sailorkoto-temp-sprite.png') -34px 0;
 }
 /* GRAPHICS AUTHOR */
 
@@ -1052,23 +1052,44 @@ a {
 .graphics-add input::-moz-placeholder { color: #333; }
 .graphics-add input:-ms-placeholder { color: #333; }
 
-#graphics-name {
+.graphics-name {
+  height: 47px;
   width: 461px;
-  margin-right: 8px;
   float: left;
+  position: relative;
+  margin-bottom: 8px;
 }
 
-#graphics-name {
-  background: url('../img/input-name.png') no-repeat right;
+.graphics-name:after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('../img/sailorkoto-temp-sprite.png') 0 -13px;
+  position: absolute;
+  top: 17px;
+  right: 15px;
 }
-
-#graphics-tags {
-  background: url('../img/input-tags.png') no-repeat right;
-}
-
 .graphics-add-form-select-menu {
   width: 241px !important;
   float: right;
+}
+
+.graphics-tags {
+  height: 47px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.graphics-tags:after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('../img/sailorkoto-temp-sprite.png') -16px -13px;
+  position: absolute;
+  top: 17px;
+  right: 15px;
 }
 
 /* drag n drop zone */
@@ -1077,19 +1098,30 @@ a {
   height: 532px;
   background: #f5f7f9;
   border: 2px dashed #d9e0e9;
+  margin-bottom: 9px;
 }
 
 .drag-n-drop-info-container {
   width: 230px;
   height: 230px;
   margin: 149px auto;
-  background: url('../img/drag-n-drop.png') no-repeat top center;
-  position: relative;
   text-align: center;
   padding-top: 120px;
   font-family: Arial, sans-serif;
   font-size: 14px;
   color: #c3c8cc !important;
+  position: relative;
+}
+
+.drag-n-drop-info-container:after {
+  content: '';
+  display: block;
+  width: 111px;
+  height: 95px;
+  background: url('../img/sailorkoto-temp-sprite.png') 0 -29px;
+  position: absolute;
+  top: 10px;
+  left: 60px;
 }
 
 .drag-n-drop-info-container p {
@@ -1143,6 +1175,179 @@ a {
   display: none;
 }
 
+/* textarea */
+
+.textarea-toolbar {
+  display: block;
+  width: 100%;
+  height: 46px;
+  background: #f0f0f0;
+  border: 1px solid #bdbdbd;
+}
+
+.textarea-toolbar ul {
+  list-style-type: none;
+  display: block;
+  padding-left: 15px;
+  background: #ccc;
+}
+
+.textarea-toolbar a {
+  float: left;
+  display: block;
+  margin-top: 12px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.textarea-toolbar a:hover {
+  border: 1px solid #ccc;
+}
+
+.textarea-tool-bold:after      { content: ''; display: block; position: absolute; width: 10px; height: 10px; background: url('../img/sailorkoto-temp-sprite.png') -32px -13px; top: 4px; left: 4px; }
+.textarea-tool-italic:after    { content: ''; display: block; position: absolute; width:  8px; height: 10px; background: url('../img/sailorkoto-temp-sprite.png') -42px -13px; top: 4px; left: 5px; }
+.textarea-tool-strike:after    { content: ''; display: block; position: absolute; width: 14px; height: 10px; background: url('../img/sailorkoto-temp-sprite.png') -50px -13px; top: 4px; left: 2px; }
+.textarea-tool-underline:after { content: ''; display: block; position: absolute; width: 10px; height: 13px; background: url('../img/sailorkoto-temp-sprite.png') -64px -13px; top: 4px; left: 4px; }
+.textarea-tool-link:after      { content: ''; display: block; position: absolute; width: 15px; height: 13px; background: url('../img/sailorkoto-temp-sprite.png') -74px -13px; top: 4px; left: 2px; }
+
+.textarea-counter {
+  float: right;
+  font-size: 12px;
+  line-height: 42px;
+  color: #666;
+  padding-right: 15px;
+}
+
+.graphics-adding-textarea {
+  width: 100%;
+  height: 128px;
+  border: 1px solid #bdbdbd;
+  border-top: none;
+  padding: 15px;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 13px;
+  color: #666;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.graphics-adding-textarea::-webkit-input-placeholder { color: #666; }
+.graphics-adding-textarea:-moz-placeholder { color: #666; }
+.graphics-adding-textarea::-moz-placeholder { color: #666; }
+.graphics-adding-textarea:-ms-placeholder { color: #666; }
+
+/* form submit button, etc. */
+
+.graphics-adding-options {
+  height: 40px;
+}
+
+.form-submit {
+  display: block;
+  height: inherit;
+  border-radius: 2px;
+  font-size: 13px;
+  color: #fff;
+  padding: 11px 15px 15px 40px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  float: left;
+}
+
+.form-submit:before {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.graphics-public { background: #71a4da; }
+.graphics-public:hover { background: #81b4ea; }
+.graphics-public:active { background: #71a4da; }
+
+.graphics-preview{ background: #add23b; }
+.graphics-preview:hover { background: #bde24b; }
+.graphics-preview:active{ background: #add23b; }
+
+.graphics-public:before {
+  width: 16px;
+  height: 12px;
+  background: url('../img/sailorkoto-temp-sprite.png') -49px 0;
+  top: 15px;
+  left: 11px;
+}
+
+.graphics-preview:before {
+  width: 16px;
+  height: 10px;
+  background: url('../img/sailorkoto-temp-sprite.png') -65px 0;
+  top: 16px;
+  left: 13px;
+}
+
+/* dpublish as */
+
+.publish-as {
+  height: 100%;
+  float: right;
+}
+
+.publish-as-cancel {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-top: 14px;
+  margin-right: 5px;
+  position: relative;
+  float: left;
+}
+
+.publish-as-cancel:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url('../img/sailorkoto-temp-sprite.png') -81px 0;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.publish-as span {
+  display: block;
+  float: left;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.publish-as-img {
+  display: block;
+  float: left;
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+.publish-as-img:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.publish-as-img:hover:after {
+  display: none;
+}
+
 /* dropdown select-menu */
 
 .select-menu {
@@ -1170,13 +1375,13 @@ a {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   position: absolute;
-  top: 23px;
+  top: 21px;
   right: 15px;
 }
 
 .select-menu-dropdown {
   display: block;
-  width: inherit;
+  width: 101%;
   background: #fff;
   border: 1px solid #e3e3e3;
   border-radius: 1px;
