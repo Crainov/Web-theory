@@ -536,8 +536,8 @@ a {
   content: ":";
 }
 
-.slider-range-image span[data-state="hidden"], 
-.slider-range-user span[data-state="hidden"] 
+.slider-range-image span[data-state="hidden"],
+.slider-range-user span[data-state="hidden"]
 {
   display: none;
 }
@@ -758,6 +758,7 @@ a {
 /* GRAPHICS INFO */
 
 .graphics-block-info {
+  display: block;
   position: absolute;
   top: 177px;
   left: 0;
@@ -768,6 +769,7 @@ a {
 .graphics-likes,
 .graphics-views,
 .graphics-comments {
+  list-style: none;
   float: left;
   margin-right: 15px;
   font-size: 12px;
