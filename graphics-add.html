@@ -46,11 +46,11 @@
       <div class="content"> <!-- content -->
         <div class="graphics-add">
           <h3>Добавление графики</h3>
-          <ul class="content-tabs clearfix">
+          <ul class="content-tabs clearfix"> <!-- tabs -->
             <li><a href="#" class="active-content-tab">Форма добавления</a></li>
             <li><a href="#">Правила публикации</a></li>
-          </ul>
-          <form action="">
+          </ul> <!-- end of tabs -->
+          <form action=""> <!-- adding form -->
             <div class="clearfix">
               <input type="text" name="graphics-name" id="graphics-name" placeholder="Введите название работы">
               <ul class="select-menu graphics-add-form-select-menu">
@@ -63,7 +63,17 @@
               </ul>
             </div>
             <input type="text" name="graphics-tags" id="graphics-tags" placeholder="Добавьте 2-3 тега">
-          </form>
+            <div class="drag-n-drop-zone">
+              <div class="drag-n-drop-info-container">
+                <p>Перетащите сюда фотографию</p>
+                или
+                <label class="image-upload-button">
+                  <input type="file">
+                  <span>Выберите фотографию</span>
+                </label>
+              </div>
+            </div>
+          </form> <!-- end adding form -->
         </div>
       </div> <!-- end of content -->
       <aside class="common-aside">
