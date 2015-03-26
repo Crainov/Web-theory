@@ -414,17 +414,6 @@ a {
   padding-top: 40px;
 }
 
-.slider-row-first {
-  width: 100%;
-  line-height: 16px;
-  margin-bottom: 20px;
-  font-family: OpenSans, sans-serif;
-  font-weight: lighter;
-  font-size: 16px;
-  color: #fff;
-  position: relative;
-}
-
 /*-----What to show-----*/
 
 .what-to-show {
@@ -509,26 +498,42 @@ a {
   top: 8px;
 }
 
-/*Fist row (text)*/
-
-.slider-range-image select, .slider-range-user select {
-  background: rgba(0,0,0,0);
-  border: 0;
-  border-bottom: 1px dashed #fff;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none; 
+.slider-row-first {
+  width: 100%;
+  line-height: 16px;
+  margin-bottom: 20px;
+  font-family: OpenSans, sans-serif;
   font-weight: lighter;
   font-size: 16px;
   color: #fff;
+  position: relative;
 }
 
-.slider-range-image select > option, .slider-range-user select > option {
-  color: #000;
+/*Fist row (text)*/
+
+.slider-row-first ul {
+  position: absolute;
+  list-style: none;
+  top: 0;
+  z-index: 2;
+  left: 85px;
+}
+
+.slider-row-first ul li {
+  padding-bottom: 3px;
+  border-bottom: 1px dashed #fff;
+}
+
+.slider-row-first ul li:after {
+  content: ":";
 }
 
 .slider-range-image span, .slider-range-user span {
   border-bottom: 1px dashed #fff;
+}
+
+.slider-range-image span:after, .slider-range-user span:after {
+  content: ":";
 }
 
 .slider-range-image span[data-state="hidden"], 
@@ -537,21 +542,27 @@ a {
   display: none;
 }
 
-.slider-range-image select[data-state="visible"], 
-.slider-range-user select[data-state="visible"] 
-{
+.slider-row-first ul[data-state="visible"] {
   display: inline-block;
 }
 
-.slider-range-image select[data-state="hidden"], 
-.slider-range-user select[data-state="hidden"] 
-{
+.slider-row-first ul[data-state="hidden"] {
   display: none;
 }
 
-.slider-range-user {
-  float: right;
-  margin-right: 10px;
+.slider-right-text {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.slider-right-text ul {
+  position: absolute;
+  list-style: none;
+  top: 0;
+  z-index: 2;
+  right: -15px;
+  left: auto;
 }
 
 /*Second row (slider-content)*/
