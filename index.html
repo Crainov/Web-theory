@@ -51,20 +51,25 @@
           </div> <!-- End of "What to show" -->
           <!-- Text row of the slider -->
           <span class="slider-range-image">
-            Лучшее за 
-            <select>
-              <option value="today">сегодня:</option>
-              <option value="week">неделю:</option>
-              <option value="month">месяц:</option>
-              <option value="year">год:</option>
-            </select>
+            Лучшее за <span data-state="visible">неделю</span><!-- To hide span data-state should = "hidden"-->
           </span>
-          <span class="slider-range-user">Топ публикующих за 
-            <select>
-              <option value="month">месяц:</option>
-              <option value="year">год:</option>
-            </select>
-          </span>
+          <ul data-state="hidden"><!-- To show droplist data-state should = "visible"-->
+              <li value="today">сегодня</li>
+              <li value="week">неделю</li>
+              <li value="month">месяц</li>
+              <li value="year">год</li>
+          </ul>
+          <div class="slider-right-text">
+            <span class="slider-range-user">
+            Топ публикующих за <span data-state="visible">месяц</span><!-- To hide span data-state should = "hidden"-->
+            </span>
+            <ul data-state="hidden"><!-- To show droplist data-state should = "visible"-->
+              <li value="today">сегодня</li>
+              <li value="week">неделю</li>
+              <li value="month">месяц</li>
+              <li value="year">год</li>
+            </ul>
+          </div>
           <!-- End Text row of the slider -->
         </div>
         <div class="slider-row-second">
