@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'SansPro';
+  src: url('../fonts/PFBeauSansPro-Thin.otf'), url('../fonts/PFBeauSansPro-Thin-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: url(/static/img/bg-error.png);
+  font-family: SansPro, Helvetica Neue, Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.error-403,
+.error-404,
+.error-503 {
+  font-size: 25px;
+  position: absolute;
+  margin: 20% 0 0 40%;
+}
+
+h1:before {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.error-403:before {
+  content: url(/static/img/error-403.png);
+}
+
+.error-404:before {
+  content: url(/static/img/error-404.png);
+}
+
+.error-503:before {
+  content: url(/static/img/error-503.png);
+}
