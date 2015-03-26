@@ -487,27 +487,33 @@
         </div>
         <div class="aside-sorting"> <!-- sidebar sorting -->
           <h3>Сортировка</h3>
-          <form>
-            <label for="sort-category">Категория</label>
-            <select name="sort-category" id="sort-category">
-              <option value="all">Все категории</option>
-              <option value="category-1">Категория 1</option>
-              <option value="category-2">Категория 2</option>
-              <option value="category-3">Категория 3</option>
-            </select>
-            <label for="sort-toshow">Показывать</label>
-            <select name="sort-toshow" id="sort-toshow">
-              <option value="new">Новое</option>
-              <option value="mostliked">По количеству лайков</option>
-              <option value="mostviewed">По количеству просмотров</option>
-            </select>
-            <label for="sort-attachments">Наличие прикреплений</label>
-            <select name="sort-attachments" id="sort-attachments">
-              <option value="any">Не важно</option>
-              <option value="onlyattach">Только с прикреплениями</option>
-              <option value="onlynoattach">Без прикреплений</option>
-            </select>
-          </form>
+          <span class="sidebar-select-menu-label">Категория</span>
+          <ul class="select-menu sidebar-select-menu">
+            <li>Выберите категорию</li>
+            <ul class="select-menu-dropdown">
+              <li>Категория 1</li>
+              <li>Категория 2</li>
+              <li>Категория 3</li>
+            </ul>
+          </ul>
+          <span class="sidebar-select-menu-label">Показывать</span>
+          <ul class="select-menu sidebar-select-menu">
+            <li>Новое</li>
+            <ul class="select-menu-dropdown">
+              <li>Новое</li>
+              <li>Самое популярное</li>
+              <li>Самое просматриваемое</li>
+            </ul>
+          </ul>
+          <span class="sidebar-select-menu-label">Наличие прикреплений</span>
+          <ul class="select-menu sidebar-select-menu">
+            <li>Не важно</li>
+            <ul class="select-menu-dropdown">
+              <li>Не важно</li>
+              <li>Только с прикреплениями</li>
+              <li>Без прикреплений</li>
+            </ul>
+          </ul>
         </div> <!-- end of sidebar sorting -->
         <div class="aside-activity">
           <h3>Активность</h3>
