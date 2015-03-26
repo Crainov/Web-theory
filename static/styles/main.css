@@ -375,7 +375,7 @@ a {
 .user-profile {
   width: 150px;
   height: 100%;
-  float: right;
+  margin-left: 34px;
   display: inline-block;
   position: relative;
   background: url(../img/temp_icons/user-profile-bckgr.png);
