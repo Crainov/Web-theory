@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url(/static/img/bg-error.png);
+  background: url(../img/bg-error.png);
   font-family: SansPro, Helvetica Neue, Arial, sans-serif;
   color: #fff;
   position: relative;
@@ -27,13 +27,13 @@ h1:before {
 }
 
 .error-403:before {
-  content: url(/static/img/error-403.png);
+  content: url(../img/error-403.png);
 }
 
 .error-404:before {
-  content: url(/static/img/error-404.png);
+  content: url(../img/error-404.png);
 }
 
 .error-503:before {
-  content: url(/static/img/error-503.png);
+  content: url(../img/error-503.png);
 }
