@@ -147,18 +147,19 @@ a {
 /*Logo*/
 
 .logo {
-  display: inline-block;
+  /* display: inline-block; */
+  display: block;
+  float: left;
+  padding-top: 18px;
   height: 100%;
-}
-
-.logo img {
-  padding-bottom: 18px;
 }
 
 /*Top-site-menu*/
 
 .top-menu {
-  display: inline-block;
+  /* display: inline-block; */
+  display: block;
+  float: left;
   margin-left: 30px;
   font-family: OpenSans, sans-serif;
   font-size: 13px;
@@ -194,23 +195,17 @@ a {
 /*Top-User-menu*/
 
 .user-actions {
-  display: inline-block;
-  height: 16px;
-  width: 16px;
+  /* display: inline-block; */
+  display: block;
+  float: left;
+  height: 100%;
+  width: 46px;
   font-family: Arial, sans-serif;
   font-size: 13px;
-  overflow: hidden;
-  margin-left: 165px;
-  margin-bottom: 22px;
+  /* overflow: hidden; */
+  margin-left: 150px;
   cursor: pointer;
-}
-
-.user-actions:hover {
-  width: 200px;
-  height: 60px;
-  margin-left: 75px;
-  overflow: visible;
-  position: absolute;
+  position: relative;
 }
 
 .user-actions:before {
@@ -219,41 +214,51 @@ a {
   background: url(../img/sprites.png);
   height: 16px;
   width: 16px;
+  top: 22px;
+  left: 15px;
 }
 
 .user-actions:hover:before {
   background: url(../img/sprites.png) -16px 0;
-  top: 22px;
-  left: 95px;
 }
 
-.user-actions:after {
-  position: absolute;
-  content: "";
-  border-left: 5px solid rgba(0,0,0,0);
-  border-right: 5px solid rgba(0,0,0,0);
-  border-bottom: 5px solid #fff;
-  top: 55px;
-  left: 98px;
-  visibility: hidden;
-}
-
-.user-actions:hover:after {
+.user-actions:hover > .user-menu {
   visibility: visible;
+  opacity: 1;
+  top: 60px;
 }
 
 .user-menu {
-  top: 60px;
-  position: relative;
+  display: block;
+  width: 200px;
+  position: absolute;
+  left: -77px;
+  top: 100px;
   background: #fff;
   border-radius: 2px;
-  overflow: hidden;
+  /* overflow: hidden; */
   -webkit-box-shadow: 3px 3px 19px 8px rgba(0,0,0,0.07);
   -moz-box-shadow: 3px 3px 19px 8px rgba(0,0,0,0.07);
   box-shadow: 3px 3px 19px 8px rgba(0,0,0,0.07);
   z-index: 5;
   padding-top: 5px;
+  padding-bottom: 5px;
   list-style: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .1s, top .1s;
+  -o-transition: opacity .1s, top .1s;
+  transition: opacity .1s, top .1s;
+}
+
+.user-menu:after {
+  position: absolute;
+  content: "";
+  border-left: 5px solid rgba(0,0,0,0);
+  border-right: 5px solid rgba(0,0,0,0);
+  border-bottom: 5px solid #fff;
+  left: 95px;
+  top: -5px;
 }
 
 /*User-actions-icons*/
@@ -335,19 +340,22 @@ a {
 /*User-block*/
 
 .user-block {
-  position: absolute;
+  /* position: absolute; */
+  display: block;
+  float: right;
   height: 100%;
   width: 210px;
-  top: 0;
-  right: 0;
 }
 
 /*User-mail*/
 
 .user-mail {
+  display: block;
+  float: left;
   width: 22px;
   height: 100%;
-  display: inline-block;
+  margin-right: 29px;
+  position: relative;
 }
 
 .user-mail:before {
@@ -378,15 +386,15 @@ a {
 
 /*User-profile*/
 .home-user-profile {
+  display: block;
+  float: right;
   width: 150px;
   height: 100%;
-  margin-left: 33px;
-  display: inline-block;
   position: relative;
   background: url(../img/temp_icons/user-profile-bckgr.png);
 }
 
-.user-profile a {
+.home-user-profile a {
   display: block;
   width: 100%;
   height: 100%;
@@ -868,9 +876,9 @@ a {
   -ms-transform: translateY(-10px);
   -o-transform: translateY(-10px);
   transform: translateY(-10px);
-  -webkit-transition: opacity .2s .1s, -webkit-transform .3s ease-out .1s, -ms-transform .3s ease-out .1s, -o-transform .3s ease-out .1s, transform .3s ease-out .1s;
-  -o-transition: opacity .2s .1s, -webkit-transform .3s ease-out .1s, -ms-transform .3s ease-out .1s, -o-transform .3s ease-out .1s, transform .3s ease-out .1s;
-  transition: opacity .2s .1s, -webkit-transform .3s ease-out .1s, -ms-transform .3s ease-out .1s, -o-transform .3s ease-out .1s, transform .3s ease-out .1s;
+  -webkit-transition: opacity .2s .1s, transform .3s ease-out .1s;
+  -o-transition: opacity .2s .1s, transform .3s ease-out .1s;
+  transition: opacity .2s .1s, transform .3s ease-out .1s;
 }
 
 .graphics-header {
