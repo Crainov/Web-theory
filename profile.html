@@ -23,93 +23,53 @@
             <li><a href="#">Сообщества</a></li>
           </ul>
         </nav>
-        <div class="user-actions"><!-- Top User menu -->
-            <ul class="user-menu">
-              <li><a class="open-book" href="#">Список чтения</a></li>
-              <li><a class="upload-cloud" href="graphics-add.html">Добавить работу</a></li>
-              <li><a class="thumbs-up" href="#">Понравилось</a></li>
-              <li><a class="project-help" href="#">Помочь проекту</a></li>
-            </ul>
-        </div>
-        <div class="user-block"> <!-- User mail and profile -->
-          <a class="user-mail" href="#" data-messages-counter="2"></a>
+        <div class="profile-user-block"> <!-- User mail and profile -->
+          <div class="profile-user-mail">
+            <a href="#" data-messages-counter="2"></a>
+          </div>
           <div class="profile-user-profile">
             <a href="#"></a>
             <div class="user-name">webtheory</div>
-            <div class="user-photo"><img src="upload/user-photo.png" alt="user-photo"></div>
+            <div class="user-photo profile-user-photo"><img src="upload/user-photo.png" alt="user-photo"></div>
           </div>
         </div><!--  End of User mail and profile -->
       </div>
     </div>
   </header><!-- End of Header-->
-  <div class="subheader">
+  <div class="profile-subheader">
     <div class="wrapper">
-      <div class="slider"> <!-- Slider -->
-        <div class="slider-row-first">
-          <div class="what-to-show"> <!-- What to show -->
-            <a class="slider-show-posts" href="#" data-post-count="2"></a>
-            <a class="slider-show-articles" href="#" data-article-count="8"></a>
-          </div> <!-- End of "What to show" -->
-          <!-- Text row of the slider -->
-          <span class="slider-range-image">
-            Лучшее за <span data-state="visible">неделю</span><!-- To hide span data-state should = "hidden"-->
-          </span>
-          <ul data-state="hidden"><!-- To show droplist data-state should = "visible"-->
-              <li value="today">сегодня</li>
-              <li value="week">неделю</li>
-              <li value="month">месяц</li>
-              <li value="year">год</li>
-          </ul>
-          <div class="slider-right-text">
-            <span class="slider-range-user">
-            Топ публикующих за <span data-state="visible">месяц</span><!-- To hide span data-state should = "hidden"-->
-            </span>
-            <ul data-state="hidden"><!-- To show droplist data-state should = "visible"-->
-              <li value="today">сегодня</li>
-              <li value="week">неделю</li>
-              <li value="month">месяц</li>
-              <li value="year">год</li>
-            </ul>
-          </div>
-          <!-- End Text row of the slider -->
-        </div>
-        <div class="slider-row-second">
-          <div class="slider-top-graphic"> <!-- Slider graphic thumbs -->
-            <a href="#"><img src="upload/slider-thumb-1.jpg" alt="slider-thumb"></a>
-            <a href="#"><img src="upload/slider-thumb-2.jpg" alt="slider-thumb"></a>
-            <a href="#"><img src="upload/slider-thumb-3.jpg" alt="slider-thumb"></a>
-            <a href="#"><img class="last-slider-thumb" src="upload/slider-thumb-4.jpg" alt="slider-thumb"></a>
-            <a class="slider-next" href="#next"></a>
-          </div> <!-- End of Slider graphic thumbs -->
-          <div class="slider-top-users"> <!-- Top user block -->
-            <div class="slider-top-user">
-              <img src="upload/user-slider-thumb-3.png">
-              <div class="top-user-info">
-                <span class="top-user-name">desmood</span>
-                <span class="user-likes-counter">1 273 лайка</span>
-              </div>
-              <a class="slider-user-link" href="#"></a>
-            </div>
-            <div class="slider-top-user">
-              <img src="upload/user-slider-thumb-2.png">
-              <div class="top-user-info">
-                <span class="top-user-name">Th. Gleb</span>
-                <span class="user-likes-counter">1 269 лайков</span>
-              </div>
-              <a class="slider-user-link" href="#"></a>
-            </div>
-            <div class="slider-top-user">
-              <img src="upload/user-slider-thumb-1.png">
-              <div class="top-user-info">
-                <span class="top-user-name">Smeet</span>
-                <span class="user-likes-counter">842 лайка</span>
-              </div>
-              <a class="slider-user-link" href="#"></a>
-            </div>
-          </div><!-- End of Top user block -->
-        </div>
-      </div> <!-- End of Slider -->
+      <div class="user-last-visit">Заходил 15 минут назад</div>
+      <div class="user-stats-options">
+        <ul>
+          <li class="user-stats"><a href="#">Статистика</a></li>
+          <li class="user-options"><a href="#">Настройки</a></li>
+        </ul>
+      </div>
     </div>
   </div> <!-- End of subheader -->
+  <div class="profile-main-block">
+    <div class="wrapper">
+      <aside class="profile-user-aside">
+        <div class="profile-user-avatar">
+          <a href="#" class="profile-edit-user-profile">ред.</a>
+          <img src="upload/user-avatar.jpg">
+        </div>
+        <div class="profile-user-full-name">Артемка Аллаяров</div>
+        <div class="profile-user-specialization">Веб-дизайнер</div>
+        <div class="profile-user-occupation">
+          <span class="profile-user-salary"><span class="salary-amount">35 000</span> руб/мес</span>
+          <span class="work-state">Готов работать</span>
+        </div>
+        <div class="profile-user-rating">
+          <span class="profile-rating-points"><span class="rating-points-count">382</span> балла</span>
+          <span class="profile-rating-position"><span>28</span><a href=""> в рейтинге</a></span>
+        </div>
+        <div class="profile-send-message">
+          <a href="#">Отправить сообщение</a>
+        </div>
+      </aside>
+      <div class="profile-user-activity-block"></div>
+    </div>
+  </div>
 </body>
 </html>
