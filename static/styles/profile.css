@@ -1,22 +1,61 @@
 .profile-user-block {
   height: 100%;
-  display: none;
-  width: 220px;
+  display: block;
   float: right;
 }
-.profile-user-profile {
-  height: 100%;
-  display: inline-block;
-}
+
 .profile-user-mail {
   height: 100%;
+  float: right;
+}
+
+.profile-user-mail a:before {
+  content: "";
   display: inline-block;
-  width: 40px;
+  background: url(../img/sprites.png) -32px 0;
+  width: 22px;
+  height: 16px;
+  margin-bottom: -21px;
+  margin-right: 7px;
+}
+
+.profile-user-mail a:after {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 11px;
+  content: attr(data-messages-counter);
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  background: #e14c64;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  display: inline-block;
+  float: right;
+  margin-top: 21px;
+}
+
+.profile-user-profile {
+  height: 100%;
+  display: block;
+  float: right;
+  position: relative;
+}
+
+.profile-user-profile a {
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  color: #fff;
 }
 
 .profile-user-photo img {
   border-radius: 40px;
 }
+
+/**************************/
+/********Profile-subheader*/
+/**************************/
 
 .profile-subheader {
   height: 40px;
@@ -27,6 +66,8 @@
   margin-bottom: 30px;
 }
 
+/***Last-visit****/
+
 .user-last-visit {
   height: 100%;
   line-height: 40px;
@@ -34,15 +75,19 @@
   color: #b7b7b7
 }
 
+/****User stats and options****/
+
 .user-stats-options {
   height: 100%;
   line-height: 40px;
   display: inline-block;
   float: right;
 }
+
 .user-stats-options ul {
   list-style: none;
 }
+
 .user-stats-options ul li {
   padding-right: 28px;
   position: relative;
@@ -77,6 +122,10 @@
   width: 17px !important;
 }
 
+/**************************/
+/********Profile-aside*****/
+/**************************/
+
 .profile-user-aside {
   font-family: Arial, sans-serif;
   width: 200px;
@@ -84,10 +133,7 @@
   margin-right: 45px;
 }
 
-.profile-user-activity-block {
-  display: inline-block;
-  width: 710px;
-}
+/*******Profile-avatar*******/
 
 .profile-user-avatar img {
   border-radius: 100px;
@@ -119,6 +165,8 @@
   position: relative;
   margin-bottom: 20px;
 }
+
+/*Profile userName, specialization, rating, occupation, salary, send-message, unsubscribe/subscribe*/
 
 .profile-user-full-name {
   font-size: 18px;
@@ -194,7 +242,8 @@
   color: #a3b2c6;
   text-decoration: underline;
 }
-.profile-send-message a {
+
+.profile-send-message-button a {
   display: block;
   height: 40px;
   line-height: 40px;
@@ -203,8 +252,335 @@
   color: #fff;
   background: url(../img/temp_icons/send-mail-button-bckgr.png);
   border-radius: 2px;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.15);
+  margin-bottom: 10px;
 }
 
-.profile-send-message a:hover {
+.profile-send-message-button a:hover {
   background: #214d87;
+}
+
+.profile-unsubscribe-button a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 13px;
+  background: #eee;
+  color: #9a9a9a;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.profile-unsubscribe-button a:hover {
+  background: #9a9a9a;
+  color: #eee;
+}
+
+/*****Subscribers block, folllowed block, title definition******/
+
+.subscribers-title, .followed-title, .skills-title, .about-title, .contacts-title {
+  padding-top: 28px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+}
+
+.subscribers-counter, .followed-counter {
+  font-size: 14px;
+  float: right;
+  color: #999;
+}
+
+.subscribers-thumbs, .followed-thumbs {
+  padding-top: 15px;
+}
+
+.sbs-row, .fl-row {
+  height: 68px;
+}
+
+.sbs-user, .fl-user {
+  float: left;
+  margin-right: 4px;
+  position: relative;
+}
+
+.sbs-user:last-child, .fl-user:last-child {
+  margin-right: 0;
+}
+
+.sbs-user a, .fl-user a {
+  top: 0;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+
+/***************Title definition <a>*************/
+
+.skills-title a, .about-title a, .contacts-title a {
+  position: absolute;
+  background: url(../img/temp_icons/user-edit-pencil.png);
+  height: 10px;
+  width: 10px;
+  bottom: 5px;
+  right: 0;
+}
+
+/***********************Skills*******************/
+
+.skills-info-current {
+  margin-top: 20px;
+}
+
+.skills-info-current span, .skills-info-bet {
+  font-size: 13px;
+  font-weight: bold;
+  color: #666;
+}
+
+.skills-info-current ul, .skills-info-bet ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.skills-info-current a {
+  display: block;
+  color: #949fb0;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 40px;
+  border-bottom: 1px solid #dedede;
+}
+
+.skills-info-current a span{
+  font-size: 13px;
+  float: right;
+}
+
+.skills-info-current a span:after {
+  display: inline-block;
+  content: "";
+  background: url(../img/temp_icons/percent-icon.png);
+  height: 10px;
+  width: 11px;
+}
+
+.skills-info-bet {
+  margin-top: 10px;
+}
+
+
+.skills-info-bet ul {
+  height: 176px; /******** Temp style ************/
+}
+
+.skills-info-bet li {
+  line-height: 30px;
+  float: left;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  background: #e7ebf1;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skills-info-bet li a {
+  display: block;
+  font-size: 12px;
+  color: #868f9d;
+  padding-left: 10px;
+}
+
+.skills-info-bet li a:after {
+  content: attr(data-skill-bet-counter);
+  display: block;
+  float: right;
+  padding: 0 9px;
+  margin-left: 10px;
+  color: #fff;
+  background: #c9d1de;
+  font-weight: bold;
+}
+
+/*****************User-about******************/
+
+.user-about-nav {
+  margin-top: 20px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.user-about-nav a {
+  display: block;
+  font-family: Arial, sans-serif;
+  color: #808b9c;
+  font-size: 13px;
+  line-height: 35px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.user-about-nav a:hover {
+  opacity: .7;
+}
+
+.user-location:before {
+  display: inline-block;
+  content: " ";
+  width: 11px;
+  height: 16px;
+  margin-bottom: -3px;
+  margin-right: 9px;
+  background: url(../img/temp_icons/map-pin.png);
+}
+
+.user-location:hover:before {background: url(../img/temp_icons/map-pin-hover.png);}
+
+.user-graduate-level:before {
+  display: inline-block;
+  content: " ";
+  width: 12px;
+  height: 7px;
+  margin-right: 8px;
+  margin-bottom: 2px;
+  background: url(../img/temp_icons/graduate-icon.png);
+}
+
+.user-graduate-level:hover:before {background: url(../img/temp_icons/graduate-icon-hover.png);}
+
+.user-age:before {
+  display: inline-block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background: url(../img/temp_icons/box-closed-icon.png);
+}
+
+.user-age:hover:before {background: url(../img/temp_icons/box-closed-icon-hover.png);}
+
+.user-qualification:before {
+  display: inline-block;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background: url(../img/temp_icons/brief-case-icon.png);
+}
+
+.user-qualification:hover:before {background: url(../img/temp_icons/brief-case-icon-hover.png);}
+
+.user-about-text {
+  margin-top: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #707070;
+}
+
+/*************************User Contacts************************/
+
+.user-contacts ul {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.user-contacts ul a {
+  display: block;
+  line-height: 40px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #75a5d7;
+  border-bottom: 1px solid #dedede;
+}
+
+.user-contacts li:last-child a {
+  border-bottom: 0;
+}
+
+.skype:before {
+  display: inline-block;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-bottom: -5px;
+  background: url(../img/temp_icons/skype-icon.png);
+}
+
+.twitter:before {
+  display: inline-block;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-bottom: -5px;
+  background: url(../img/temp_icons/twitter-icon.png);
+}
+
+.behance:before {
+  display: inline-block;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-bottom: -5px;
+  background: url(../img/temp_icons/behance-icon.png);
+}
+
+.youtube:before {
+  display: inline-block;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-bottom: -5px;
+  background: url(../img/temp_icons/youtube-icon.png);
+}
+
+/*************************Profile-footer***********************/
+
+.aside-user-footer {
+  margin-top: 20px;
+}
+
+.aside-user-footer a {
+  font-size: 12px;
+  color: #666;
+  font-weight: bold;
+}
+
+.aside-user-footer ul {
+  list-style: none;
+  margin-top: 28px;
+}
+
+.aside-user-footer ul a {
+  font-size: 11px;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.aside-user-footer ul a:hover {
+  text-decoration: underline;
+}
+
+.aside-user-footer ul a:after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: #666;
+  margin-bottom: 1px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.aside-user-footer li:last-child a:after {
+  display: none;
 }
