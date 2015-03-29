@@ -1697,6 +1697,26 @@ a {
   content: none;
 }
 
+/* aside best of the week */
+
+.aside-best-list a {
+  font-size: 13px;
+  color: #3676b1;
+  text-decoration: underline;
+  display: block;
+  height: 35px;
+  line-height: 34px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.aside-best-list a:hover {
+  color: #639fd6;
+}
+
+.aside-best-list li:last-child a {
+  border-bottom: none;
+}
+
 /*----HELP---*/
 
 .aside-help a {
