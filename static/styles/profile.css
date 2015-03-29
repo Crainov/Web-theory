@@ -57,15 +57,6 @@
 /********Profile-subheader*/
 /**************************/
 
-.profile-subheader {
-  height: 40px;
-  background: #f4f4f4;
-  border-bottom: 1px solid #e4e4e4;
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  margin-bottom: 30px;
-}
-
 /***Last-visit****/
 
 .user-last-visit {

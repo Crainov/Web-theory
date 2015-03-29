@@ -765,6 +765,42 @@ a {
   bottom: 7px;
 }
 
+/*===============*/
+/*SMALL SUBHEADER*/
+/*===============*/
+
+.small-subheader {
+  height: 40px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #e4e4e4;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+/* small subheader tabs */
+
+.small-subheader-tabs {
+  list-style-type: none;
+}
+
+.small-subheader-tabs a {
+  float: left;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  padding-right: 20px;
+}
+
+.small-subheader-tabs a:hover {
+  text-decoration: underline;
+}
+
+.current-subheader-tab {
+  color: #3676b1 !important;
+}
+
 /*==============*/
 /*CONTENT*/
 /*==============*/
