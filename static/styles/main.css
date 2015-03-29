@@ -778,10 +778,9 @@ a {
   padding-bottom: 100px;
 }
 
-.content-grid {
+.graphics-grid {
   padding-bottom: 11px;
   /* padding + border */
-
   border-bottom: 1px solid #e2e2e2;
   margin-bottom: 27px;
 }
