@@ -484,9 +484,10 @@ a {
   height: 240px;
   border-radius: 3px;
   background: #fff;
-  box-shadow: 0 0 2px 1px #d6d7d7;
+  box-shadow: 0 1px 2px 1px #d6d7d7;
   overflow: hidden;
   font-size: 13px;
+  text-align: center;
 }
 
 .login-header {
@@ -509,6 +510,11 @@ a {
   color: #fff;
 }
 
-form {
-  position: relative;
+input {
+  width: 250px;
+  height: 33px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  margin-top: 10px;
+  background: url(../img/authorization-sprites.png) no-repeat;
 }
