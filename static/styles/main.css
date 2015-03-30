@@ -1548,6 +1548,9 @@ a {
   color: #fff;
   text-align: center;
   padding-top: 115px;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
 }
 
 .play-course:after {
@@ -1578,6 +1581,127 @@ a {
   height: 10px;
   line-height: 10px;
 }
+
+/*=====================*/
+/*       ARTICLE       */
+/*=====================*/
+
+.article-heading {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+
+.edit-article-button {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: #3676b1;
+  text-decoration: underline;
+}
+
+.edit-article-button:hover {
+  color: #66a6e1;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
+
+.article-paragraph {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.article-section {
+  margin-bottom: 40px;
+}
+
+.colored-link {
+  display: inline-block;
+  margin-bottom: -6px;
+  padding: 0 3px;
+  border-radius: 2px;
+  color: #999;
+  background: #e5e5e5;
+  border-left: 2px solid #aaa;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+}
+
+.colored-link:hover {
+  color: #fff !important;
+  background: #aaa;
+}
+
+.brown-link {
+  color: #a68769;
+  background: #ecd7c3;
+  border-left: 2px solid #e1a062;
+}
+
+.brown-link:hover { background: #e1a062; }
+
+.blue-link {
+  color: #3787a4;
+  background: #c3dfec;
+  border-left: 2px solid #4ea7c8;
+}
+
+.blue-link:hover { background: #4ea7c8; }
+
+.pink-link {
+  color: #a954a3;
+  background: #ecc3e9;
+  border-left: 2px solid #c56dbf;
+}
+
+.pink-link:hover { background: #c56dbf; }
+
+.yellow-link {
+  color: #7a9746;
+  background: #e6ecc3;
+  border-left: 2px solid #a5c56d;
+}
+
+.yellow-link:hover { background: #a5c56d; }
+
+.violet-link {
+  color: #985db3;
+  background: #dfc3ec;
+  border-left: 2px solid #c67acf;
+}
+
+.violet-link:hover { background: #c67acf; }
+
+.red-link {
+  color: #ae4646;
+  background: #ecc3c3;
+  border-left: 2px solid #cf7a7a;
+}
+
+.red-link:hover { background: #cf7a7a; }
+
+.lightgreen-link {
+  color: #4c9746;
+  background: #c6ecc3;
+  border-left: 2px solid #6dc56d;
+}
+
+.lightgreen-link:hover { background: #6dc56d; }
+
+.lightblue-link {
+  color: #469796;
+  background: #c3eceb;
+  border-left: 2px solid #6dc5c4;
+}
+
+.lightblue-link:hover { background: #6dc5c4; }
 
 /*==============*/
 /*SIDEBAR*/

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Theory</title>
+  <link rel="stylesheet" href="static/styles/main.css">
+</head>
+<body>
+  <header class="header"><!--Header-->
+    <div class="wrapper">
+      <div class="top-nav clearfix">
+        <a class="logo" href="index.html"><!--Logo-->
+          <img src="static/img/temp_icons/logo.png" alt="Web-Theory">
+        </a>
+        <nav class="top-menu"><!-- Top site menu -->
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="courses.html" class="current-nav-item">Курсы</a></li>
+            <li><a href="#">Статьи</a></li>
+            <li><a href="graphics.html">Дизайн</a></li>
+            <li><a href="#">Люди</a></li>
+            <li><a href="#">Сообщества</a></li>
+          </ul>
+        </nav>
+        <div class="user-block clearfix"> <!-- User mail and profile -->
+          <div class="user-actions"><!-- Top User menu -->
+              <ul class="user-menu">
+                <li><a class="open-book" href="#">Список чтения</a></li>
+                <li><a class="upload-cloud" href="graphics-add.html">Добавить работу</a></li>
+                <li><a class="thumbs-up" href="#">Понравилось</a></li>
+                <li><a class="project-help" href="#">Помочь проекту</a></li>
+              </ul>
+          </div>
+          <a class="user-mail" href="#" data-messages-counter="2"></a>
+          <div class="home-user-profile">
+            <a href="#"></a>
+            <div class="user-name">webtheory</div>
+            <div class="user-photo"><img src="upload/user-photo.png" alt="user-photo"></div>
+          </div>
+        </div><!--  End of User mail and profile -->
+      </div>
+    </div>
+  </header><!-- End of Header-->
+  <div class="small-subheader mb30"> <!-- Subheader-->
+    <div class="wrapper">
+      <ul class="small-subheader-tabs clearfix">
+        <li><a href="courses.html">Курсы</a></li>
+        <li><a href="what-to-learn.html" class="current-subheader-tab">Что мне учить?</a></li>
+      </ul>
+    </div>
+  </div> <!-- Subheader-->
+  <div class="page">
+    <div class="wrapper clearfix">
+      <div class="content"> <!-- content -->
+        <article> <!-- what to learn article -->
+          <h3 class="article-heading">Что мне учить?</h3>
+          <a href="#" class="edit-article-button clearfix">Править</a>
+          <section class="article-section">
+            <p class="article-paragraph">
+              Прежде всего, вам необходимо определиться, что вам больше всего нравится делать. Как только вы сможете ответить для себя на этот вопрос, мы сможем подсказать в каком направлении вам следует двигаться.
+              Стоит сказать, что создание сайта как правило делится на две части: front-end и back-end.
+            </p>
+            <p class="article-paragraph">
+            <strong>Front-end</strong> - это работа по созданию <i>публичной части сайта</i>, с которой непосредственно контактирует пользователь и функционала который обычно обыгрывается на клиентской стороне (в браузере).
+              К аспектам front-end разработки можно отнести создание дизайна макета, верстка макетов (превращение макетов в рабочий код), адаптация под CMS - системы управления содержимым.
+              На сегодняшний день, в обязанности front-end разработчика также входит добавление интерактивности при помощи скриптов.
+            </p>
+            <p class="article-paragraph">
+              <strong>Back-end</strong> - это процесс <i>программирования</i> сайта и разработки функционала. На back-end’е обычно производится обработка полученной информации из front-end и обработанная информация может вернутся на front-end в привычном для пользователя виде.
+              Если вы желаете работать в сфере back-end, то крайне желательно иметь опыт в front-end разработке, например в верстке сайтов и создании интерактивных элементов.
+            </p>
+          </section>
+          <section class="article-section">
+            <h3 class="section-heading">Front-end</h3>
+            <p class="article-paragraph">
+              Для начала, попробуйте себя в дизайне, если вам понравится и у вас это будет получаться - можете развивать свои дизайнерские навыки.<br>
+              После этого, попробуйте перейти непосредственно к верстке макетов. Многим дизайнерам приходится самостоятельно верстать свои творения на работе.
+              Сам процесс верстки осуществляется при помощи HTML и CSS, на данный момент актуальные версии -  <a href="#" class="colored-link brown-link">HTML5 и CSS3</a><br>
+              После того, как вы выучите HTML5 и CSS3, а также наберетесь большого количества опыта, выполняя различные тренировочные задания,
+              вы сможете приступить к более сложным аспектам front-end разработки, а именно к созданию интерактивных элементов.<br>
+              Как правило, интерактивности добавляют при помощи языка  <a href="#" class="colored-link blue-link">JavaScript</a>  (курс в данный момент снимается) или библиотек, основанных на JavaScript, вроде  <a href="#" class="colored-link pink-link">jQuery</a>  (курс в данный момент снимается).<br>
+              Знание библиотек вовсе не обязательно, однако желательно. Во-первых, знание библиотек вроде jQuery или <a href="#" class="colored-link">CoffeeScript</a>  необходимо при устройстве на работу. Во-вторых, библиотеки помогут ускорить вашу разработку, если вам действительно необходимо сделать быстро тот или иной проект.<br>
+              После изученного, вы можете по-прежнему развиваться в области front-end, изучая каждый день что-то новое, а можете попробовать себя в back-end.
+            </p>
+          </section>
+          <section class="article-section">
+            <h3 class="section-heading">Back-end</h3>
+            <p class="article-paragraph">
+              После того, как вы попробовали front-end, пора попробовать себя в back-end. Для начала, желательно выучить некий серверный язык программирования, в основном начинают с  <a href="#" class="colored-link violet-link">PHP</a>  (курс в данный момент снимается) . Во время обучения, вам захочется где-то хранить данные и работать с ними, тут вам поможет СУБД (Система Управления Базами Данных), вместе с PHP обычно пробуют  <a href="#" class="colored-link red-link">MySQL</a>  (курс в данный момент снимается).
+              Далее, вы можете двигаться в интересных для вас направлениях. Если вам понравился JavaScript и при этом вы хотите работать на back-end, вы можете попробовать <a href="#" class="colored-link lightgreen-link">Node.js</a>, а в качестве СУБД для Node.js можете попробовать <a href="#" class="colored-link lightblue-link">MongoDB</a>
+            </p>
+          </section>
+        </article> <!-- end of what to learn article -->
+      </div> <!-- end of content -->
+      <aside class="common-aside">
+        <div class="aside-nav">
+          <h3>Навигация</h3>
+          <ul class="home-aside-nav">
+            <li><a href="#">Моя страница</a></li>
+            <li><a href="#">Мои публикации</a></li>
+            <li><a href="#">Мои навыки</a></li>
+            <li><a href="#">Мои сообщества</a></li>
+            <li><a href="#">Диалоги</a></li>
+            <li><a href="graphics-add.html">Добавить работу</a></li>
+            <li><a href="#">Настройки</a></li>
+            <li><a href="#">Выйти</a></li>
+          </ul>
+        </div>
+        <div class="aside-best-of-the-week">
+          <h3>Лучшее за неделю</h3>
+          <ul class="aside-best-list">
+            <li><a href="#">Как повысить эффективность...</a></li>
+            <li><a href="#">Новости webtheory</a></li>
+            <li><a href="#">Изучение Ruby #0</a></li>
+            <li><a href="#">Значимые мероприятия для...</a></li>
+            <li><a href="#">Эффект перетекания в CorelDRAW</a></li>
+            <li><a href="#">Как мы делали новогодние...</a></li>
+          </ul>
+        </div>
+        <div class="aside-follow">
+          <h3>Мы в соц.сетях</h3>
+          <ul>
+            <li class="Vk"><a href="#">Вконтакте</a></li>
+            <li class="Fc"><a href="#">Facebook</a></li>
+            <li class="Gg"><a href="#">Google+</a></li>
+            <li class="Yt"><a href="#">YouTube</a></li>
+            <li class="Tw"><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+        <footer class="aside-footer">
+          <a href="#">webtheory.net © 2014</a>
+          <ul>
+            <li><a href="#">Правила</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </footer>
+      </aside>
+    </div> <!-- end of page wrapper -->
+  </div> <!-- end of page -->
+</body>
+</html>
