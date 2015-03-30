@@ -133,8 +133,10 @@ a {
 /*Logo*/
 
 .logo {
-  display: inline-block;
+  display: block;
+  float: left;
   height: 100%;
+  padding-top: 18px;
 }
 
 .logo img {
@@ -143,7 +145,8 @@ a {
 /*Top-site-menu*/
 
 .landing-menu {
-  display: inline-block;
+  display: block;
+  float: left;
   margin-left: 30px;
   font-family: OpenSans, sans-serif;
   font-size: 13px;
@@ -172,7 +175,7 @@ a {
 }
 
 .landing-user {
-  display: inline-block;
+  display: block;
   float: right;
   font-family: OpenSans, sans-serif;
   font-size: 13px;
@@ -183,7 +186,6 @@ a {
 }
 
 .landing-user a {
-  display: inline-block;
   line-height: 60px;
   margin-left: 13px;
   color: #fff;
