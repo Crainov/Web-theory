@@ -216,8 +216,8 @@
         <div class="user-content"><!--User content-->
           <div class="user-content-sort"><!--Content sorting-->
             <ul class="clearfix">
-              <li><a class="current-sort-item" href="profile.html">Записи<span class="content-posts-counter">38</span></a></li>
-              <li><a href="profile-posts.html">Публикации<span class="content-upload-counter">3</span></a></li>
+              <li><a href="profile.html">Записи<span class="content-posts-counter">38</span></a></li>
+              <li><a class="current-sort-item" href="profile-posts.html">Публикации<span class="content-upload-counter">3</span></a></li>
               <li><a href="#">Подписчики<span class="content-subscribers-counter">4523</span></a></li>
               <li><a href="#">Подписки<span class="content-followed-counter">2</span></a></li>
               <li><a href="#">Портфолио<span class="content-portfolio-counter">32</span></a></li>
@@ -226,160 +226,156 @@
           </div><!-- End Content sorting-->
           <div class="extra-sort"><!--Extra sort-->
             <ul class="clearfix">
-              <li><a href="#">Все записи</a></li>
-              <li><a href="#">Личные записи</a></li>
-              <li><a href="#">Записей<span class="content-posts-counter"> 38</span></a></li>
+              <li><a href="#">Все публикации</a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#">Графика</a></li>
+              <li><a href="#">Курсы</a></li>
+              <li><a href="#">Публикаций<span class="content-posts-counter"> 8</span></a></li>
             </ul>
           </div><!--End Extra sort-->
-          <div class="add-post"><!--Add post-->
-            <form>
-              <div class="message-text-form">
-                <input type="text" name="text-of-the-message" placeholder="Написать сообщение">
-                <input id="upload" type="file" name="upload-file-to-post">
+          <div class="publications-block"><!--Articles content-->
+            <div class="articles-title clearfix"><!--Articles title-->
+              <span data-publications-counter="1">Статьи</span>
+              <a href="#" class="hide-article">спрятать</a>
+            </div><!--End Articles title-->
+            <div class="article-content">
+              <div class="article-name"><h2>Новости webtheory</h2></div>
+              <div class="article-info clearfix">
+                <ul>
+                  <li class="article-category"><a href="#">Новости</a></li>
+                  <li class="article-author"><a href="profile.html">webtheory</a></li>
+                  <li class="article-date">Сегодня, 02:31</li>
+                </ul>
               </div>
-              <div class="add-post-active">
-                Для публикации можно нажать Shift+Enter
-                <input type="submit" name="submit-post" value="Отправить">
+              <div class="article-text">
+                <p>Скоро мы начнем заполнять сайт качественным контентом и нам прийдется поставить модерацию на публикуемый контент, чтобы выводились только достойные публикации. Тесты и курсы также появятся в ближайшее время, мы работаем над их созданием.</p>
+                <p>Чтобы сделать обучение максимально интересным и увлекательным мы запланировали сделать очередное глобальное обновление, чтобы достичь этой цели. Структура сайта во многом поменяется и думаю, что вы это оцените, но сейчас мы не будем вдаваться в подробности :)</p>
+                <p>Баги, которые вы сейчас часто замечаете будут исправлены, нужно лишь время.</p>
               </div>
-            </form>
-          </div><!--End Add sort-->
-          <div class="user-posts"><!--Posts wall-->
-            <div class="user-post clearfix"><!--Post item-->
-              <div class="user-post-avatar"><!--Post user avatar-->
-                <a href="#"><img src="upload/user-post-thumb1.jpg" alt="user-thumb"></a>
-              </div>
-              <div class="post-body">
-                <div class="username-post"><a href="#">Даниил Крамер</a></div>
-                <div class="user-post-content">Когда будешь свободен, зайди на <a href="http://gamepro.pro/">http://gamepro.pro/</a> мы там дизайн обновили.</div>
-                <div class="user-post-options"><time>15:29, 18 сентября</time><a href="#">Комментировать</a></div>
-              </div>
-              <div class="post-likes"><a href="#"><span>Мне нравится</span>81</a></div>
-            </div><!--End Post item-->
-            <div class="user-post-comments"><!--Comments to post-->
-              <div class="show-more-comments"><a href="#">Показать больше комментариев</a></div>
-              <div class="user-comment clearfix"><!--comment-->
-                <div class="user-comment-avatar">
-                  <a href="#"><img src="upload/user-post-thumb2.jpg" alt="user-thumb"></a>
-                </div>
-                <div class="comment-body">
-                  <div class="username-comment"><a href="#">Альберт Калашников</a></div>
-                  <div class="user-comment-content">Потрясно! Ждем открытия!</div>
-                  <div class="user-comment-options"><time>17:57, 19 сентября</time><a href="#">Ответить</a></div>
-                </div>
-              </div><!--end comment-->
-              <div class="user-comment clearfix"><!--comment-->
-                <div class="user-comment-avatar">
-                  <a href="#"><img src="upload/user-post-thumb3.jpg" alt="user-thumb"></a>
-                </div>
-                <div class="comment-body">
-                  <div class="username-comment"><a href="#">Павел Дуров</a></div>
-                  <div class="user-comment-content">Ваще збс! Покупаем после отрытия ахаха</div>
-                  <div class="user-comment-options"><time>21 минуту назад</time><a href="#">Ответить</a>
+            </div>
+            <div class="article-bottom-bar clearfix"><!--Publication bottom bar-->
+              <div class="read-more-button clearfix"><a href="#">Читать далее</a></div>
+              <ul>
+                <li class="article-views-counter">88, 129</li>
+                <li class="article-comments-counter">973</li>
+                <li class="article-likes-counter"><a href="#">64</a></li>
+              </ul>
+            </div><!--End article bottom bar-->
+          </div><!--End Articles content-->
+          <div class="publications-block"><!--pub block-->
+            <div class="graphics-title clearfix"><!--Graphics title-->
+              <span data-publications-counter="6">Графика</span>
+              <a href="#" class="hide-article">спрятать</a>
+            </div><!--End Graphics title-->
+            <div class="published-graphics-content"><!--Graphics content-->
+              <div class="pub-row"><!--Graphics items row-->
+                <div class="pub-graphics-item"><!--Graphics element-->
+                  <div class="graphics-item-body">
+                    <div class="graphic-item-stats clearfix">
+                      <a href="#">Посмотреть</a>
+                      <ul class="clearfix">
+                        <li class="graphic-views-counter">88,129</li>
+                        <li class="graphic-comments-counter">973</li>
+                        <li class="graphic-likes-counter">64</li>
+                      </ul>
+                    </div>
+                    <img src="upload/pub-graphic-tumb1.jpg" alt="pub-graphic-thumb1">
                   </div>
-                </div>
-                <div class="comment-likes"><a href="#"><span>Мне нравится</span>1</a></div>
-              </div><!--end comment-->
-              <div class="user-comment clearfix"><!--comment-->
-                <div class="user-comment-avatar">
-                  <a href="#"><img src="upload/user-post-thumb4.jpg" alt="user-thumb"></a>
-                </div>
-                <div class="comment-body">
-                  <div class="username-comment"><a href="#">Павел Дуров</a></div>
-                  <div class="user-comment-content">Заметано ;)</div>
-                  <div class="user-comment-options"><time>Минуту назад</time><a href="#">Ответить</a>
+                  <div class="graphics-item-info">
+                    <a href="#" class="graphics-item-title">Journey</a>
+                    <a href="#" class="graphics-item-author">The Fox And King</a>
                   </div>
-                </div>
-                <div class="comment-likes"><a href="#"><span>Мне нравится</span>2</a></div>
-              </div><!--end comment-->
-              <div class="add-post"><!--add comment-->
-                <form>
-                  <div class="message-text-form">
-                    <input type="text" name="text-of-the-message" placeholder="Комментировать">
-                    <input id="upload" type="file" name="upload-file-to-post">
+                </div><!--End Graphics element-->
+                <div class="pub-graphics-item"><!--Graphics element-->
+                  <div class="graphics-item-body">
+                    <div class="graphic-item-stats clearfix">
+                      <a href="#">Посмотреть</a>
+                      <ul class="clearfix">
+                        <li class="graphic-views-counter">88,129</li>
+                        <li class="graphic-comments-counter">973</li>
+                        <li class="graphic-likes-counter">64</li>
+                      </ul>
+                    </div>
+                    <img src="upload/pub-graphic-tumb2.jpg" alt="pub-graphic-thumb1">
                   </div>
-                  <div class="add-post-active">
-                    Для отправки комментария можно нажать Shift+Enter
-                    <input type="submit" name="submit-post" value="Отправить">
+                  <div class="graphics-item-info">
+                    <a href="#" class="graphics-item-title">Android Game</a>
+                    <a href="#" class="graphics-item-author">Nina Geometrieva</a>
                   </div>
-                </form>
-              </div><!--end add comment-->
-            </div><!--End of Comments to post-->
-            <div class="user-post clearfix after-comments-post"><!--Post item-->
-              <div class="user-post-avatar">
-                <a href="#"><img src="upload/user-post-thumb5.jpg" alt="user-thumb"></a>
-              </div>
-              <div class="post-body">
-                <div class="username-post"><a href="#">Артемка Аллаяров</a></div>
-                <div class="user-post-content"><img src="upload/user-post-media.jpg"></div>
-                <div class="user-post-options"><time>15:29, 18 сентября</time><a href="#">Комментировать</a>
-                </div>
-              </div>
-              <div class="post-likes"><a href="#"><span>Мне нравится</span>12</a></div>
-            </div><!--End Post item-->
-            <div class="user-post clearfix"><!--Post item-->
-              <div class="user-post-avatar">
-                <a href="#"><img src="upload/user-post-thumb5.jpg" alt="user-thumb"></a>
-              </div>
-              <div class="post-body">
-                <div class="username-post"><a href="#">Артемка Аллаяров</a></div>
-                <div class="user-post-content clearfix">
-                  <img src="upload/user-post-media1.jpg">
-                </div>
-                <div class="user-post-options"><time>15:29, 18 сентября</time><a href="#">Комментировать</a>
-                </div>
-              </div>
-              <div class="post-likes"><a href="#"><span>Мне нравится</span>581</a></div>
-            </div><!--End Post item-->
-            <div class="user-post-comments"><!--Comments to post-->
-              <div class="show-more-comments"><a href="#">Показать больше комментариев</a></div>
-              <div class="user-comment clearfix">
-                <div class="user-comment-avatar">
-                  <a href="#"><img src="upload/user-post-thumb3.jpg" alt="user-thumb"></a>
-                </div>
-                <div class="comment-body">
-                  <div class="username-comment"><a href="#">Айдар Каллимулин</a></div>
-                  <div class="user-comment-content">В каких программах работаете?</div>
-                  <div class="user-comment-options"><time>17:57, 19 сентября</time><a href="#">Ответить</a></div>
-                </div>
-              </div>
-              <div class="user-comment clearfix"><!--comment-->
-                <div class="user-comment-avatar">
-                  <a href="#"><img src="upload/user-post-thumb5.jpg" alt="user-thumb"></a>
-                </div>
-                <div class="comment-body">
-                  <div class="username-comment"><a href="#">Артемка Аллаяров</a></div>
-                  <div class="user-comment-content">AI, PS</div>
-                  <div class="user-comment-options"><time>21 минуту назад</time><a href="#">Ответить</a>
+                </div><!--End Graphics element-->
+                <div class="pub-graphics-item"><!--Graphics element-->
+                  <div class="graphics-item-body">
+                    <div class="graphic-item-stats clearfix">
+                      <a href="#">Посмотреть</a>
+                      <ul class="clearfix">
+                        <li class="graphic-views-counter">88,129</li>
+                        <li class="graphic-comments-counter">973</li>
+                        <li class="graphic-likes-counter">64</li>
+                      </ul>
+                    </div><!--End article bottom bar-->
+                    <img src="upload/pub-graphic-tumb3.jpg" alt="pub-graphic-thumb1">
                   </div>
-                </div>
-                <div class="comment-likes"><a href="#"><span>Мне нравится</span>1</a></div>
-              </div><!--end comment-->
-              <div class="user-comment clearfix"><!--comment-->
-                <div class="user-comment-avatar">
-                  <a href="#"><img src="upload/user-post-thumb3.jpg" alt="user-thumb"></a>
-                </div>
-                <div class="comment-body">
-                  <div class="username-comment"><a href="#">Айдар Каллимулин</a></div>
-                  <div class="user-comment-content">Спасибо)</div>
-                  <div class="user-comment-options"><time>Минуту назад</time><a href="#">Ответить</a>
+                  <div class="graphics-item-info">
+                    <a href="#" class="graphics-item-title">Property Compare</a>
+                    <a href="#" class="graphics-item-author">Oykin</a>
                   </div>
-                </div>
-                <div class="comment-likes"><a href="#"><span>Мне нравится</span>2</a></div>
-              </div><!--end comment-->
-              <div class="add-post"><!--add comment-->
-                <form>
-                  <div class="message-text-form">
-                    <input type="text" name="text-of-the-message" placeholder="Комментировать">
-                    <input id="upload" type="file" name="upload-file-to-post">
+                </div><!--End Graphics element-->
+              </div><!--End Graphics items row-->
+              <div class="pub-row"><!--Graphics items row-->
+                <div class="pub-graphics-item"><!--Graphics element-->
+                  <div class="graphics-item-body">
+                    <div class="graphic-item-stats clearfix">
+                      <a href="#">Посмотреть</a>
+                      <ul class="clearfix">
+                        <li class="graphic-views-counter">88,129</li>
+                        <li class="graphic-comments-counter">973</li>
+                        <li class="graphic-likes-counter">64</li>
+                      </ul>
+                    </div>
+                    <img src="upload/pub-graphic-tumb1.jpg" alt="pub-graphic-thumb1">
                   </div>
-                  <div class="add-post-active">
-                    Для отправки комментария можно нажать Shift+Enter
-                    <input type="submit" name="submit-post" value="Отправить">
+                  <div class="graphics-item-info">
+                    <a href="#" class="graphics-item-title">Journey</a>
+                    <a href="#" class="graphics-item-author">The Fox And King</a>
                   </div>
-                </form>
-              </div><!--end add comment-->
-            </div><!--End Comments to post-->
-          </div><!-- End Posts wall-->
+                </div><!--End Graphics element-->
+                <div class="pub-graphics-item"><!--Graphics element-->
+                  <div class="graphics-item-body">
+                    <div class="graphic-item-stats clearfix">
+                      <a href="#">Посмотреть</a>
+                      <ul class="clearfix">
+                        <li class="graphic-views-counter">88,129</li>
+                        <li class="graphic-comments-counter">973</li>
+                        <li class="graphic-likes-counter">64</li>
+                      </ul>
+                    </div>
+                    <img src="upload/pub-graphic-tumb2.jpg" alt="pub-graphic-thumb1">
+                  </div>
+                  <div class="graphics-item-info">
+                    <a href="#" class="graphics-item-title">Android Game</a>
+                    <a href="#" class="graphics-item-author">Nina Geometrieva</a>
+                  </div>
+                </div><!--End Graphics element-->
+                <div class="pub-graphics-item"><!--Graphics element-->
+                  <div class="graphics-item-body">
+                    <div class="graphic-item-stats clearfix">
+                      <a href="#">Посмотреть</a>
+                      <ul class="clearfix">
+                        <li class="graphic-views-counter">88,129</li>
+                        <li class="graphic-comments-counter">973</li>
+                        <li class="graphic-likes-counter">64</li>
+                      </ul>
+                    </div>
+                    <img src="upload/pub-graphic-tumb3.jpg" alt="pub-graphic-thumb1">
+                  </div>
+                  <div class="graphics-item-info">
+                    <a href="#" class="graphics-item-title">Property Compare</a>
+                    <a href="#" class="graphics-item-author">Oykin</a>
+                  </div>
+                </div><!--End Graphics element-->
+              </div><!--End Graphics items row-->
+            </div><!--End Graphics content-->
+          </div><!--End pub block-->
       </div><!--End User content-->
     </div>
   </div><!--End Profile page-->
