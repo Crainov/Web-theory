@@ -966,7 +966,11 @@
 /******************************************/
 /******************************************/
 
-.articles-title {
+.publications-block {
+  margin-bottom: 15px;
+}
+
+.articles-title, .graphics-title {
   line-height: 45px;
   font-size: 17px;
   text-transform: uppercase;
@@ -978,7 +982,7 @@
   box-shadow: inset 0px -1px 0px 0px rgba(227,227,227,1);
 }
 
-.articles-title a {
+.articles-title a, .graphics-title a {
   display: block;
   float: right;
   font-size: 13px;
@@ -988,13 +992,13 @@
   font-weight: normal;
 }
 
-.articles-title span {
+.articles-title span, .graphics-title span {
   display: block;
   float: left;
   position: relative;
 }
 
-.articles-title span:after {
+.articles-title span:after, .graphics-title span:after {
   content: attr(data-publications-counter);
   position: absolute;
   height: 20px;
@@ -1153,4 +1157,124 @@
 
 .article-likes-counter a:hover:before {
   background: url(../img/temp_icons/publication-likes-icon-hover.png);
+}
+
+/**************************Graphics block*********************/
+
+.pub-row {
+  height: 240px;
+  padding-top: 20px;
+}
+
+/*******************Graphics Item************************/
+
+.pub-graphics-item {
+  float: left;
+  margin-right: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.pub-row .pub-graphics-item:last-child {
+  margin: 0;
+}
+
+.graphics-item-body {
+  position: relative;
+}
+
+/*******************Graphics Item img background************************/
+
+.pub-graphics-item img {
+  display: block;
+}
+
+/*******************Graphics Item Stats************************/
+
+.graphic-item-stats {
+  background: rgba(33,45,55,.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.graphic-item-stats:hover {
+  opacity: 1;
+}
+
+.graphic-item-stats a {
+  font-family: OpenSans, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 70px;
+  text-align: center;
+  display: block;
+  color: #fff;
+}
+
+.graphic-item-stats a:hover {
+  text-decoration: underline;
+}
+
+.graphic-item-stats ul {
+  list-style: none;
+  margin-left: 10px;
+  margin-top: 45px;
+}
+
+.graphic-item-stats li {
+  float: left;
+  font-size: 13px;
+  color: #ccccce;
+  margin-left: 15px;
+}
+
+/*******************Graphics Item stats icons************************/
+
+.graphic-item-stats li:before {
+  content: "";
+  display: inline-block;
+  background: url(../img/temp_icons/graphic-views-icon.png);
+  width: 18px;
+  height: 11px;
+  margin-right: 7px;
+}
+
+.graphic-comments-counter:before {
+  background: url(../img/temp_icons/graphic-comments-icon.png) !important;
+  width: 15px !important;
+  height: 13px !important;
+  margin-bottom: -2px;
+}
+
+.graphic-likes-counter:before {
+  background: url(../img/temp_icons/graphic-like-icon.png) !important;
+  width: 15px !important;
+  height: 13px !important;
+  margin-bottom: -2px;
+}
+
+.graphic-likes-counter:hover:before {
+  background: url(../img/temp_icons/graphic-like-icon-hover.png) !important;
+}
+
+/*******************Graphics Item Title and Author************************/
+
+.graphics-item-info a {
+  display: block;
+  margin-top: 10px;
+}
+
+.graphics-item-title {
+  font-size: 13px;
+  font-weight: bold;
+  color: #414141;
+}
+
+.graphics-item-author {
+  font-size: 11px;
+  color: #929292;
+  margin-top: 5px !important;
 }
