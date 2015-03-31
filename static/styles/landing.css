@@ -489,7 +489,6 @@ a {
   box-shadow: 0 1px 2px 1px #d6d7d7;
   overflow: hidden;
   font-size: 13px;
-  text-align: center;
 }
 
 .login-header {
@@ -512,11 +511,82 @@ a {
   color: #fff;
 }
 
-input {
+.login-form {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.login-form div {
+  display: inline-block;
   width: 250px;
   height: 33px;
   border: 1px solid #d5d5d5;
   border-radius: 3px;
-  margin-top: 10px;
-  background: url(../img/authorization-sprites.png) no-repeat;
+  margin-top: 8px;
+  padding-left: 35px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+input {
+  height: 30px;
+  width: 200px;
+  outline: none;
+  border: none;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #999;
+}
+
+.login-form div:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: #f5f5f5;
+  border-right: 1px solid #d5d5d5;
+}
+
+.login-input:after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  background: url(../img/authorization-sprites.png);
+  width: 12px;
+  height: 12px;
+}
+
+.password-input:after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  background: url(../img/authorization-sprites.png);
+  width: 13px;
+  height: 14px;
+  background-position: -12px 0;
+}
+
+.login-form input[type="submit"] {
+  width: 252px;
+  height: 35px;
+  border-radius: 3px;
+  background: #466fa7;
+  color: #fff;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.login-form a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #999;
+  font-size: 12px;
+  text-decoration: underline;
 }
