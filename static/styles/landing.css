@@ -170,6 +170,11 @@ a {
   color: #bcd3e6;
 }
 
+.landing-menu ul li:first-child a {
+  font-weight: bold;
+  color: #fff;
+}
+
 .landing-menu ul li a:hover {
   color: #fff;
 }
@@ -489,6 +494,7 @@ a {
   box-shadow: 0 1px 2px 1px #d6d7d7;
   overflow: hidden;
   font-size: 13px;
+  display: none;
 }
 
 .login-header {
