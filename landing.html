@@ -21,11 +21,11 @@
           <ul>
             <li><a href="#">Знакомство</a>
             </li>
-            <li><a href="#">Главная</a>
+            <li><a href="index.html">Главная</a>
             </li>
             <li><a href="#">Статьи</a>
             </li>
-            <li><a href="#">Дизайн</a>
+            <li><a href="graphics.html">Дизайн</a>
             </li>
             <li><a href="#">Люди</a>
             </li>
@@ -162,15 +162,44 @@
     </div>
   </footer>
   <div class="login">
-    <div class="login-header">
+    <div class="modal-header">
       <span>Авторизация</span>
       <a href="#">Закрыть</a>
     </div>
-    <form action="1.php" method="GET">
-      <input type="text" name="login" placeholder="Логин:">
-      <input type="password" name="password" placeholder="Пароль:">
+    <form action="" class="login-form">
+      <div class="login-input">
+        <input type="text" name="login" placeholder="Логин:">
+      </div>
+      <div class="password-input">
+        <input type="password" name="password" placeholder="Пароль:">
+      </div>
+      <input type="submit" name="authorization" value="Авторизоваться">
+      <a href="#">Забыли пароль?</a>
     </form>
   </div>
+
+  <div class="invite-window">
+    <div class="modal-header">
+      <span>Получить приглашение</span>
+      <a href="#">Закрыть</a>
+    </div>
+    <form action="" class="invite-form">
+      <div class="login-input f-left">
+        <input type="text" name="name" placeholder="Ваше имя:">
+      </div>
+      <div class="email-input f-left">
+        <input type="email" name="email" placeholder="Ваш e-mail:">
+      </div>
+      <div class="who-input f-left">
+        <input type="" name="whois" placeholder="Кто вы?" readonly>
+      </div>
+      <div class="inform-input f-left">
+        <textarea placeholder="Расскажите о себе..."></textarea>
+        <span>Осталось 300 символов</span>
+      </div>
+    </form>
+  </div>
+
 </body>
 
 </html>
