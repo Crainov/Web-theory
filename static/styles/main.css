@@ -136,6 +136,7 @@ a {
 .mb30 { margin-bottom: 30px; }
 
 .gradient-button {
+  font-family: OpenSans, Arial, sans-serif;
   color: #f4f6f8;
   font-size: 13px;
   text-align: center;
@@ -1768,9 +1769,9 @@ a {
   color: #999;
 }
 
-.lesson-tabs a:hover {
+.lesson-tabs a:hover, .current-lesson-tab {
   border-bottom: 2px solid #4f87c7;
-  color: #333;
+  color: #333 !important;
 }
 
 .lesson-options a { color: #4f87c7;   margin-left: 19px;}
@@ -1826,6 +1827,7 @@ a {
   height: auto;
   margin-bottom: 15px;
   border-bottom: 1px solid #f0f0f0;
+  position: relative;
 }
 
 .comment-content{
@@ -1908,6 +1910,48 @@ a {
   text-decoration: underline;
 }
 
+.comment-like-button {
+  display: block;
+  width: 95px;
+  height: 15px;
+  font-size: 11px;
+  line-height: 15px;
+  color: #7fa1ce;
+  position: absolute;
+  right: 0;
+  bottom: 14px;
+  opacity: 0;
+  -webkit-transition: opacity .1s;
+  -o-transition: opacity .1s;
+  transition: opacity .1s;
+}
+
+.comment-like-button:after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 11px;
+  background: url('../img/sailorkoto-temp-sprite.png') -91px 0px;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
+.lesson-comments-row:hover > .comment-like-button { opacity: .5; }
+.comment-like-button:hover { opacity: 1 !important; }
+
+.has-likes { width: 109px !important; }
+.has-likes:after { right: 14px !important; }
+.has-likes:before {
+  content: attr(data-likes);
+  font-size: 11px;
+  line-height: 15px;
+  color: #7fa1ce;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 /*==============*/
 /*SIDEBAR*/
 /*==============*/
@@ -1925,6 +1969,23 @@ a {
 .common-aside div {
   margin-bottom: 30px;
 }
+
+.aside-list a{
+  font-size: 13px;
+  display: block;
+  height: 35px;
+  line-height: 34px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.aside-list a:hover {
+  color: #639fd6 !important;
+}
+
+.aside-list li:last-child a {
+  border-bottom: none;
+}
+
 /*--------NAVIGATION------*/
 
 .common-aside {
@@ -2002,6 +2063,66 @@ a {
   width: 19px;
   background: #74aded;
   border-radius: 3px;
+}
+
+/* BEST OF THE WEEK */
+
+.aside-best-of-the-week .aside-list a {
+  text-decoration: underline;
+  color: #3676b1;
+}
+
+/* LESSONS LIST */
+
+.aside-lessons-list .aside-list {
+  margin-bottom: 5px;
+}
+
+.aside-lessons-list .aside-list a {
+  color: #666;
+}
+
+.current-lesson {
+  color: #4f83ca !important;
+}
+
+.lesson-number {
+  color: #999 !important;
+  margin-right: 15px;
+}
+
+.next-lesson-button {
+  display: block;
+  height: 40px;
+  line-height: 39px;
+}
+
+/* ABOUT THE COURSE */
+
+.aside-about-course > span {
+  font-size: 13px;
+  color: #333;
+  line-height: 24px;
+}
+
+.aside-about-course > span > a {
+  color: #4f7ab4;
+  text-decoration: underline;
+}
+
+.aside-about-course > span > a:hover {
+  color: #639fd6;
+}
+
+.aside-course-difficulty {
+  color: #cfa913 !important;
+  font-weight: 600;
+}
+
+.aside-about-course p {
+  color: #666;
+  line-height: 20px;
+  margin-top: 10px;
 }
 
 /* SORTING */
@@ -2101,26 +2222,6 @@ a {
 
 .aside-activ:last-child .after:after {
   content: none;
-}
-
-/* aside best of the week */
-
-.aside-best-list a {
-  font-size: 13px;
-  color: #3676b1;
-  text-decoration: underline;
-  display: block;
-  height: 35px;
-  line-height: 34px;
-  border-bottom: 1px solid #e7e7e7;
-}
-
-.aside-best-list a:hover {
-  color: #639fd6;
-}
-
-.aside-best-list li:last-child a {
-  border-bottom: none;
 }
 
 /*----HELP---*/

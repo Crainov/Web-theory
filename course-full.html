@@ -59,7 +59,7 @@
         </div>
         <div class="lesson-details clearfix">
           <ul class="lesson-tabs">
-            <li><a href="#">Описание</a></li>
+            <li><a href="#" class="current-lesson-tab">Описание</a></li>
             <li><a href="#">Приложения (0)</a></li>
             <li><a href="#">Поделиться</a></li>
             <li><a href="#">Об авторе</a></li>
@@ -95,6 +95,7 @@
                 <li><a href="#">Удалить</a></li>
               </ul>
             </div>
+            <a href="#" class="comment-like-button">Мне нравится</a>
           </div> <!-- end of comment -->
           <div class="lesson-comments-row clearfix"> <!-- comment -->
             <a href="#" class="comment-author-thumb"><img src="upload/comment-author-thumb-2.png" height="50" width="50" alt="comment-author"></a>
@@ -111,6 +112,7 @@
                 <li><a href="#">Удалить</a></li>
               </ul>
             </div>
+            <a href="#" class="comment-like-button">Мне нравится</a>
           </div> <!-- end of comment -->
           <div class="lesson-comments-row clearfix"> <!-- comment -->
             <a href="#" class="comment-author-thumb"><img src="upload/comment-author-thumb-3.png" height="50" width="50" alt="comment-author"></a>
@@ -127,6 +129,7 @@
                 <li><a href="#">Удалить</a></li>
               </ul>
             </div>
+            <a href="#" class="comment-like-button">Мне нравится</a>
           </div> <!-- end of comment -->
           <div class="lesson-comments-row clearfix"> <!-- comment -->
             <a href="#" class="comment-author-thumb"><img src="upload/comment-author-thumb-1.png" height="50" width="50" alt="comment-author"></a>
@@ -143,33 +146,33 @@
                 <li><a href="#">Удалить</a></li>
               </ul>
             </div>
+            <a href="#" class="comment-like-button has-likes" data-likes="2">Мне нравится</a>
           </div> <!-- end of comment -->
         </div> <!-- end of comments -->
       </div> <!-- end of content -->
       <aside class="common-aside">
-        <div class="aside-nav">
-          <h3>Навигация</h3>
-          <ul class="home-aside-nav">
-            <li><a href="#">Моя страница</a></li>
-            <li><a href="#">Мои публикации</a></li>
-            <li><a href="#">Мои навыки</a></li>
-            <li><a href="#">Мои сообщества</a></li>
-            <li><a href="#">Диалоги</a></li>
-            <li><a href="graphics-add.html">Добавить работу</a></li>
-            <li><a href="#">Настройки</a></li>
-            <li><a href="#">Выйти</a></li>
-          </ul>
+        <div class="aside-lessons-list">
+          <h3>Уроки</h3>
+            <ul class="aside-list">
+              <li><a href="#"><span class="lesson-number">00</span>Введение</a></li>
+              <li><a href="#" class="current-lesson"><span class="lesson-number">01</span>Установка компилятора</a></li>
+              <li><a href="#"><span class="lesson-number">02</span>Типы данных</a></li>
+              <li><a href="#"><span class="lesson-number">03</span>Операторы</a></li>
+              <li><a href="#"><span class="lesson-number">04</span>Функции</a></li>
+              <li><a href="#"><span class="lesson-number">05</span>Условия</a></li>
+              <li><a href="#"><span class="lesson-number">06</span>Циклы</a></li>
+              <li><a href="#"><span class="lesson-number">07</span>Классы</a></li>
+              <li><a href="#"><span class="lesson-number">08</span>Практический пример</a></li>
+            </ul>
+            <a href="#" class="gradient-button next-lesson-button">Следующее видео</a>
         </div>
-        <div class="aside-best-of-the-week">
-          <h3>Лучшее за неделю</h3>
-          <ul class="aside-best-list">
-            <li><a href="#">Как повысить эффективность...</a></li>
-            <li><a href="#">Новости webtheory</a></li>
-            <li><a href="#">Изучение Ruby #0</a></li>
-            <li><a href="#">Значимые мероприятия для...</a></li>
-            <li><a href="#">Эффект перетекания в CorelDRAW</a></li>
-            <li><a href="#">Как мы делали новогодние...</a></li>
-          </ul>
+        <div class="aside-about-course">
+          <h3>О курсе</h3>
+          <span>Уровень сложности:&nbsp;&nbsp;&nbsp;<span class="aside-course-difficulty">средний</span></span>
+          <span>Необходимые навыки:&nbsp;&nbsp;&nbsp;<a href="#">JavaScript</a></span>
+          <p>
+            Данный курс расчитан на аудиторию, которая знает что такое JavaScript. В данном курсе вы научитесь использовать CoffeeScript - компилируемый язык в JavaScript, который позволяет упростить и ускорить разработку.
+          </p>
         </div>
         <div class="aside-follow">
           <h3>Мы в соц.сетях</h3>
