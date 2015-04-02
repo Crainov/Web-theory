@@ -2131,6 +2131,81 @@ article a:hover,
   margin-top: 10px;
 }
 
+/* SHARE THE COURSE */
+
+.lesson-share-options {
+  height: 32px;
+  margin-bottom: 13px;
+}
+
+.lesson-share-list {
+  list-style-type: none;
+  margin-top: 7px;
+  margin-right: 10px;
+  float: left;
+}
+
+.lesson-share-list li {
+  float: left;
+  margin-right: 4px;
+}
+
+.lesson-share-button {
+  display: block;
+  height: 18px;
+  padding-left: 20px;
+  padding-right: 5px;
+  border-radius: 2px;
+  font-style: 12px;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.lesson-share-button:before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.vkontakte-button { background: #58719f; }
+.facebook-button { background: #475998; }
+.twitter-button { background: #64a9f0; }
+.google-button { background: #a75432; }
+
+.vkontakte-button:before{ background: url('../img/sailorkoto-temp-sprite.png') -111px -66px;}
+.facebook-button:before{ background: url('../img/sailorkoto-temp-sprite.png') -129px -66px;}
+.twitter-button:before{ background: url('../img/sailorkoto-temp-sprite.png') -111px -84px;}
+.google-button:before{ background: url('../img/sailorkoto-temp-sprite.png') -129px -84px;}
+
+.lesson-share-options span {
+  display: block;
+  height: 100%;
+  line-height: 32px;
+  float: left;
+  margin-right: 10px;
+}
+
+#lesson-share-code {
+  resize: none;
+  display: block;
+  height: 100%;
+  width: auto;
+  border-radius: 1px;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #666;
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.05);
+  box-shadow: inset 0 0 3px rgba(0,0,0,.05);
+}
+
 /* SORTING */
 
 .sidebar-select-menu-label{
