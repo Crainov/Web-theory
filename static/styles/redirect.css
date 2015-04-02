@@ -53,35 +53,81 @@
 /*MAIN STYLES*/
 /*==============*/
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
-  background: url(../img/bg-error.png);
-  font-family: SansPro, Helvetica Neue, Arial, sans-serif;
-  color: #fff;
+  background: #fff;
+  font-family: OpenSans, Helvetica Neue, Arial, sans-serif;
   position: relative;
   text-align: center;
 }
 
-.error-403,
-.error-404,
-.error-503 {
-  font-size: 25px;
-  position: absolute;
-  margin: 20% 0 0 40%;
+li {
+  list-style: none;
 }
 
-h1:before {
+a {
+  text-decoration: none;
+}
+
+.redirect {
+  display: inline-block;
+  margin-top: 18%;
+}
+
+.redirect span {
   display: block;
-  margin-bottom: 10px;
+  color: #74aded;
+  font-size: 14px;
+  text-decoration: underline;
+  padding: 20px 0;
 }
 
-.error-403:before {
-  content: url(../img/error-403.png);
+.redirect h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: bold;
 }
 
-.error-404:before {
-  content: url(../img/error-404.png);
+.redirect p {
+  color: #727272;
+  font-size: 14px;
 }
 
-.error-503:before {
-  content: url(../img/error-503.png);
+.redirect ul {
+  margin-top: 25px;
+}
+
+.redirect li {
+  float: left;
+}
+
+.action-button {
+  display: inline-block;
+  width: 180px;
+  height: 45px;
+  line-height: 42px;
+  font-size: 14px;
+  box-shadow: inset 0 0 0 2px #ccc;
+  color: #999;
+  background: transparent;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+
+.action-button:hover {
+  background: #74aded;
+  color: #fff;
+  box-shadow: none;
+}
+
+.redirect li:first-child a {
+  margin-left: 120px;
 }
