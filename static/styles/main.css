@@ -693,7 +693,6 @@ article a:hover,
 .slider-top-users {
   height: 100%;
   display: inline-block;
-  margin-left: 30px;
 }
 
 .slider-top-user {
@@ -780,12 +779,15 @@ article a:hover,
 /*CONTENT*/
 /*==============*/
 
+.page {
+  padding-bottom: 50px;
+}
+
 .content {
   height: 100%;
   width: 710px;
   float: left;
   margin-right: 30px;
-  padding-bottom: 50px;
 }
 
 .graphics-grid {
