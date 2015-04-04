@@ -74,6 +74,9 @@ li {
 a {
   text-decoration: none;
 }
+/*------------------
+SIGNUP
+--------------------*/
 
 .signup {
   position: absolute;
@@ -97,6 +100,16 @@ a {
 .modal-header span {
   color: #fff;
   margin-left: 20px;
+}
+
+.modal-header a {
+  color: #a9bed9;
+  float: right;
+  margin-right: 20px;
+}
+
+.modal-header a:hover {
+  color: #fff;
 }
 
 .login-input:after {
@@ -157,7 +170,8 @@ a {
   overflow: hidden;
 }
 
-.signup-form div:before {
+.signup-form div:before,
+.give-invite-form div:before {
   content: " ";
   display: inline-block;
   position: absolute;
@@ -168,11 +182,13 @@ a {
   border-right: 1px solid #d5d5d5;
 }
 
-.signup-form div {
+.signup-form div,
+.give-invite-form div {
   padding-left: 45px;
 }
 
-.signup-form input {
+.signup-form input,
+.give-invite-form input {
   width: 275px;
   line-height: 38px;
   color: #666;
@@ -266,5 +282,117 @@ a {
 }
 
 .signup-form input[type="submit"]:hover {
+  opacity: .85;
+}
+/*------------------
+PEOPLE-GIVE-INVITE
+--------------------*/
+
+.give-invite {
+  position: absolute;
+  left: 50%;
+  margin-top: 15%;
+  margin-left: -225px;
+  width: 450px;
+  height: 225px;
+  border-radius: 5px;
+  background: #fff;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.give-invite .modal-header {
+  background: url(../img/giveinvite-header.png);
+}
+
+.give-invite .modal-header span:before {
+  content: " ";
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  left: 0;
+  margin-bottom: -8px;
+  margin-right: 10px;
+}
+
+.give-invite .modal-header span:after {
+  content: "3";
+  position: absolute;
+  left: 29px;
+}
+
+.give-invite-form {
+  padding: 20px;
+}
+
+.give-invite-form div {
+  display: inline-block;
+  width: 408px;
+  height: 38px;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.give-invite-form input {
+  width: 350px;
+}
+
+.give-invite-form p {
+  font-size: 12px;
+  line-height: 50px;
+  color: #666;
+}
+
+.give-invite-form p a {
+  text-decoration: underline;
+  color: #427ec1;
+}
+
+.give-invite-form p input {
+  display: inline-block;
+  width: 35px;
+}
+
+.give-invite input[type="submit"] {
+  width: 408px;
+  height: 44px;
+  border: 1px solid #d4d4d4;
+  background: #f9f9f9;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #f9f9f9 0%, #f2f2f2 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9f9f9), color-stop(100%, #f2f2f2));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #f9f9f9 0%, #f2f2f2 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #f9f9f9 0%, #f2f2f2 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #f9f9f9 0%, #f2f2f2 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #f9f9f9 0%, #f2f2f2 100%);
+  /* W3C */
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f2f2f2', GradientType=0);
+  /* IE6-9 */
+
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 800;
+  font-family: Arial, sans-serif;
+  letter-spacing: -1px;
+}
+
+.give-invite input[type="submit"]:hover {
   opacity: .85;
 }
