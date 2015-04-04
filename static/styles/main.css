@@ -2286,7 +2286,8 @@ article a:hover,
   resize: none;
   display: block;
   height: 100%;
-  width: auto;
+  width: 267px;
+  border: 1px solid #dcdcdc;
   border-radius: 1px;
   overflow: hidden;
   font-size: 13px;
