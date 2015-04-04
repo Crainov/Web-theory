@@ -288,7 +288,8 @@ SIGNUP
 PEOPLE-GIVE-INVITE
 --------------------*/
 
-.give-invite {
+.give-invite,
+.give-invite-result {
   position: absolute;
   left: 50%;
   margin-top: 15%;
@@ -302,11 +303,13 @@ PEOPLE-GIVE-INVITE
   font-weight: normal;
 }
 
-.give-invite .modal-header {
+.give-invite .modal-header,
+.give-invite-result .modal-header {
   background: url(../img/giveinvite-header.png);
 }
 
-.give-invite .modal-header span:before {
+.give-invite .modal-header span:before,
+.give-invite-result .modal-header span:before {
   content: " ";
   display: inline-block;
   width: 21px;
@@ -320,6 +323,12 @@ PEOPLE-GIVE-INVITE
 
 .give-invite .modal-header span:after {
   content: "3";
+  position: absolute;
+  left: 29px;
+}
+
+.give-invite-result .modal-header span:after {
+  content: "2";
   position: absolute;
   left: 29px;
 }
@@ -395,4 +404,33 @@ PEOPLE-GIVE-INVITE
 
 .give-invite input[type="submit"]:hover {
   opacity: .85;
+}
+/*GIVE-INVITE-LINK*/
+
+.give-invite-link {
+  padding: 18px;
+  text-align: center;
+}
+
+.give-invite-link span {
+  display: flex;
+  width: 100%;
+  line-height: 38px;
+  color: #666;
+  border: 1px solid #e293d3;
+  border-radius: 3px;
+  padding-left: 10px;
+  box-shadow: 0px 0px 15px 0.00px rgba(163, 70, 146, 0.25);
+}
+
+.give-invite-link p {
+  font-size: 12px;
+  color: #666;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.give-invite-link a {
+  text-decoration: underline;
+  font-size: 12px;
 }
