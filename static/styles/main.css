@@ -2235,6 +2235,13 @@ article a:hover,
   border-radius: 3px;
 }
 
+.navigation-aside-number {
+  float: right;
+  font-size: 13px;
+  line-height: 36px;
+  color: #ccc;
+}
+
 /* LESSONS LIST */
 
 .aside-lessons-list .aside-list {
