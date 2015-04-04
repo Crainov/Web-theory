@@ -845,7 +845,7 @@ article a:hover,
   margin-right: 30px;
 }
 
-.graphics-grid {
+.graphics-grid, .article-container {
   padding-bottom: 11px;
   /* padding + border */
   border-bottom: 1px solid #e2e2e2;
@@ -1659,6 +1659,277 @@ article a:hover,
 /*=====================*/
 /*       ARTICLE       */
 /*=====================*/
+
+.article-header {
+  padding-right: 150px;
+  position: relative;
+}
+
+.label-lesson:after {
+  content: 'Урок';
+  border-radius: 3px;
+  background: #71a7da;
+  padding: 4px 8px 3px 8px;
+  font-size: 13px;
+  color: #fff;
+  margin-left: 10px;
+  position: relative;
+  top: -1px;
+}
+
+.read-later-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.grey-round-button {
+  float: left;
+  margin-left: 7px;
+  display: block;
+  height: 27px;
+  line-height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #f8f8f8;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #868686;
+}
+
+.grey-round-button:hover {
+  color: #666;
+  border: 1px solid #ccc;
+}
+
+/* ARTICLE INFO ROW */
+
+.article-info {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.article-author-container {
+  width: 50%;
+  height: 40px;
+  float: left;
+}
+
+.article-author-thumb {
+  float: left;
+  display: block;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.article-author {
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #3b3b3b;
+  position: relative;
+  top: -3px;
+}
+
+.article-author:hover {
+  text-decoration: underline;
+}
+
+.article-post-date {
+  font-size: 12px;
+  line-height: 22px;
+  color: #757575;
+  position: relative;
+  top: -7px;
+}
+
+.article-tags-container {
+  padding-top: 7px;
+  float: right;
+}
+
+/* ARTICLE CONTENT */
+
+.article-text {
+  margin-bottom: 20px;
+}
+
+.article-text p{
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  color: #484747;
+}
+
+/* ARTICLE FOOTER */
+
+.article-footer {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.read-more-button {
+  float: left;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 15px;
+}
+
+.article-likes-container {
+  float: left;
+  margin-right: 15px;
+}
+
+.article-like-button,
+.article-likes,
+.article-dislike-button {
+  float: left;
+  display: block;
+  width: 42px;
+  height: 40px;
+  position: relative;
+}
+
+.article-like-button {
+  background: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px 0 0 3px;
+}
+
+.article-likes {
+  background: #fff;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 38px;
+  color: #5fac39;
+}
+
+.article-dislike-button {
+  background: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 0 3px 3px 0;
+}
+
+.article-like-button:hover,
+.article-dislike-button:hover {
+  border: 1px solid #ccc;
+}
+
+.article-like-button:after,
+.article-dislike-button:after {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 16px;
+  background: url('../img/sailorkoto-temp-sprite.png');
+  position: absolute;
+  top: 11px;
+  left: 14px;
+}
+
+.article-like-button:after { background-position: -147px -66px; }
+.article-dislike-button:after { background-position: -161px -66px; }
+.article-like-button:hover:after { background-position: -147px -82px; }
+.article-dislike-button:hover:after { background-position: -161px -82px; }
+
+.article-views,
+.article-comments {
+  float: left;
+  display: block;
+  height: 40px;
+  font-size: 13px;
+  line-height: 38px;
+  color: #a3a1a1;
+  padding-left: 30px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.article-views:after,
+.article-comments:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url('../img/sailorkoto-temp-sprite.png');
+}
+
+.article-views:after {
+  width: 18px;
+  height: 12px;
+  background-position: -147px -98px;
+  top: 13px;
+  left: 0;
+}
+
+.article-comments:after {
+  width: 14px;
+  height: 11px;
+  background-position: -147px -110px;
+  top: 12px;
+  left: 0;
+}
+
+.article-share-list {
+  float: right;
+  list-style-type: none;
+}
+
+.article-share-list li {
+  float: left;
+  margin-left: 5px;
+}
+
+.article-share-button {
+  display: block;
+  height: 24px;
+  min-width: 24px;
+  padding-left: 27px;
+  padding-right: 6px;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.article-share-button:after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url('../img/sailorkoto-temp-sprite.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.vkontakte-big-button { background: #48729e; }
+.facebook-big-button { background: #3c5a98; }
+.twitter-big-button { background: #00aced; }
+.google-big-button { background: #c25234; }
+
+.vkontakte-big-button:after { background-position: 0px -124px; }
+.facebook-big-button:after { background-position: -24px -124px; }
+.twitter-big-button:after { background-position: -48px -124px; }
+.google-big-button:after { background-position: -72px -124px; }
+
+.empty-share-button { padding: 0 !important; }
+
+/*======================*/
+/* COURSES PAGE ARTICLE */
+/*======================*/
 
 .article-heading-block {
   height: 24px;
