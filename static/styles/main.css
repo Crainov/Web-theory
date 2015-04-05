@@ -486,6 +486,50 @@ code {
   border-radius: 3px;
 }
 
+/* BACK BUTTON */
+
+.header-back-button {
+  float: left;
+  display: block;
+  height: 100%;
+  background: url(../img/temp_icons/user-profile-bckgr.png);
+  margin-left: 40px;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  line-height: 60px;
+  padding-left: 32px;
+  padding-right: 15px;
+  position: relative;
+}
+
+.header-back-button:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 4px solid #fff;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  position: absolute;
+  top: 27px;
+  left: 17px;
+}
+
+.header-back-button:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  opacity: 0;
+}
+
+.header-back-button:hover:after { opacity: .03; }
+
 /*==============*/
 /*SUBHEADER*/
 /*==============*/
