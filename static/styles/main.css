@@ -459,8 +459,6 @@ code {
 .user-photo img {
   border-radius: 3px;
 }
-<<<<<<< HEAD
-=======
 
 /* BACK BUTTON */
 
@@ -506,7 +504,6 @@ code {
 
 .header-back-button:hover:after { opacity: .03; }
 
->>>>>>> origin/index-commit
 /*==============*/
 /*SUBHEADER*/
 /*==============*/
@@ -1729,10 +1726,8 @@ code {
   top: 16px;
   left: 13px;
 }
-<<<<<<< HEAD
+
 /* dpublish as */
-=======
->>>>>>> origin/index-commit
 
 .publish-as {
   height: 100%;
@@ -1791,11 +1786,7 @@ code {
 .publish-as-img:hover:after {
   display: none;
 }
-<<<<<<< HEAD
-/* dropdown select-menu */
-=======
 
->>>>>>> origin/index-commit
 /*============================*/
 /*   CONTENT OF COURSES.HTML  */
 /*============================*/
@@ -2037,8 +2028,6 @@ code {
   line-height: 22px;
   color: #484747;
 }
-<<<<<<< HEAD
-=======
 
 .article-task {
   padding-left: 40px;
@@ -2082,7 +2071,6 @@ code {
   border-color: #69a5f1;
 }
 
->>>>>>> origin/index-commit
 /* ARTICLE FOOTER */
 
 .article-footer {
