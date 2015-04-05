@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="static/styles/main.css">
 </head>
 <body>
-  <header class="header"><!--Header-->
+  <header class="header mb30"><!--Header-->
     <div class="wrapper">
       <div class="top-nav clearfix">
         <a class="logo" href="index.html"><!--Logo-->
@@ -44,16 +44,85 @@
   <div class="page">
     <div class="wrapper clearfix">
       <div class="content"> <!-- content -->
-
+        <h1>Добавление статьи</h1>
+        <ul class="content-tabs clearfix"> <!-- tabs -->
+          <li><a href="#" class="active-content-tab">Форма добавления</a></li>
+          <li><a href="#">Правила публикации</a></li>
+        </ul> <!-- end of tabs -->
+        <form> <!-- adding form -->
+          <div class="row-input clearfix"> <!-- name + category inputs -->
+            <div class="first-column-input">
+              <div class="input-container upload-name-icon">
+                <input type="text" placeholder="Заголовок статьи">
+              </div>
+            </div>
+            <div class="second-column-input">
+              <ul class="select-menu">
+                <li>Выберите категорию</li>
+                <ul class="select-menu-dropdown">
+                  <li>Категория 1</li>
+                  <li>Категория 2</li>
+                  <li>Категория 3</li>
+                </ul>
+              </ul>
+            </div>
+          </div> <!-- end of name + category inputs -->
+          <div class="row-input clearfix"> <!-- tags + article type inputs -->
+            <div class="first-column-input">
+              <div class="input-container upload-tags-icon">
+                <input type="text" placeholder="Введите два тега">
+              </div>
+            </div>
+            <div class="second-column-input">
+              <ul class="select-menu">
+                <li>Тип статьи (необязательно)</li>
+                <ul class="select-menu-dropdown">
+                  <li>Тип статьи 1</li>
+                  <li>Тип статьи 2</li>
+                  <li>Тип статьи 3</li>
+                </ul>
+              </ul>
+            </div>
+          </div> <!-- end off tags + article type inputs -->
+          <div class="textarea-toolbar clearfix">
+            <ul>
+              <li><a href="#" class="textarea-tool-bold"></a></li>
+              <li><a href="#" class="textarea-tool-italic"></a></li>
+              <li><a href="#" class="textarea-tool-strike"></a></li>
+              <li><a href="#" class="textarea-tool-underline"></a></li>
+              <li><a href="#" class="textarea-tool-ulist"></a></li>
+              <li><a href="#" class="textarea-tool-olist"></a></li>
+              <li><a href="#" class="textarea-tool-h1"></a></li>
+              <li><a href="#" class="textarea-tool-h2"></a></li>
+              <li><a href="#" class="textarea-tool-code"></a></li>
+              <li><a href="#" class="textarea-tool-link"></a></li>
+              <li><a href="#" class="textarea-tool-image"></a></li>
+              <li><a href="#" class="textarea-tool-video"></a></li>
+              <li><a href="#" class="textarea-tool-quote"></a></li>
+              <li><a href="#" class="textarea-tool-task"></a></li>
+            </ul>
+            <div class="textarea-counter">Введено символов: 0</div>
+          </div>
+          <textarea placeholder="Начните вводить текст" class="upload-form-textarea article-upload-textarea"></textarea>
+          <div class="upload-form-options-row clearfix"> <!-- upload form options -->
+            <submit value="public" class="form-submit graphics-public">Опубликовать статью</submit>
+            <submit value="public" class="form-submit graphics-preview">Предпросмотр</submit>
+            <div class="publish-as clearfix">
+              <a href="#" class="publish-as-cancel"></a>
+              <span>webtheory</span>
+              <a href="#" class="publish-as-img"><img src="upload/publish-as-wt.png" height="40" width="40" alt="publish as"></a>
+            </div>
+          </div> <!-- end of upload form options -->
+        </form> <!-- end of adding form -->
       </div> <!-- end of content -->
       <aside class="common-aside">
         <div class="aside-nav">
           <h3>Навигация</h3>
           <ul class="home-aside-nav">
             <li><a href="#">Моя страница</a></li>
-            <li><a href="#">Мои публикации<span class="navigation-aside-number">19</span></a></li>
+            <li><a href="#">Мои публикации</a></li>
             <li><a href="#">Мои навыки</a></li>
-            <li><a href="#">Мои сообщества<span class="navigation-aside-number">82</span></a></li>
+            <li><a href="#">Мои сообщества</a></li>
             <li><a href="#">Диалоги</a></li>
             <li><a href="#upload-modal">Добавить работу</a></li>
             <li><a href="#">Настройки</a></li>

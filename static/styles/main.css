@@ -1187,9 +1187,23 @@ article a:hover,
   background: #e3e8ee !important;
 }
 
-/* graphics adding form */
+/*============================*/
+/*        UPLOAD FORMS        */
+/*============================*/
 
-.graphics-add input {
+/* FORM LAYOUT CLASSES */
+
+.row-input  { margin-bottom: 8px; }
+.first-column-input  { width: 461px; float: left;  }
+.second-column-input { width: 241px; float: right; }
+
+/* TEXT INPUTS */
+
+.input-container {
+  position: relative;
+}
+
+.input-container > input {
   width: 100%;
   height: 47px;
   border: 1px solid #dbdbdb;
@@ -1199,62 +1213,97 @@ article a:hover,
   padding: 15px;
   outline: none;
   border-radius: 1px;
-  margin-bottom: 8px;
-  position: relative;
 }
 
-.graphics-add input::-webkit-input-placeholder { color: #333; }
-.graphics-add input:-moz-placeholder { color: #333; }
-.graphics-add input::-moz-placeholder { color: #333; }
-.graphics-add input:-ms-placeholder { color: #333; }
+.input-container > input::-webkit-input-placeholder { color: #333; }
+.input-container > input:-moz-placeholder { color: #333; }
+.input-container > input::-moz-placeholder { color: #333; }
+.input-container > input:-ms-placeholder { color: #333; }
 
-.graphics-name {
-  height: 47px;
-  width: 461px;
-  float: left;
-  position: relative;
-  margin-bottom: 8px;
-}
-
-.graphics-name:after {
+.input-container:after {
   content: '';
-  display: block;
   width: 16px;
   height: 16px;
-  background: url('../img/sailorkoto-temp-sprite.png') 0 -13px;
+  background: url('../img/sailorkoto-temp-sprite.png');
   position: absolute;
   top: 17px;
   right: 15px;
-}
-.graphics-add-form-select-menu {
-  width: 241px !important;
-  float: right;
+  display: none;
 }
 
-.graphics-tags {
+.upload-name-icon:after { display: block; background-position:     0 -13px; }
+.upload-tags-icon:after { display: block; background-position: -16px -13px; }
+
+/* DROPDOWN MENU INPUTS */
+
+.select-menu {
+  list-style-type: none;
+  display: block;
+  width: 100%;
   height: 47px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #707070;
+  padding: 15px;
+  background: #f8f8f8;
+  border: 1px solid #e3e3e3;
+  border-radius: 1px;
   position: relative;
-  margin-bottom: 8px;
+  cursor: pointer;
 }
 
-.graphics-tags:after {
+.select-menu:after {
   content: '';
   display: block;
-  width: 16px;
-  height: 16px;
-  background: url('../img/sailorkoto-temp-sprite.png') -16px -13px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid #d3d3d3;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
   position: absolute;
-  top: 17px;
+  top: 21px;
   right: 15px;
 }
 
-/* drag n drop zone */
+.select-menu-dropdown {
+  display: block;
+  width: 101%;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 1px;
+  list-style-type: none;
+  position: absolute;
+  left: -1px;
+  top: 100%;
+  z-index: 2;
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transition: max-height .3s;
+  -o-transition: max-height .3s;
+  transition: max-height .3s;
+}
+
+.select-menu-dropdown li {
+  height: 30px;
+  padding: 7px 15px 7px 15px;
+}
+
+.select-menu-dropdown li:hover {
+  background: #eee;
+}
+
+.select-menu:hover .select-menu-dropdown {
+  visibility: visible;
+  max-height: 200px;
+}
+
+/* DRAG-N-DROP INPUT */
 
 .drag-n-drop-zone {
   height: 532px;
   background: #f5f7f9;
   border: 2px dashed #d9e0e9;
-  margin-bottom: 9px;
 }
 
 .drag-n-drop-info-container {
@@ -1331,7 +1380,7 @@ article a:hover,
   display: none;
 }
 
-/* textarea */
+/* TEXTAREA INPUT */
 
 .textarea-toolbar {
   display: block;
@@ -1339,6 +1388,7 @@ article a:hover,
   height: 46px;
   background: #f0f0f0;
   border: 1px solid #bdbdbd;
+  margin-top: 9px;
 }
 
 .textarea-toolbar ul {
@@ -1363,11 +1413,20 @@ article a:hover,
   border: 1px solid #ccc;
 }
 
-.textarea-tool-bold:after      { content: ''; display: block; position: absolute; width: 10px; height: 10px; background: url('../img/sailorkoto-temp-sprite.png') -32px -13px; top: 4px; left: 4px; }
-.textarea-tool-italic:after    { content: ''; display: block; position: absolute; width:  8px; height: 10px; background: url('../img/sailorkoto-temp-sprite.png') -42px -13px; top: 4px; left: 5px; }
-.textarea-tool-strike:after    { content: ''; display: block; position: absolute; width: 14px; height: 10px; background: url('../img/sailorkoto-temp-sprite.png') -50px -13px; top: 4px; left: 2px; }
-.textarea-tool-underline:after { content: ''; display: block; position: absolute; width: 10px; height: 13px; background: url('../img/sailorkoto-temp-sprite.png') -64px -13px; top: 4px; left: 4px; }
-.textarea-tool-link:after      { content: ''; display: block; position: absolute; width: 15px; height: 13px; background: url('../img/sailorkoto-temp-sprite.png') -74px -13px; top: 4px; left: 2px; }
+.textarea-tool-bold:after      { content: ''; display: block; position: absolute; width: 10px; height: 10px; background: url('../img/sailorkoto-temp-sprite.png')  -32px  -13px; top: 4px; left: 4px; }
+.textarea-tool-italic:after    { content: ''; display: block; position: absolute; width:  8px; height: 10px; background: url('../img/sailorkoto-temp-sprite.png')  -42px  -13px; top: 4px; left: 5px; }
+.textarea-tool-strike:after    { content: ''; display: block; position: absolute; width: 14px; height: 10px; background: url('../img/sailorkoto-temp-sprite.png')  -50px  -13px; top: 4px; left: 2px; }
+.textarea-tool-underline:after { content: ''; display: block; position: absolute; width: 10px; height: 13px; background: url('../img/sailorkoto-temp-sprite.png')  -64px  -13px; top: 4px; left: 4px; }
+.textarea-tool-ulist:after     { content: ''; display: block; position: absolute; width: 13px; height: 13px; background: url('../img/sailorkoto-temp-sprite.png') -177px -102px; top: 3px; left: 2px; }
+.textarea-tool-olist:after     { content: ''; display: block; position: absolute; width: 13px; height: 14px; background: url('../img/sailorkoto-temp-sprite.png') -190px -102px; top: 3px; left: 2px; }
+.textarea-tool-h1:after        { content: ''; display: block; position: absolute; width: 14px; height:  8px; background: url('../img/sailorkoto-temp-sprite.png') -203px -102px; top: 5px; left: 2px; }
+.textarea-tool-h2:after        { content: ''; display: block; position: absolute; width: 14px; height:  8px; background: url('../img/sailorkoto-temp-sprite.png') -203px -110px; top: 5px; left: 2px; }
+.textarea-tool-code:after      { content: ''; display: block; position: absolute; width: 14px; height:  8px; background: url('../img/sailorkoto-temp-sprite.png') -217px -102px; top: 5px; left: 2px; }
+.textarea-tool-link:after      { content: ''; display: block; position: absolute; width: 15px; height: 13px; background: url('../img/sailorkoto-temp-sprite.png')  -74px  -13px; top: 4px; left: 2px; }
+.textarea-tool-image:after     { content: ''; display: block; position: absolute; width: 14px; height: 14px; background: url('../img/sailorkoto-temp-sprite.png') -217px -110px; top: 3px; left: 2px; }
+.textarea-tool-video:after     { content: ''; display: block; position: absolute; width: 14px; height: 14px; background: url('../img/sailorkoto-temp-sprite.png') -231px -102px; top: 3px; left: 2px; }
+.textarea-tool-quote:after     { content: ''; display: block; position: absolute; width: 14px; height: 11px; background: url('../img/sailorkoto-temp-sprite.png') -231px -116px; top: 3px; left: 2px; }
+.textarea-tool-task:after      { content: ''; display: block; position: absolute; width: 12px; height: 16px; background: url('../img/sailorkoto-temp-sprite.png') -245px -102px; top: 2px; left: 2px; }
 
 .textarea-counter {
   float: right;
@@ -1377,7 +1436,7 @@ article a:hover,
   padding-right: 15px;
 }
 
-.graphics-adding-textarea {
+.upload-form-textarea {
   width: 100%;
   max-width: 100%;
   height: 128px;
@@ -1391,14 +1450,16 @@ article a:hover,
   margin-bottom: 15px;
 }
 
-.graphics-adding-textarea::-webkit-input-placeholder { color: #666; }
-.graphics-adding-textarea:-moz-placeholder { color: #666; }
-.graphics-adding-textarea::-moz-placeholder { color: #666; }
-.graphics-adding-textarea:-ms-placeholder { color: #666; }
+.upload-form-textarea::-webkit-input-placeholder { color: #666; }
+.upload-form-textarea:-moz-placeholder { color: #666; }
+.upload-form-textarea::-moz-placeholder { color: #666; }
+.upload-form-textarea:-ms-placeholder { color: #666; }
 
-/* form submit button, etc. */
+.article-upload-textarea { height: 250px; }
 
-.graphics-adding-options {
+/* UPLOAD FORM OPTIONS */
+
+.upload-form-options-row {
   height: 40px;
 }
 
@@ -1507,67 +1568,7 @@ article a:hover,
 
 /* dropdown select-menu */
 
-.select-menu {
-  list-style-type: none;
-  display: block;
-  width: 100%;
-  height: 47px;
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  color: #707070;
-  padding: 15px;
-  background: #f8f8f8;
-  border: 1px solid #e3e3e3;
-  border-radius: 1px;
-  position: relative;
-  cursor: pointer;
-}
 
-.select-menu:after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 5px solid #d3d3d3;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  position: absolute;
-  top: 21px;
-  right: 15px;
-}
-
-.select-menu-dropdown {
-  display: block;
-  width: 101%;
-  background: #fff;
-  border: 1px solid #e3e3e3;
-  border-radius: 1px;
-  list-style-type: none;
-  position: absolute;
-  left: -1px;
-  top: 100%;
-  z-index: 2;
-  max-height: 0;
-  overflow: hidden;
-  visibility: hidden;
-  -webkit-transition: max-height .3s;
-  -o-transition: max-height .3s;
-  transition: max-height .3s;
-}
-
-.select-menu-dropdown li {
-  height: 30px;
-  padding: 7px 15px 7px 15px;
-}
-
-.select-menu-dropdown li:hover {
-  background: #eee;
-}
-
-.select-menu:hover .select-menu-dropdown {
-  visibility: visible;
-  max-height: 200px;
-}
 
 /*============================*/
 /*   CONTENT OF COURSES.HTML  */

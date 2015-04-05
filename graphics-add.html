@@ -50,23 +50,29 @@
             <li><a href="#" class="active-content-tab">Форма добавления</a></li>
             <li><a href="#">Правила публикации</a></li>
           </ul> <!-- end of tabs -->
-          <form action=""> <!-- adding form -->
-            <div class="clearfix">
-              <div class="graphics-name">
-                <input type="text" name="graphics-name" placeholder="Введите название работы">
+          <form> <!-- adding form -->
+            <div class="row-input clearfix"> <!-- name + category inputs -->
+              <div class="first-column-input">
+                <div class="input-container upload-name-icon">
+                  <input type="text" placeholder="Введите название работы">
+                </div>
               </div>
-              <ul class="select-menu graphics-add-form-select-menu">
-                <li>Выберите категорию</li>
-                <ul class="select-menu-dropdown">
-                  <li>Категория 1</li>
-                  <li>Категория 2</li>
-                  <li>Категория 3</li>
+              <div class="second-column-input">
+                <ul class="select-menu">
+                  <li>Выберите категорию</li>
+                  <ul class="select-menu-dropdown">
+                    <li>Категория 1</li>
+                    <li>Категория 2</li>
+                    <li>Категория 3</li>
+                  </ul>
                 </ul>
-              </ul>
-            </div>
-            <div class="graphics-tags">
-              <input type="text" name="graphics-tags" placeholder="Добавьте 2-3 тега">
-            </div>
+              </div>
+            </div> <!-- end of name + category inputs -->
+            <div class="row-input"> <!-- tags input -->
+              <div class="input-container upload-tags-icon">
+                <input type="text" placeholder="Добавьте 2-3 тега">
+              </div>
+            </div> <!-- end off tags + article type inputs -->
             <div class="drag-n-drop-zone">
               <div class="drag-n-drop-info-container">
                 <p>Перетащите сюда фотографию</p>
@@ -75,8 +81,8 @@
                   <input type="file">
                   <span>Выберите фотографию</span>
                 </label>
-              </div>
-            </div>
+              </div> <!-- drag-n-drop input -->
+            </div> <!-- end of drag-n-drop input -->
             <div class="textarea-toolbar clearfix">
               <ul>
                 <li><a href="#" class="textarea-tool-bold"></a></li>
@@ -87,8 +93,8 @@
               </ul>
               <div class="textarea-counter">Введено символов: 0</div>
             </div>
-            <textarea placeholder="Опишите вашу работу" class="graphics-adding-textarea"></textarea>
-            <div class="graphics-adding-options clearfix">
+            <textarea placeholder="Опишите вашу работу" class="upload-form-textarea"></textarea>
+            <div class="upload-form-options-row clearfix">
               <submit value="public" class="form-submit graphics-public">Опубликовать работу</submit>
               <submit value="public" class="form-submit graphics-preview">Предпросмотр</submit>
               <div class="publish-as clearfix">
