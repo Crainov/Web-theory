@@ -2857,10 +2857,6 @@ article a:hover,
   border-radius: 3px;
   margin: 222px auto;
   position: relative;
-/*   -webkit-transform: translateY(-500px);
--ms-transform: translateY(-500px);
--o-transform: translateY(-500px);
-transform: translateY(-500px); */
   -webkit-transform: scale(0, 0);
   -ms-transform: scale(0, 0);
   -o-transform: scale(0, 0);
@@ -2871,10 +2867,6 @@ transform: translateY(-500px); */
 }
 
 .modal-window:target > div {
-/*   -webkit-transform: translateY(0px);
--ms-transform: translateY(0px);
--o-transform: translateY(0px);
-transform: translateY(0px); */
 -webkit-transform: scale(1, 1);
 -ms-transform: scale(1, 1);
 -o-transform: scale(1, 1);
