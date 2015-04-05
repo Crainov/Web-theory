@@ -92,7 +92,7 @@ body {
 }
 
 h2 {
-  /* for graphics preview headings */
+  /* for graphics preview headings & article subheadings */
 
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -139,6 +139,18 @@ article a:hover,
 .aside-list a:hover {
   color: #639fd6;
 }
+
+code {
+  display: block;
+  background: #f7f9f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.yellow-code { color: #878000; }
+.blue-code   { color: #4d77a9; }
+.green-code  { color: #339900; }
 
 .wrapper {
   height: 100%;
@@ -1506,8 +1518,6 @@ article a:hover,
   left: 13px;
 }
 
-/* dpublish as */
-
 .publish-as {
   height: 100%;
   float: right;
@@ -1565,10 +1575,6 @@ article a:hover,
 .publish-as-img:hover:after {
   display: none;
 }
-
-/* dropdown select-menu */
-
-
 
 /*============================*/
 /*   CONTENT OF COURSES.HTML  */
@@ -1662,7 +1668,7 @@ article a:hover,
 /*=====================*/
 
 .article-header {
-  padding-right: 150px;
+  padding-right: 200px;
   position: relative;
 }
 
@@ -1678,10 +1684,50 @@ article a:hover,
   top: -1px;
 }
 
-.read-later-button {
+.article-header-options {
+  height: 27px;
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.article-header-options ul {
+  float: right;
+  list-style-type: none;
+}
+
+.article-header-options li {
+  float: left;
+  margin-left: 15px;
+}
+
+.article-header-icon-link {
+  display: block;
+  float: left;
+  height: 100%;
+  font-size: 13px;
+  line-height: 22px;
+  color: #7396c1;
+  padding-left: 20px;
+  position: relative;
+}
+
+.article-header-icon-link:after {
+  content: '';
+  display: block;
+  height: 12px;
+  background: url('../img/sailorkoto-temp-sprite.png');
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
+.edit-article-icon:after   { width: 12px; background-position: -281px -102px; }
+.remove-article-icon:after { width:  9px; background-position: -293px -102px; }
+
+.article-header-icon-link:hover {
+  color: #5376a1;
+  text-decoration: underline;
 }
 
 .grey-round-button {
@@ -1755,6 +1801,14 @@ article a:hover,
 
 /* ARTICLE CONTENT */
 
+.article-text h2 {
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  color: #448acd;
+  font-weight: 400;
+}
+
 .article-text {
   margin-bottom: 20px;
 }
@@ -1764,6 +1818,48 @@ article a:hover,
   font-size: 13px;
   line-height: 22px;
   color: #484747;
+}
+
+.article-task {
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 15px;
+  font-family: OpenSans, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #6e7987;
+}
+
+.article-task:after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 28px;
+  background: url('../img/sailorkoto-temp-sprite.png') -257px -102px;
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+
+.article-task h4 {
+  color: #6e7987;
+  margin-bottom: 5px;
+}
+
+.article-task p {
+  margin-bottom: 5px;
+}
+
+.article-task a {
+  line-height: 22px;
+  color: #4985d1;
+  border-bottom: 1px dashed #4985d1;
+  text-decoration: none;
+}
+
+.article-task a:hover {
+  color: #69a5f1;
+  border-color: #69a5f1;
 }
 
 /* ARTICLE FOOTER */
