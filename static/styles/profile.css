@@ -100,7 +100,7 @@
 
 .user-stats-options ul li a:after {
   content: "";
-  background: url(../img/temp_icons/profile-user-options.png);
+  background: url(../img/spritesheet.png) -117px -61px;
   height: 15px;
   width: 15px;
   position: absolute;
@@ -109,7 +109,7 @@
 }
 
 .user-stats a:after {
-  background: url(../img/temp_icons/profile-user-stats.png) !important;
+  background: url(../img/spritesheet.png) -132px -61px !important;
   width: 17px !important;
 }
 
@@ -146,7 +146,7 @@
 .profile-edit-user-profile:after {
   content: "";
   position: absolute;
-  background: url(../img/temp_icons/user-edit-pencil.png);
+  background: url(../img/spritesheet.png) -50px -153px;
   height: 10px;
   width: 10px;
   right: -15px;
@@ -185,7 +185,7 @@
 .profile-user-occupation:before, .profile-user-rating:before {
   content: "";
   position: absolute;
-  background: url(../img/temp_icons/profile-clock.png);
+  background: url(../img/spritesheet.png) -64px -61px;
   width: 27px;
   height: 27px;
   left: 25px;
@@ -214,7 +214,7 @@
   height: 26px;
   top: 21px;
   left: 26px;
-  background: url(../img/temp_icons/profile-rating-star.png);
+  background: url(../img/spritesheet.png) -91px -61px;
 }
 
 .profile-rating-points {
@@ -316,7 +316,7 @@
 
 .skills-title a, .about-title a, .contacts-title a {
   position: absolute;
-  background: url(../img/temp_icons/user-edit-pencil.png);
+  background: url(../img/spritesheet.png) -50px -153px;
   height: 10px;
   width: 10px;
   bottom: 5px;
@@ -358,7 +358,7 @@
 .skills-info-current a span:after {
   display: inline-block;
   content: "";
-  background: url(../img/temp_icons/percent-icon.png);
+  background: url(../img/spritesheet.png) -93px -13px;
   height: 10px;
   width: 11px;
 }
@@ -428,10 +428,10 @@
   height: 16px;
   margin-bottom: -3px;
   margin-right: 9px;
-  background: url(../img/temp_icons/map-pin.png);
+  background: url(../img/spritesheet.png) -127px -13px;
 }
 
-.user-location:hover:before {background: url(../img/temp_icons/map-pin-hover.png);}
+.user-location:hover:before {background: url(../img/spritesheet.png) -138px -13px;}
 
 .user-graduate-level:before {
   display: inline-block;
@@ -440,10 +440,10 @@
   height: 7px;
   margin-right: 8px;
   margin-bottom: 2px;
-  background: url(../img/temp_icons/graduate-icon.png);
+  background: url(../img/spritesheet.png) -127px 0;
 }
 
-.user-graduate-level:hover:before {background: url(../img/temp_icons/graduate-icon-hover.png);}
+.user-graduate-level:hover:before {background: url(../img/spritesheet.png) -139px 0;}
 
 .user-age:before {
   display: inline-block;
@@ -451,10 +451,10 @@
   width: 10px;
   height: 10px;
   margin-right: 10px;
-  background: url(../img/temp_icons/box-closed-icon.png);
+  background: url(../img/spritesheet.png) -67px 0;
 }
 
-.user-age:hover:before {background: url(../img/temp_icons/box-closed-icon-hover.png);}
+.user-age:hover:before {background: url(../img/spritesheet.png) -77px 0;}
 
 .user-qualification:before {
   display: inline-block;
@@ -462,10 +462,10 @@
   width: 10px;
   height: 10px;
   margin-right: 10px;
-  background: url(../img/temp_icons/brief-case-icon.png);
+  background: url(../img/spritesheet.png) -87px 0;
 }
 
-.user-qualification:hover:before {background: url(../img/temp_icons/brief-case-icon-hover.png);}
+.user-qualification:hover:before {background: url(../img/spritesheet.png) -97px 0;}
 
 .user-about-text {
   margin-top: 15px;
@@ -501,7 +501,7 @@
   height: 20px;
   margin-right: 10px;
   margin-bottom: -5px;
-  background: url(../img/temp_icons/skype-icon.png);
+  background: url(../img/spritesheet.png) -176px -24px;
 }
 
 .twitter:before {
@@ -511,7 +511,7 @@
   height: 20px;
   margin-right: 10px;
   margin-bottom: -5px;
-  background: url(../img/temp_icons/twitter-icon.png);
+  background: url(../img/spritesheet.png) -200px -121px;
 }
 
 .behance:before {
@@ -521,7 +521,7 @@
   height: 20px;
   margin-right: 10px;
   margin-bottom: -5px;
-  background: url(../img/temp_icons/behance-icon.png);
+  background: url(../img/spritesheet.png) -47px 0;
 }
 
 .youtube:before {
@@ -531,7 +531,7 @@
   height: 20px;
   margin-right: 10px;
   margin-bottom: -5px;
-  background: url(../img/temp_icons/youtube-icon.png);
+  background: url(../img/spritesheet.png) -189px -165px;
 }
 
 /*************************Profile-footer***********************/
@@ -753,7 +753,7 @@
 .message-text-form:after {
   content: "";
   position: absolute;
-  background: url(../img/temp_icons/folder-icon.png);
+  background: url(../img/spritesheet.png) -107px 0;
   width: 20px;
   height: 15px;
   top: 10px;
@@ -929,7 +929,7 @@
   visibility: visible;
   content: "";
   display: inline-block;
-  background: url(../img/temp_icons/like-icon.png);
+  background: url(../img/spritesheet.png) -82px -13px;
   width: 11px;
   height: 10px;
   margin: 0 5px;
@@ -1054,7 +1054,7 @@
   display: block;
   float: left;
   content: "";
-  background: url(../img/temp_icons/publication-folder-icon.png);
+  background: url(../img/spritesheet.png) -162px -37px;
   width: 14px;
   height: 10px;
   margin-right: 10px;
@@ -1062,12 +1062,12 @@
 }
 
 .profile-article-author:before {
-  background: url(../img/temp_icons/publication-user-icon.png) !important;
+  background: url(../img/spritesheet.png) -166px -10px !important;
   width: 10px !important;
 }
 
 .profile-article-date:before {
-  background: url(../img/temp_icons/publication-clock-icon.png) !important;
+  background: url(../img/spritesheet.png) -166px 0 !important;
   width: 10px !important;
 }
 
@@ -1124,7 +1124,7 @@
   display: block;
   float: left;
   content: "";
-  background: url(../img/temp_icons/publication-views-icon.png);
+  background: url(../img/spritesheet.png) -15px -93px;
   width: 18px;
   height: 11px;
   margin-right: 10px;
@@ -1137,7 +1137,7 @@
 }
 
 .profile-article-comments-counter:before {
-  background: url(../img/temp_icons/publication-comments-icon.png) !important;
+  background: url(../img/spritesheet.png) -136px -80px !important;
   width: 15px !important;
   height: 13px !important;
   margin-top: 10px;
@@ -1147,7 +1147,7 @@
   display: block;
   float: left;
   content: "";
-  background: url(../img/temp_icons/publication-likes-icon.png);
+  background: url(../img/spritesheet.png) -151px -80px;
   width: 15px;
   height: 13px;
   margin-right: 10px;
@@ -1156,7 +1156,7 @@
 }
 
 .profile-article-likes-counter a:hover:before {
-  background: url(../img/temp_icons/publication-likes-icon-hover.png);
+  background: url(../img/spritesheet.png) 0 -93px;
 }
 
 /**************************Graphics block*********************/
@@ -1236,28 +1236,28 @@
 .graphic-item-stats li:before {
   content: "";
   display: inline-block;
-  background: url(../img/temp_icons/graphic-views-icon.png);
+  background: url(../img/spritesheet.png) -15px -93px;
   width: 18px;
   height: 11px;
   margin-right: 7px;
 }
 
 .graphic-comments-counter:before {
-  background: url(../img/temp_icons/graphic-comments-icon.png) !important;
+  background: url(../img/spritesheet.png) -151px 0 !important;
   width: 15px !important;
   height: 13px !important;
   margin-bottom: -2px;
 }
 
 .graphic-likes-counter:before {
-  background: url(../img/temp_icons/graphic-like-icon.png) !important;
+  background: url(../img/spritesheet.png) -67px -13px !important;
   width: 15px !important;
   height: 13px !important;
   margin-bottom: -2px;
 }
 
 .graphic-likes-counter:hover:before {
-  background: url(../img/temp_icons/graphic-like-icon-hover.png) !important;
+  background: url(../img/spritesheet.png) -33px -93px !important;
 }
 
 /*******************Graphics Item Title and Author************************/
@@ -1333,7 +1333,7 @@
   float: right;
   margin: 0 !important;
   padding: 0 !important;
-  background: url(../img/temp_icons/modal-close-btn.png) !important;
+  background: url(../img/spritesheet.png) -162px -106px !important;
   width: 14px;
   height: 14px;
   margin-top: 5px !important;
@@ -1363,7 +1363,7 @@
 
 .success-modal h1:after {
   content: "";
-  background: url(../img/temp_icons/upload-photo-check.png);
+  background: url(../img/spritesheet.png) -162px -124px;
   width: 10px;
   height: 8px;
   display: block;
@@ -1481,7 +1481,7 @@
 .error-send-message-modal a {
   margin: 0;
   padding: 0;
-  background: url(../img/temp_icons/close-modal-error.png) !important;
+  background: url(../img/spritesheet.png) -114px -20px !important;
   height: 10px;
   width: 10px;
   margin-top: 8px !important;
@@ -1670,7 +1670,7 @@
 .error-upload-modal a {
   margin: 0;
   padding: 0;
-  background: url(../img/temp_icons/close-modal-error.png) !important;
+  background: url(../img/spritesheet.png) -114px -20px !important;
   height: 10px;
   width: 10px;
   margin-top: 8px !important;
