@@ -1,0 +1,53 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-landing-communication-1 {
+    width: 96px;
+    height: 128px;
+    background-position: 0 0;
+}
+
+.sprite-landing-communication-2 {
+    width: 132px;
+    height: 130px;
+    background-position: -96px 0;
+}
+
+.sprite-landing-communication-3 {
+    width: 132px;
+    height: 130px;
+    background-position: -228px 0;
+}
+
+.sprite-landing-education-1 {
+    width: 310px;
+    height: 220px;
+    background-position: 0 -130px;
+}
+
+.sprite-landing-education-2 {
+    width: 470px;
+    height: 275px;
+    background-position: -360px 0;
+}
+
+.sprite-landing-inside-1 {
+    width: 90px;
+    height: 108px;
+    background-position: -830px 0;
+}
+
+.sprite-landing-inside-2 {
+    width: 108px;
+    height: 108px;
+    background-position: -830px -108px;
+}
+
+.sprite-landing-inside-3 {
+    width: 108px;
+    height: 108px;
+    background-position: -830px -216px;
+}
