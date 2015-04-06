@@ -414,19 +414,30 @@
      </div>
   </div>
   <div class="modal-box" id="upload-new-avatar">
-    <div class="modal-content upload-avatar-modal">
-      <h1>Оценили запись</h1>
+    <div class="modal-content error-upload-modal">
+      <h1>Ошибка: Неверный формат фотографии</h1>
       <a class="modal-close" href="#close-modal"></a>
-      <div class="drag-n-drop-zone">
-        <div class="drag-n-drop-info-container">
+    </div>
+    <div class="modal-content upload-avatar-modal">
+      <h1>Загрузка фотографии</h1>
+      <a class="modal-close" href="#close-modal"></a>
+      <p>Предпочтительно загружать квадратные фотографии (200x200, 400x400).</p>
+<p>Вес не должен превышать 1мб.</p>
+      <div class="drop-avatar-zone">
+        <div class="drop-avatar-zone-container">
           <p>Перетащите сюда фотографию</p>
                 или
-          <label class="image-upload-button">
+          <label class="avatar-upload-button">
             <input type="file">
             <span>Выберите фотографию</span>
           </label>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="modal-box">
+    <div class="modal-content succes-upload-modal">
+      <h1>Фотография загружена успешно</h1>
     </div>
   </div>
   <!--Modal Area-->

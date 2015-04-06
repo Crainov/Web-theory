@@ -1348,6 +1348,7 @@
   font-size: 20px;
   color: #333;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .modal-content p {
@@ -1400,13 +1401,22 @@
 
 /* drag n drop zone */
 
-.modal-content .drag-n-drop-zone {
-  height: 280px;
+.upload-avatar-modal p {
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.drop-avatar-zone {
+  margin-top: 25px;
   background: #f5f7f9;
   border: 2px dashed #d9e0e9;
 }
 
-.modal-content .drag-n-drop-info-container {
+.drop-avatar-zone-container {
   text-align: center;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -1414,26 +1424,27 @@
   position: relative;
 }
 
-.modal-content .drag-n-drop-info-container:after {
-  content: '';
+.drop-avatar-zone-container:before {
   display: block;
+  content: '';
   width: 111px;
   height: 95px;
+  margin: 30px auto;
+  margin-bottom: 25px;
   background: url('../img/sailorkoto-temp-sprite.png') 0 -29px;
-  position: absolute;
 }
 
-.modal-content .drag-n-drop-info-container p {
-    color: #93a4b5;
-    margin-bottom: 20px;
+.drop-avatar-zone-container p {
+  color: #93a4b5;
+  margin-bottom: 20px;
 }
 
-.modal-content .image-upload-button input[type='file'] {
+.avatar-upload-button input[type='file'] {
   position: fixed;
   top: -999px;
 }
 
-.modal-content .image-upload-button {
+.avatar-upload-button {
   display: block;
   width: 230px;
   height: 43px;
@@ -1443,40 +1454,103 @@
   color: #fff;
   padding-top: 14px;
   font-size: 13px;
-  position: absolute;
-  bottom: 2px;
-  left: 0;
   cursor: pointer;
+  position: relative;
+  margin: 25px auto;
+  margin-top: 20px;
 }
 
-.modal-content .image-upload-button:after {
+.avatar-upload-button:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   content: '';
-  display: block;
   background: #3e689f;
   width: 230px;
   height: 2px;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
   border-radius: 0 0 3px 3px;
 }
 
-.modal-content .image-upload-button:hover {
+.avatar-upload-button:hover {
   background: #5a8bcc;
 }
 
-.modal-content .image-upload-button:active {
+.avatar-upload-button:active {
   bottom: 0;
   border-radius: 2px;
 }
 
-.modal-content .image-upload-button:active:after {
+.avatar-upload-button:active:after {
   display: none;
 }
 
 .modal-box:target .upload-avatar-modal {
-  transform: translate(0,10%);
-  -webkit-transform: translate(0,10%); 
-  -o-transform: translate(0,10%);
-  -moz-transform: translate(0,10%);
+  transform: translate(0,25%);
+  -webkit-transform: translate(0,25%); 
+  -o-transform: translate(0,25%);
+  -moz-transform: translate(0,25%);
+}
+
+.succes-upload-modal {
+  padding: 15px;
+  background: #5693d7;
+}
+
+.succes-upload-modal h1 {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+  font-weight: normal;
+}
+
+.succes-upload-modal h1:after {
+  content: "";
+  background: url(../img/temp_icons/upload-photo-check.png);
+  width: 10px;
+  height: 8px;
+  display: block;
+  float: right;
+  margin-left: 260px;
+  margin-top: 3px;
+}
+
+.modal-box:target .succes-upload-modal {
+  transform: translate(0,550%);
+  -webkit-transform: translate(0,550%); 
+  -o-transform: translate(0,550%);
+  -moz-transform: translate(0,550%);
+}
+
+.error-upload-modal {
+  display: block;
+  padding: 15px;
+  background: #d7565f;
+  width: 557px;
+  margin: 0 auto;
+  padding-right: 30px;
+}
+
+.error-upload-modal a {
+  margin: 0;
+  padding: 0;
+  background: url(../img/temp_icons/close-modal-error.png) !important;
+  height: 10px;
+  width: 10px;
+  margin-top: 8px !important;
+}
+
+.error-upload-modal h1 {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+  font-weight: normal;
+}
+
+.modal-box:target .error-upload-modal {
+  transform: translate(0,200%);
+  -webkit-transform: translate(0,200%); 
+  -o-transform: translate(0,200%);
+  -moz-transform: translate(0,200%);
 }
