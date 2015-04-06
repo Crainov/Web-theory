@@ -50,7 +50,7 @@
     <div class="wrapper">
       <aside class="profile-user-aside"><!-- Aside user block-->
         <div class="profile-user-avatar"><!-- user avatar-->
-          <a href="#" class="profile-edit-user-profile">ред.</a>
+          <a href="#upload-new-avatar" class="profile-edit-user-profile">ред.</a>
           <img src="upload/user-avatar.jpg" alt="user-avatar">
         </div><!-- end user avatar-->
         <!--user main info-->
@@ -70,7 +70,7 @@
           <a href="#">Отправить сообщение</a>
         </div>
         <div class="profile-unsubscribe-button">
-          <a href="#">Отписаться</a>
+          <a href="#unsubscribe">Отписаться</a>
         </div>
         <!--end send mail, subscribe/unsubscribe-->
         <div class="subscribers"><!--subscribers block-->
@@ -235,7 +235,7 @@
             <form>
               <div class="message-text-form">
                 <input type="text" name="text-of-the-message" placeholder="Написать сообщение">
-                <input id="upload" type="file" name="upload-file-to-post">
+                <input id="upload-message" type="file" name="upload-file-to-post">
               </div>
               <div class="add-post-active">
                 Для публикации можно нажать Shift+Enter
@@ -310,7 +310,7 @@
               </div>
               <div class="post-body">
                 <div class="username-post"><a href="#">Артемка Аллаяров</a></div>
-                <div class="user-post-content"><img src="upload/user-post-media.jpg"></div>
+                <div class="user-post-content"><img src="upload/user-post-media.jpg" alt="user-post-img"></div>
                 <div class="user-post-options"><time>15:29, 18 сентября</time><a href="#">Комментировать</a>
                 </div>
               </div>
@@ -323,12 +323,12 @@
               <div class="post-body">
                 <div class="username-post"><a href="#">Артемка Аллаяров</a></div>
                 <div class="user-post-content clearfix">
-                  <img src="upload/user-post-media1.jpg">
+                  <img src="upload/user-post-media1.jpg" alt="user-post-img">
                 </div>
                 <div class="user-post-options"><time>15:29, 18 сентября</time><a href="#">Комментировать</a>
                 </div>
               </div>
-              <div class="post-likes"><a href="#"><span>Мне нравится</span>581</a></div>
+              <div class="post-likes"><a href="#liked-users"><span>Мне нравится</span>581</a></div>
             </div><!--End Post item-->
             <div class="user-post-comments"><!--Comments to post-->
               <div class="show-more-comments"><a href="#">Показать больше комментариев</a></div>
@@ -383,5 +383,52 @@
       </div><!--End User content-->
     </div>
   </div><!--End Profile page-->
+  <!--Modal Area-->
+  <div class="modal-box" id="unsubscribe">
+    <div class="modal-content unsubscribe-modal">
+      <h1>Подтверждение</h1>
+      <a class="modal-close" href="#close-modal"></a>
+      <p>Вы уверены, что хотите отписаться от <span>Артемки Аллаярова</span>?</p>
+      <a class="modal-unsubscribe" href="#unsbscribe">Отписаться</a>
+      <a class="modal-cancel" href="#cancel">Отмена</a>
+     </div>
+  </div>
+  <div class="modal-box" id="liked-users">
+    <div class="modal-content liked-users-modal">
+      <h1>Оценили запись</h1>
+      <a class="modal-close" href="#close-modal"></a>
+      <div class="liked-user-row">
+        <a href="#"><img src="upload/liked-user-thumb1.jpg" alt="liked-user-thumb">Th.Gleb</a>
+        <a href="#"><img src="upload/liked-user-thumb2.jpg" alt="liked-user-thumb">Smeet</a>
+        <a href="#"><img src="upload/liked-user-thumb3.jpg" alt="liked-user-thumb">Perseus</a>
+        <a href="#"><img src="upload/liked-user-thumb4.jpg" alt="liked-user-thumb">dscruas</a>
+        <a href="#"><img src="upload/liked-user-thumb5.jpg" alt="liked-user-thumb">romkaaa</a>
+      </div>
+      <div class="liked-user-row">
+        <a href="#"><img src="upload/liked-user-thumb6.jpg" alt="liked-user-thumb">Th.Gleb</a>
+        <a href="#"><img src="upload/liked-user-thumb7.jpg" alt="liked-user-thumb">Smeet</a>
+        <a href="#"><img src="upload/liked-user-thumb8.jpg" alt="liked-user-thumb">Perseus</a>
+        <a href="#"><img src="upload/liked-user-thumb9.jpg" alt="liked-user-thumb">dscruas</a>
+        <a href="#"><img src="upload/liked-user-thumb10.jpg" alt="liked-user-thumb">romkaaa</a>
+      </div>
+     </div>
+  </div>
+  <div class="modal-box" id="upload-new-avatar">
+    <div class="modal-content upload-avatar-modal">
+      <h1>Оценили запись</h1>
+      <a class="modal-close" href="#close-modal"></a>
+      <div class="drag-n-drop-zone">
+        <div class="drag-n-drop-info-container">
+          <p>Перетащите сюда фотографию</p>
+                или
+          <label class="image-upload-button">
+            <input type="file">
+            <span>Выберите фотографию</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal Area-->
 </body>
 </html>

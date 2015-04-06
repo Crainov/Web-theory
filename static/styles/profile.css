@@ -1278,3 +1278,205 @@
   color: #929292;
   margin-top: 5px !important;
 }
+
+/*******************************************/
+
+.modal-box  {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  text-align: center;
+  display: block;
+  background-color: rgba(30,44,76,.85);
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  transition: opacity .2s ease-in;
+}
+
+.modal-box:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  display: inline-block;
+  padding: 25px 28px 20px 28px;
+  border-radius: 3px;
+  text-align: left;
+  background: #fff;
+}
+
+.modal-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #4f7ab4, #3b66a1);
+  background: -webkit-linear-gradient(to bottom, #4f7ab4, #3b66a1);
+  background: -moz-linear-gradient(to bottom, #4f7ab4, #3b66a1);
+  border-radius: 3px;
+  font-size: 13px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.modal-close {
+  display: block;
+  float: right;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: url(../img/temp_icons/modal-close-btn.png) !important;
+  width: 14px;
+  height: 14px;
+  margin-top: 5px !important;
+}
+
+.modal-cancel:hover {
+  background: #99a5b5;
+}
+
+.modal-unsubscribe:hover {
+  background: #4a7bba;
+}
+
+.modal-content h1 {
+  display: inline-block;
+  font-family: OpenSans, sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.modal-content p {
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 15px;
+  margin-right: 100px;
+}
+
+.modal-box:target .modal-content {
+  -webkit-transition: .4s ease-in-out; 
+  -moz-transition: .4s ease-in-out; 
+  -o-transition: .4s ease-in-out; 
+  transition: .4s ease-in-out;
+}
+
+.modal-box:target .unsubscribe-modal {
+  transform: translate(0,150%);
+  -webkit-transform: translate(0,150%); 
+  -o-transform: translate(0,150%);
+  -moz-transform: translate(0,150%);
+}
+
+.liked-user-row {
+  margin-bottom: 15px;
+}
+
+.liked-user-row a {
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #666;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.liked-user-row img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-box:target .liked-users-modal {
+  transform: translate(0,50%);
+  -webkit-transform: translate(0,50%); 
+  -o-transform: translate(0,50%);
+  -moz-transform: translate(0,50%);
+}
+
+/* drag n drop zone */
+
+.modal-content .drag-n-drop-zone {
+  height: 280px;
+  background: #f5f7f9;
+  border: 2px dashed #d9e0e9;
+}
+
+.modal-content .drag-n-drop-info-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #c3c8cc;
+  position: relative;
+}
+
+.modal-content .drag-n-drop-info-container:after {
+  content: '';
+  display: block;
+  width: 111px;
+  height: 95px;
+  background: url('../img/sailorkoto-temp-sprite.png') 0 -29px;
+  position: absolute;
+}
+
+.modal-content .drag-n-drop-info-container p {
+    color: #93a4b5;
+    margin-bottom: 20px;
+}
+
+.modal-content .image-upload-button input[type='file'] {
+  position: fixed;
+  top: -999px;
+}
+
+.modal-content .image-upload-button {
+  display: block;
+  width: 230px;
+  height: 43px;
+  border-radius: 2px 2px 0 0;
+  background: #4e79b3;
+  text-align: center;
+  color: #fff;
+  padding-top: 14px;
+  font-size: 13px;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-content .image-upload-button:after {
+  content: '';
+  display: block;
+  background: #3e689f;
+  width: 230px;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  border-radius: 0 0 3px 3px;
+}
+
+.modal-content .image-upload-button:hover {
+  background: #5a8bcc;
+}
+
+.modal-content .image-upload-button:active {
+  bottom: 0;
+  border-radius: 2px;
+}
+
+.modal-content .image-upload-button:active:after {
+  display: none;
+}
+
+.modal-box:target .upload-avatar-modal {
+  transform: translate(0,10%);
+  -webkit-transform: translate(0,10%); 
+  -o-transform: translate(0,10%);
+  -moz-transform: translate(0,10%);
+}
