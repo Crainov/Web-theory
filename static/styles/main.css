@@ -184,7 +184,9 @@ code {
 
 .header {
   height: 60px;
-  background: url(../img/temp_icons/top-bar-bckgr.png);
+  background: linear-gradient(to bottom, #496ea0, #3e5f8c);
+  background: -webkit-linear-gradient(to bottom, #496ea0, #3e5f8c);
+  background: -moz-linear-gradient(to bottom, #496ea0, #3e5f8c);
 }
 /*Top-Nav*/
 
@@ -197,8 +199,10 @@ code {
 .logo {
   display: block;
   float: left;
-  padding-top: 18px;
-  height: 100%;
+  margin-top: 18px;
+  width: 114px;
+  height: 24px;
+  background: url(../img/spritesheet.png) 0 -26px;
 }
 /*Top-site-menu*/
 
@@ -430,7 +434,9 @@ code {
   width: 150px;
   height: 100%;
   position: relative;
-  background: url(../img/temp_icons/user-profile-bckgr.png);
+  background: linear-gradient(to bottom, #40608a, #36537a);
+  background: -webkit-linear-gradient(to bottom, #40608a, #36537a);
+  background: -moz-linear-gradient(to bottom, #40608a, #36537a);
 }
 
 .home-user-profile a {
@@ -466,7 +472,9 @@ code {
   float: left;
   display: block;
   height: 100%;
-  background: url(../img/temp_icons/user-profile-bckgr.png);
+  background: linear-gradient(to bottom, #40608a, #36537a);
+  background: -webkit-linear-gradient(to bottom, #40608a, #36537a);
+  background: -moz-linear-gradient(to bottom, #40608a, #36537a);
   margin-left: 40px;
   font-family: OpenSans, Arial, sans-serif;
   font-size: 13px;
@@ -510,7 +518,7 @@ code {
 
 .subheader {
   height: 250px;
-  background: url(../img/temp_icons/subheader-pattern.png);
+  background: url(../img/subheader-pattern.png);
 }
 
 .slider {
@@ -714,7 +722,7 @@ code {
 .slider-next:before {
   content: "";
   position: absolute;
-  background: url(../img/temp_icons/slider-next.png);
+  background: url(../img/spritesheet.png) -24px -148px;
   width: 10px;
   height: 20px;
   top: 60px;
@@ -3423,7 +3431,7 @@ GRAPHICS-FULL
   position: absolute;
   height: 13px;
   width: 15px;
-  background: url(../img/temp_icons/graphic-like-icon.png);
+  background: url(../img/spritesheet.png) -67px -13px;
   left: 105px;
   top: 11px;
 }
