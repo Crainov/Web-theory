@@ -1,0 +1,641 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-authorization-sprites-1 {
+    width: 12px;
+    height: 15px;
+    background-position: 0 0;
+}
+
+.sprite-authorization-sprites-2 {
+    width: 11px;
+    height: 15px;
+    background-position: -12px 0;
+}
+
+.sprite-authorization-sprites-3 {
+    width: 12px;
+    height: 15px;
+    background-position: -23px 0;
+}
+
+.sprite-authorization-sprites-4 {
+    width: 12px;
+    height: 15px;
+    background-position: -35px 0;
+}
+
+.sprite-behance-icon {
+    width: 20px;
+    height: 20px;
+    background-position: -47px 0;
+}
+
+.sprite-box-closed-icon {
+    width: 10px;
+    height: 10px;
+    background-position: -67px 0;
+}
+
+.sprite-box-closed-icon-hover {
+    width: 10px;
+    height: 10px;
+    background-position: -77px 0;
+}
+
+.sprite-brief-case-icon {
+    width: 10px;
+    height: 10px;
+    background-position: -87px 0;
+}
+
+.sprite-brief-case-icon-hover {
+    width: 10px;
+    height: 10px;
+    background-position: -97px 0;
+}
+
+.sprite-folder-icon {
+    width: 20px;
+    height: 15px;
+    background-position: -107px 0;
+}
+
+.sprite-graduate-icon {
+    width: 12px;
+    height: 7px;
+    background-position: -127px 0;
+}
+
+.sprite-graduate-icon-hover {
+    width: 12px;
+    height: 7px;
+    background-position: -139px 0;
+}
+
+.sprite-graphic-comments-icon {
+    width: 15px;
+    height: 13px;
+    background-position: -151px 0;
+}
+
+.sprite-graphic-like-icon {
+    width: 15px;
+    height: 13px;
+    background-position: -67px -13px;
+}
+
+.sprite-like-icon {
+    width: 11px;
+    height: 10px;
+    background-position: -82px -13px;
+}
+
+.sprite-logo {
+    width: 114px;
+    height: 24px;
+    background-position: 0 -26px;
+}
+
+.sprite-map-pin {
+    width: 11px;
+    height: 16px;
+    background-position: -127px -13px;
+}
+
+.sprite-map-pin-hover {
+    width: 11px;
+    height: 16px;
+    background-position: -138px -13px;
+}
+
+.sprite-nav-icons-1 {
+    width: 16px;
+    height: 24px;
+    background-position: -149px -13px;
+}
+
+.sprite-nav-icons-2 {
+    width: 16px;
+    height: 24px;
+    background-position: -114px -37px;
+}
+
+.sprite-nav-icons-3 {
+    width: 16px;
+    height: 24px;
+    background-position: -130px -37px;
+}
+
+.sprite-nav-icons-4 {
+    width: 16px;
+    height: 24px;
+    background-position: -146px -37px;
+}
+
+.sprite-nav-icons-5 {
+    width: 16px;
+    height: 24px;
+    background-position: 0 -61px;
+}
+
+.sprite-nav-icons-6 {
+    width: 16px;
+    height: 24px;
+    background-position: -16px -61px;
+}
+
+.sprite-nav-icons-7 {
+    width: 16px;
+    height: 24px;
+    background-position: -32px -61px;
+}
+
+.sprite-nav-icons-8 {
+    width: 16px;
+    height: 24px;
+    background-position: -48px -61px;
+}
+
+.sprite-percent-icon {
+    width: 11px;
+    height: 10px;
+    background-position: -93px -13px;
+}
+
+.sprite-profile-clock {
+    width: 27px;
+    height: 27px;
+    background-position: -64px -61px;
+}
+
+.sprite-profile-rating-star {
+    width: 26px;
+    height: 26px;
+    background-position: -91px -61px;
+}
+
+.sprite-profile-user-options {
+    width: 15px;
+    height: 15px;
+    background-position: -117px -61px;
+}
+
+.sprite-profile-user-stats {
+    width: 17px;
+    height: 15px;
+    background-position: -132px -61px;
+}
+
+.sprite-project-help {
+    width: 19px;
+    height: 19px;
+    background-position: -149px -61px;
+}
+
+.sprite-project-help-hover {
+    width: 19px;
+    height: 19px;
+    background-position: -117px -80px;
+}
+
+.sprite-publication-clock-icon {
+    width: 10px;
+    height: 10px;
+    background-position: -166px 0;
+}
+
+.sprite-publication-comments-icon {
+    width: 15px;
+    height: 13px;
+    background-position: -136px -80px;
+}
+
+.sprite-publication-folder-icon {
+    width: 14px;
+    height: 10px;
+    background-position: -162px -37px;
+}
+
+.sprite-publication-likes-icon {
+    width: 15px;
+    height: 13px;
+    background-position: -151px -80px;
+}
+
+.sprite-publication-likes-icon-hover {
+    width: 15px;
+    height: 13px;
+    background-position: 0 -93px;
+}
+
+.sprite-publication-user-icon {
+    width: 10px;
+    height: 10px;
+    background-position: -166px -10px;
+}
+
+.sprite-publication-views-icon {
+    width: 18px;
+    height: 11px;
+    background-position: -15px -93px;
+}
+
+.sprite-sailorkoto-temp-sprite_01 {
+    width: 15px;
+    height: 13px;
+    background-position: -33px -93px;
+}
+
+.sprite-sailorkoto-temp-sprite_04 {
+    width: 16px;
+    height: 10px;
+    background-position: -48px -93px;
+}
+
+.sprite-sailorkoto-temp-sprite_05 {
+    width: 16px;
+    height: 11px;
+    background-position: -64px -93px;
+}
+
+.sprite-sailorkoto-temp-sprite_06 {
+    width: 10px;
+    height: 10px;
+    background-position: -114px -20px;
+}
+
+.sprite-sailorkoto-temp-sprite_07 {
+    width: 12px;
+    height: 11px;
+    background-position: -162px -47px;
+}
+
+.sprite-sailorkoto-temp-sprite_15 {
+    width: 16px;
+    height: 14px;
+    background-position: -80px -93px;
+}
+
+.sprite-sailorkoto-temp-sprite_16 {
+    width: 16px;
+    height: 16px;
+    background-position: -96px -93px;
+}
+
+.sprite-sailorkoto-temp-sprite_17 {
+    width: 10px;
+    height: 10px;
+    background-position: -165px -20px;
+}
+
+.sprite-sailorkoto-temp-sprite_18 {
+    width: 7px;
+    height: 10px;
+    background-position: -168px -58px;
+}
+
+.sprite-sailorkoto-temp-sprite_20 {
+    width: 14px;
+    height: 10px;
+    background-position: -136px -93px;
+}
+
+.sprite-sailorkoto-temp-sprite_21 {
+    width: 10px;
+    height: 13px;
+    background-position: -166px -80px;
+}
+
+.sprite-sailorkoto-temp-sprite_22 {
+    width: 14px;
+    height: 13px;
+    background-position: -150px -93px;
+}
+
+.sprite-sailorkoto-temp-sprite_29 {
+    width: 18px;
+    height: 18px;
+    background-position: 0 -106px;
+}
+
+.sprite-sailorkoto-temp-sprite_30 {
+    width: 18px;
+    height: 18px;
+    background-position: -18px -106px;
+}
+
+.sprite-sailorkoto-temp-sprite_31 {
+    width: 14px;
+    height: 16px;
+    background-position: -36px -106px;
+}
+
+.sprite-sailorkoto-temp-sprite_32 {
+    width: 14px;
+    height: 16px;
+    background-position: -50px -106px;
+}
+
+.sprite-sailorkoto-temp-sprite_34 {
+    width: 14px;
+    height: 16px;
+    background-position: -64px -106px;
+}
+
+.sprite-sailorkoto-temp-sprite_35 {
+    width: 14px;
+    height: 16px;
+    background-position: -112px -106px;
+}
+
+.sprite-sailorkoto-temp-sprite_36 {
+    width: 18px;
+    height: 18px;
+    background-position: -126px -106px;
+}
+
+.sprite-sailorkoto-temp-sprite_37 {
+    width: 18px;
+    height: 18px;
+    background-position: -144px -106px;
+}
+
+.sprite-sailorkoto-temp-sprite_38 {
+    width: 18px;
+    height: 12px;
+    background-position: 0 -124px;
+}
+
+.sprite-sailorkoto-temp-sprite_40 {
+    width: 14px;
+    height: 14px;
+    background-position: -162px -106px;
+}
+
+.sprite-sailorkoto-temp-sprite_41 {
+    width: 14px;
+    height: 14px;
+    background-position: -78px -120px;
+}
+
+.sprite-sailorkoto-temp-sprite_43 {
+    width: 13px;
+    height: 13px;
+    background-position: -92px -120px;
+}
+
+.sprite-sailorkoto-temp-sprite_44 {
+    width: 13px;
+    height: 14px;
+    background-position: -162px -120px;
+}
+
+.sprite-sailorkoto-temp-sprite_45 {
+    width: 14px;
+    height: 8px;
+    background-position: -18px -134px;
+}
+
+.sprite-sailorkoto-temp-sprite_46 {
+    width: 14px;
+    height: 8px;
+    background-position: -32px -134px;
+}
+
+.sprite-sailorkoto-temp-sprite_47 {
+    width: 14px;
+    height: 14px;
+    background-position: -46px -134px;
+}
+
+.sprite-sailorkoto-temp-sprite_48 {
+    width: 12px;
+    height: 16px;
+    background-position: -60px -134px;
+}
+
+.sprite-sailorkoto-temp-sprite_49 {
+    width: 24px;
+    height: 28px;
+    background-position: -72px -134px;
+}
+
+.sprite-sailorkoto-temp-sprite_50 {
+    width: 12px;
+    height: 12px;
+    background-position: -164px -93px;
+}
+
+.sprite-sailorkoto-temp-sprite_51 {
+    width: 9px;
+    height: 12px;
+    background-position: -96px -134px;
+}
+
+.sprite-sailorkoto-temp-sprite_53 {
+    width: 14px;
+    height: 11px;
+    background-position: -105px -134px;
+}
+
+.sprite-sailorkoto-temp-sprite_55 {
+    width: 14px;
+    height: 8px;
+    background-position: -119px -134px;
+}
+
+.sprite-sailorkoto-temp-sprite_56 {
+    width: 14px;
+    height: 14px;
+    background-position: -133px -134px;
+}
+
+.sprite-sailorkoto-temp-sprite_61 {
+    width: 14px;
+    height: 11px;
+    background-position: -147px -134px;
+}
+
+.sprite-sailorkoto-temp-sprite_65 {
+    width: 24px;
+    height: 24px;
+    background-position: 0 -145px;
+}
+
+.sprite-sailorkoto-temp-sprite_66 {
+    width: 24px;
+    height: 24px;
+    background-position: -105px -145px;
+}
+
+.sprite-sailorkoto-temp-sprite_67 {
+    width: 24px;
+    height: 24px;
+    background-position: -147px -145px;
+}
+
+.sprite-sailorkoto-temp-sprite_68 {
+    width: 24px;
+    height: 24px;
+    background-position: -176px 0;
+}
+
+.sprite-skype-icon {
+    width: 20px;
+    height: 20px;
+    background-position: -176px -24px;
+}
+
+.sprite-slider-article {
+    width: 25px;
+    height: 28px;
+    background-position: -175px -47px;
+}
+
+.sprite-slider-article-hover {
+    width: 25px;
+    height: 28px;
+    background-position: -175px -120px;
+}
+
+.sprite-slider-graphics {
+    width: 23px;
+    height: 20px;
+    background-position: -176px -75px;
+}
+
+.sprite-slider-graphics-hover {
+    width: 23px;
+    height: 20px;
+    background-position: -176px -95px;
+}
+
+.sprite-slider-next {
+    width: 10px;
+    height: 20px;
+    background-position: -24px -148px;
+}
+
+.sprite-social-icons-1 {
+    width: 16px;
+    height: 16px;
+    background-position: -34px -148px;
+}
+
+.sprite-social-icons-2 {
+    width: 16px;
+    height: 16px;
+    background-position: -129px -148px;
+}
+
+.sprite-social-icons-3 {
+    width: 16px;
+    height: 16px;
+    background-position: -171px -148px;
+}
+
+.sprite-social-icons-4 {
+    width: 16px;
+    height: 16px;
+    background-position: -34px -164px;
+}
+
+.sprite-social-icons-5 {
+    width: 16px;
+    height: 16px;
+    background-position: -50px -164px;
+}
+
+.sprite-sprites_03 {
+    width: 22px;
+    height: 16px;
+    background-position: -66px -164px;
+}
+
+.sprite-sprites_05 {
+    width: 18px;
+    height: 18px;
+    background-position: -129px -164px;
+}
+
+.sprite-sprites_06 {
+    width: 18px;
+    height: 18px;
+    background-position: -171px -164px;
+}
+
+.sprite-sprites_16 {
+    width: 23px;
+    height: 20px;
+    background-position: -200px 0;
+}
+
+.sprite-sprites_17 {
+    width: 23px;
+    height: 20px;
+    background-position: -200px -20px;
+}
+
+.sprite-sprites_28 {
+    width: 19px;
+    height: 13px;
+    background-position: -200px -40px;
+}
+
+.sprite-thumb-up {
+    width: 16px;
+    height: 18px;
+    background-position: -200px -53px;
+}
+
+.sprite-thumb-up-hover {
+    width: 16px;
+    height: 18px;
+    background-position: -200px -71px;
+}
+
+.sprite-top-menu-icon {
+    width: 16px;
+    height: 16px;
+    background-position: -199px -89px;
+}
+
+.sprite-top-menu-icon-hover {
+    width: 16px;
+    height: 16px;
+    background-position: -200px -105px;
+}
+
+.sprite-twitter-icon {
+    width: 20px;
+    height: 20px;
+    background-position: -200px -121px;
+}
+
+.sprite-upload-cloud {
+    width: 18px;
+    height: 12px;
+    background-position: -200px -141px;
+}
+
+.sprite-upload-cloud-hover {
+    width: 18px;
+    height: 12px;
+    background-position: -189px -153px;
+}
+
+.sprite-user-edit-pencil {
+    width: 10px;
+    height: 10px;
+    background-position: -50px -153px;
+}
+
+.sprite-youtube-icon {
+    width: 20px;
+    height: 20px;
+    background-position: -189px -165px;
+}
