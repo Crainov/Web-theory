@@ -1378,7 +1378,7 @@ code {
   display: block;
   width: 111px;
   height: 95px;
-  background: url('../img/drag-n-drop-bg-img.png');
+  background: url('../img/spritesheet.png') 0 -285px;
   position: absolute;
   top: 10px;
   left: 60px;
@@ -1851,7 +1851,7 @@ code {
   display: block;
   width: 66px;
   height: 66px;
-  background: url('../img/play-video-img.png');
+  background: url('../img/spritesheet.png') -111px -285px;
   position: absolute;
   top: 41px;
   left: 84px;
@@ -3373,11 +3373,11 @@ code {
 }
 
 .article-add-modal-link:after {
-  background: url('../img/add-article-icon.png');
+  background: url('../img/spritesheet.png') 0 -185px;
 }
 
 .graphic-add-modal-link:after {
-  background: url('../img/add-graphics-icon.png');
+  background: url('../img/spritesheet.png') -100px -185px;
 }
 /*----------
 GRAPHICS-FULL
