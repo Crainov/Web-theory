@@ -1,59 +1,84 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Web Theory</title>
   <link rel="stylesheet" href="static/styles/main.css">
 </head>
+
 <body>
-  <header class="header"><!--Header-->
+  <header class="header">
+    <!--Header-->
     <div class="wrapper">
       <div class="top-nav clearfix">
-        <a class="logo" href="index.html"><!--Logo-->
+        <a class="logo" href="index.html">
+          <!--Logo-->
           <img src="static/img/temp_icons/logo.png" alt="Web-Theory">
         </a>
-        <nav class="top-menu"><!-- Top site menu -->
+        <nav class="top-menu">
+          <!-- Top site menu -->
           <ul>
-            <li><a href="index.html" class="current-nav-item">Главная</a></li>
-            <li><a href="courses.html">Курсы</a></li>
-            <li><a href="articles.html">Статьи</a></li>
-            <li><a href="graphics.html">Дизайн</a></li>
-            <li><a href="#">Люди</a></li>
-            <li><a href="#">Сообщества</a></li>
+            <li><a href="index.html" class="current-nav-item">Главная</a>
+            </li>
+            <li><a href="courses.html">Курсы</a>
+            </li>
+            <li><a href="articles.html">Статьи</a>
+            </li>
+            <li><a href="graphics.html">Дизайн</a>
+            </li>
+            <li><a href="#">Люди</a>
+            </li>
+            <li><a href="#">Сообщества</a>
+            </li>
           </ul>
         </nav>
-        <div class="user-block clearfix"> <!-- User mail and profile -->
-          <div class="user-actions"><!-- Top User menu -->
-              <ul class="user-menu">
-                <li><a class="open-book" href="#">Список чтения</a></li>
-                <li><a class="upload-cloud" href="#upload-modal">Добавить работу</a></li>
-                <li><a class="thumbs-up" href="#">Понравилось</a></li>
-                <li><a class="project-help" href="#">Помочь проекту</a></li>
-              </ul>
+        <div class="user-block clearfix">
+          <!-- User mail and profile -->
+          <div class="user-actions">
+            <!-- Top User menu -->
+            <ul class="user-menu">
+              <li><a class="open-book" href="#">Список чтения</a>
+              </li>
+              <li><a class="upload-cloud" href="#upload-modal">Добавить работу</a>
+              </li>
+              <li><a class="thumbs-up" href="#">Понравилось</a>
+              </li>
+              <li><a class="project-help" href="#">Помочь проекту</a>
+              </li>
+            </ul>
           </div>
           <a class="user-mail" href="#" data-messages-counter="2"></a>
           <div class="home-user-profile">
             <a href="profile.html"></a>
             <div class="user-name">webtheory</div>
-            <div class="user-photo"><img src="upload/user-photo.png" alt="user-photo"></div>
+            <div class="user-photo"><img src="upload/user-photo.png" alt="user-photo">
+            </div>
           </div>
-        </div><!--  End of User mail and profile -->
+        </div>
+        <!--  End of User mail and profile -->
       </div>
     </div>
-  </header><!-- End of Header-->
+  </header>
+  <!-- End of Header-->
   <div class="subheader mb30">
     <div class="wrapper">
-      <div class="slider"> <!-- Slider -->
+      <div class="slider">
+        <!-- Slider -->
         <div class="content">
           <div class="slider-row-first">
-            <div class="what-to-show"> <!-- What to show -->
+            <div class="what-to-show">
+              <!-- What to show -->
               <a class="slider-show-posts" href="#" data-post-count="2"></a>
               <a class="slider-show-articles" href="#" data-article-count="8"></a>
-            </div> <!-- End of "What to show" -->
+            </div>
+            <!-- End of "What to show" -->
             <span class="slider-range-image">
-              Лучшее за <span data-state="visible">неделю</span><!-- To hide span data-state should = "hidden"-->
+              Лучшее за <span data-state="visible">неделю</span>
+            <!-- To hide span data-state should = "hidden"-->
             </span>
-            <ul data-state="hidden"><!-- To show droplist data-state should = "visible"-->
+            <ul data-state="hidden">
+              <!-- To show droplist data-state should = "visible"-->
               <li value="today">сегодня</li>
               <li value="week">неделю</li>
               <li value="month">месяц</li>
@@ -61,21 +86,29 @@
             </ul>
           </div>
           <div class="slider-row-second">
-            <div class="slider-top-graphic"> <!-- Slider graphic thumbs -->
-              <a href="#"><img src="upload/slider-thumb-1.jpg" alt="slider-thumb"></a>
-              <a href="#"><img src="upload/slider-thumb-2.jpg" alt="slider-thumb"></a>
-              <a href="#"><img src="upload/slider-thumb-3.jpg" alt="slider-thumb"></a>
-              <a href="#"><img class="last-slider-thumb" src="upload/slider-thumb-4.jpg" alt="slider-thumb"></a>
+            <div class="slider-top-graphic">
+              <!-- Slider graphic thumbs -->
+              <a href="#"><img src="upload/slider-thumb-1.jpg" alt="slider-thumb">
+              </a>
+              <a href="graphics-full.html"><img src="upload/slider-thumb-2.jpg" alt="slider-thumb">
+              </a>
+              <a href="#"><img src="upload/slider-thumb-3.jpg" alt="slider-thumb">
+              </a>
+              <a href="#"><img class="last-slider-thumb" src="upload/slider-thumb-4.jpg" alt="slider-thumb">
+              </a>
               <a class="slider-next" href="#next"></a>
-            </div> <!-- End of Slider graphic thumbs -->
+            </div>
+            <!-- End of Slider graphic thumbs -->
           </div>
         </div>
         <div class="home-sidebar">
           <div class="slider-row-first">
             <span class="slider-range-user">
-              Топ публикующих за <span data-state="visible">месяц</span><!-- To hide span data-state should = "hidden"-->
+              Топ публикующих за <span data-state="visible">месяц</span>
+            <!-- To hide span data-state should = "hidden"-->
             </span>
-            <ul data-state="hidden"><!-- To show droplist data-state should = "visible"-->
+            <ul data-state="hidden">
+              <!-- To show droplist data-state should = "visible"-->
               <li value="today">сегодня</li>
               <li value="week">неделю</li>
               <li value="month">месяц</li>
@@ -83,7 +116,8 @@
             </ul>
           </div>
           <div class="slider-row-second">
-            <div class="slider-top-users"> <!-- Top user block -->
+            <div class="slider-top-users">
+              <!-- Top user block -->
               <div class="slider-top-user">
                 <img src="upload/user-slider-thumb-3.png">
                 <div class="top-user-info">
@@ -108,19 +142,26 @@
                 </div>
                 <a class="slider-user-link" href="#"></a>
               </div>
-            </div><!-- End of Top user block -->
+            </div>
+            <!-- End of Top user block -->
           </div>
         </div>
-      </div> <!-- End of Slider -->
+      </div>
+      <!-- End of Slider -->
     </div>
-  </div> <!-- End of subheader -->
+  </div>
+  <!-- End of subheader -->
   <div class="page">
     <div class="wrapper clearfix">
-      <div class="content"> <!-- content -->
-        <div class="graphics-grid clearfix"> <!-- graphics-grid -->
+      <div class="content">
+        <!-- content -->
+        <div class="graphics-grid clearfix">
+          <!-- graphics-grid -->
 
-          <div class="graphics-block"> <!-- graphics-block -->
-            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-01.png" alt="graphics-thumb" height="165" width="220"></a>
+          <div class="graphics-block">
+            <!-- graphics-block -->
+            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-01.png" alt="graphics-thumb" height="165" width="220">
+            </a>
             <ul class="graphics-block-info clearfix">
               <li class="graphics-likes">485</li>
               <li class="graphics-views">2 392</li>
@@ -136,10 +177,13 @@
               <p class="graphics-about">You know this feeling, when you want to create comething. Reboundif you want.</p>
               <a href="#" class="full-graphics-link gradient-button">Посмотреть работу</a>
             </div>
-          </div> <!-- end of graphics-block -->
+          </div>
+          <!-- end of graphics-block -->
 
-          <div class="graphics-block"> <!-- graphics-block -->
-            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-02.png" alt="graphics-thumb" height="165" width="220"></a>
+          <div class="graphics-block">
+            <!-- graphics-block -->
+            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-02.png" alt="graphics-thumb" height="165" width="220">
+            </a>
             <ul class="graphics-block-info clearfix">
               <li class="graphics-likes">122</li>
               <li class="graphics-views">1 321</li>
@@ -155,10 +199,13 @@
               <p class="graphics-about">You know this feeling, when you want to create comething. Reboundif you want.</p>
               <a href="#" class="full-graphics-link gradient-button">Посмотреть работу</a>
             </div>
-          </div> <!-- end of graphics-block -->
+          </div>
+          <!-- end of graphics-block -->
 
-          <div class="graphics-block"> <!-- graphics-block -->
-            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-03.png" alt="graphics-thumb" height="165" width="220"></a>
+          <div class="graphics-block">
+            <!-- graphics-block -->
+            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-03.png" alt="graphics-thumb" height="165" width="220">
+            </a>
             <ul class="graphics-block-info clearfix">
               <li class="graphics-likes">117</li>
               <li class="graphics-views">1 187</li>
@@ -174,10 +221,13 @@
               <p class="graphics-about">You know this feeling, when you want to create comething. Reboundif you want.</p>
               <a href="#" class="full-graphics-link gradient-button">Посмотреть работу</a>
             </div>
-          </div> <!-- end of graphics-block -->
+          </div>
+          <!-- end of graphics-block -->
 
-          <div class="graphics-block"> <!-- graphics-block -->
-            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-04.png" alt="graphics-thumb" height="165" width="220"></a>
+          <div class="graphics-block">
+            <!-- graphics-block -->
+            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-04.png" alt="graphics-thumb" height="165" width="220">
+            </a>
             <ul class="graphics-block-info clearfix">
               <li class="graphics-likes">112</li>
               <li class="graphics-views">1 942</li>
@@ -193,10 +243,13 @@
               <p class="graphics-about">You know this feeling, when you want to create comething. Reboundif you want.</p>
               <a href="#" class="full-graphics-link gradient-button">Посмотреть работу</a>
             </div>
-          </div> <!-- end of graphics-block -->
+          </div>
+          <!-- end of graphics-block -->
 
-          <div class="graphics-block"> <!-- graphics-block -->
-            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-05.png" alt="graphics-thumb" height="165" width="220"></a>
+          <div class="graphics-block">
+            <!-- graphics-block -->
+            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-05.png" alt="graphics-thumb" height="165" width="220">
+            </a>
             <ul class="graphics-block-info clearfix">
               <li class="graphics-likes">108</li>
               <li class="graphics-views">5 729</li>
@@ -212,10 +265,13 @@
               <p class="graphics-about">You know this feeling, when you want to create comething. Reboundif you want.</p>
               <a href="#" class="full-graphics-link gradient-button">Посмотреть работу</a>
             </div>
-          </div> <!-- end of graphics-block -->
+          </div>
+          <!-- end of graphics-block -->
 
-          <div class="graphics-block"> <!-- graphics-block -->
-            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-06.png" alt="graphics-thumb" height="165" width="220"></a>
+          <div class="graphics-block">
+            <!-- graphics-block -->
+            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-06.png" alt="graphics-thumb" height="165" width="220">
+            </a>
             <ul class="graphics-block-info clearfix">
               <li class="graphics-likes">103</li>
               <li class="graphics-views">3 283</li>
@@ -231,10 +287,13 @@
               <p class="graphics-about">You know this feeling, when you want to create comething. Reboundif you want.</p>
               <a href="#" class="full-graphics-link gradient-button">Посмотреть работу</a>
             </div>
-          </div> <!-- end of graphics-block -->
+          </div>
+          <!-- end of graphics-block -->
 
-          <div class="graphics-block"> <!-- graphics-block -->
-            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-07.png" alt="graphics-thumb" height="165" width="220"></a>
+          <div class="graphics-block">
+            <!-- graphics-block -->
+            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-07.png" alt="graphics-thumb" height="165" width="220">
+            </a>
             <ul class="graphics-block-info clearfix">
               <li class="graphics-likes">102</li>
               <li class="graphics-views">1 104</li>
@@ -250,10 +309,13 @@
               <p class="graphics-about">You know this feeling, when you want to create comething. Reboundif you want.</p>
               <a href="#" class="full-graphics-link gradient-button">Посмотреть работу</a>
             </div>
-          </div> <!-- end of graphics-block -->
+          </div>
+          <!-- end of graphics-block -->
 
-          <div class="graphics-block"> <!-- graphics-block -->
-            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-08.png" alt="graphics-thumb" height="165" width="220"></a>
+          <div class="graphics-block">
+            <!-- graphics-block -->
+            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-08.png" alt="graphics-thumb" height="165" width="220">
+            </a>
             <ul class="graphics-block-info clearfix">
               <li class="graphics-likes">98</li>
               <li class="graphics-views">882</li>
@@ -269,10 +331,13 @@
               <p class="graphics-about">You know this feeling, when you want to create comething. Reboundif you want.</p>
               <a href="#" class="full-graphics-link gradient-button">Посмотреть работу</a>
             </div>
-          </div> <!-- end of graphics-block -->
+          </div>
+          <!-- end of graphics-block -->
 
-          <div class="graphics-block"> <!-- graphics-block -->
-            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-09.png" alt="graphics-thumb" height="165" width="220"></a>
+          <div class="graphics-block">
+            <!-- graphics-block -->
+            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-09.png" alt="graphics-thumb" height="165" width="220">
+            </a>
             <ul class="graphics-block-info clearfix">
               <li class="graphics-likes">73</li>
               <li class="graphics-views">3 283</li>
@@ -288,10 +353,13 @@
               <p class="graphics-about">You know this feeling, when you want to create comething. Reboundif you want.</p>
               <a href="#" class="full-graphics-link gradient-button">Посмотреть работу</a>
             </div>
-          </div> <!-- end of graphics-block -->
+          </div>
+          <!-- end of graphics-block -->
 
-          <div class="graphics-block"> <!-- graphics-block -->
-            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-10.png" alt="graphics-thumb" height="165" width="220"></a>
+          <div class="graphics-block">
+            <!-- graphics-block -->
+            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-10.png" alt="graphics-thumb" height="165" width="220">
+            </a>
             <ul class="graphics-block-info clearfix">
               <li class="graphics-likes">69</li>
               <li class="graphics-views">392</li>
@@ -307,10 +375,13 @@
               <p class="graphics-about">You know this feeling, when you want to create comething. Reboundif you want.</p>
               <a href="#" class="full-graphics-link gradient-button">Посмотреть работу</a>
             </div>
-          </div> <!-- end of graphics-block -->
+          </div>
+          <!-- end of graphics-block -->
 
-          <div class="graphics-block"> <!-- graphics-block -->
-            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-11.png" alt="graphics-thumb" height="165" width="220"></a>
+          <div class="graphics-block">
+            <!-- graphics-block -->
+            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-11.png" alt="graphics-thumb" height="165" width="220">
+            </a>
             <ul class="graphics-block-info clearfix">
               <li class="graphics-likes">38</li>
               <li class="graphics-views">90</li>
@@ -326,10 +397,13 @@
               <p class="graphics-about">You know this feeling, when you want to create comething. Reboundif you want.</p>
               <a href="#" class="full-graphics-link gradient-button">Посмотреть работу</a>
             </div>
-          </div> <!-- end of graphics-block -->
+          </div>
+          <!-- end of graphics-block -->
 
-          <div class="graphics-block"> <!-- graphics-block -->
-            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-12.png" alt="graphics-thumb" height="165" width="220"></a>
+          <div class="graphics-block">
+            <!-- graphics-block -->
+            <a href="#" class="graphics-block-thumb"><img src="upload/graphics-thumb-12.png" alt="graphics-thumb" height="165" width="220">
+            </a>
             <ul class="graphics-block-info clearfix">
               <li class="graphics-likes">11</li>
               <li class="graphics-views">283</li>
@@ -345,57 +419,96 @@
               <p class="graphics-about">You know this feeling, when you want to create comething. Reboundif you want.</p>
               <a href="#" class="full-graphics-link gradient-button">Посмотреть работу</a>
             </div>
-          </div> <!-- end of graphics-block -->
-        </div> <!-- end of graphics-grid -->
-        <div class="pagination clearfix"> <!-- pagination -->
+          </div>
+          <!-- end of graphics-block -->
+        </div>
+        <!-- end of graphics-grid -->
+        <div class="pagination clearfix">
+          <!-- pagination -->
           <a href="#" class="pagination-big-button gradient-button" data-state="disabled">Предыдущая</a>
           <ul class="pagination-small-buttons-row">
-            <li><a href="#" class="current-page">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#">7</a></li>
-            <li><a href="#">8</a></li>
-            <li><a href="#">9</a></li>
-            <li><a href="#">10</a></li>
-            <li><a href="#">...</a></li>
+            <li><a href="#" class="current-page">1</a>
+            </li>
+            <li><a href="#">2</a>
+            </li>
+            <li><a href="#">3</a>
+            </li>
+            <li><a href="#">4</a>
+            </li>
+            <li><a href="#">5</a>
+            </li>
+            <li><a href="#">6</a>
+            </li>
+            <li><a href="#">7</a>
+            </li>
+            <li><a href="#">8</a>
+            </li>
+            <li><a href="#">9</a>
+            </li>
+            <li><a href="#">10</a>
+            </li>
+            <li><a href="#">...</a>
+            </li>
           </ul>
           <a href="#" class="pagination-big-button gradient-button">Следующая</a>
-        </div> <!-- end of pagination -->
-      </div> <!-- end of content -->
+        </div>
+        <!-- end of pagination -->
+      </div>
+      <!-- end of content -->
       <aside class="common-aside">
         <div class="aside-nav">
           <h3>Навигация</h3>
           <ul class="home-aside-nav">
-            <li><a href="profile.html">Моя страница</a></li>
-            <li><a href="#">Мои публикации</a></li>
-            <li><a href="#">Мои навыки</a></li>
-            <li><a href="#">Мои сообщества</a></li>
-            <li><a href="#">Диалоги</a></li>
-            <li><a href="#upload-modal">Добавить работу</a></li>
-            <li><a href="#">Настройки</a></li>
-            <li><a href="#">Выйти</a></li>
+            <li><a href="profile.html">Моя страница</a>
+            </li>
+            <li><a href="#">Мои публикации</a>
+            </li>
+            <li><a href="#">Мои навыки</a>
+            </li>
+            <li><a href="#">Мои сообщества</a>
+            </li>
+            <li><a href="#">Диалоги</a>
+            </li>
+            <li><a href="#upload-modal">Добавить работу</a>
+            </li>
+            <li><a href="#">Настройки</a>
+            </li>
+            <li><a href="#">Выйти</a>
+            </li>
           </ul>
         </div>
         <div class="aside-activity">
           <h3>Активность</h3>
           <ul class="aside-activ">
-            <li><a href="#">weapon outfitters</a></li>
-            <li><a href="#"><img src="upload/user-activity-01.png" alt="">deflix:</a></li>
-            <li class="activity-comment"><a href="#">Достойная работа, очень понравился сайт, особенно форма поиска</a></li>
+            <li><a href="#">weapon outfitters</a>
+            </li>
+            <li>
+              <a href="#"><img src="upload/user-activity-01.png" alt="">deflix:</a>
+            </li>
+            <li class="activity-comment"><a href="#">Достойная работа, очень понравился сайт, особенно форма поиска</a>
+            </li>
           </ul>
           <ul class="aside-activ">
-            <li><a href="#">Система уведомлений</a></li>
-            <li><a href="#"><img src="upload/user-activity-02.png" alt="">webtheory:</a></li>
-            <li class="activity-comment"><a href="#">Выглядит достаточно удобно, так держать! <br> Как будет сайт - скиньте ссылку ;)</a></li>
+            <li><a href="#">Система уведомлений</a>
+            </li>
+            <li>
+              <a href="#"><img src="upload/user-activity-02.png" alt="">webtheory:</a>
+            </li>
+            <li class="activity-comment"><a href="#">Выглядит достаточно удобно, так держать! <br> Как будет сайт - скиньте ссылку ;)</a>
+            </li>
           </ul>
           <ul class="aside-activ">
-            <li><a href="#" class="after">Как сделать, чтобы шрифты на...</a></li>
-            <li><a href="#"><img src="upload/user-activity-03.png" alt="">desmoond</a></li>
-            <li><a href="#"><img src="upload/user-activity-04.png" alt="">jedmiry</a></li>
-            <li><a href="#"><img src="upload/user-activity-05.png" alt="">smeet</a></li>
+            <li><a href="#" class="after">Как сделать, чтобы шрифты на...</a>
+            </li>
+            <li>
+              <a href="#"><img src="upload/user-activity-03.png" alt="">desmoond</a>
+            </li>
+            <li>
+              <a href="#"><img src="upload/user-activity-04.png" alt="">jedmiry</a>
+            </li>
+            <li>
+              <a href="#"><img src="upload/user-activity-05.png" alt="">smeet</a>
+            </li>
           </ul>
         </div>
         <div class="aside-help">
@@ -406,33 +519,48 @@
         <div class="aside-follow">
           <h3>Мы в соц.сетях</h3>
           <ul>
-            <li class="Vk"><a href="#">Вконтакте</a></li>
-            <li class="Fc"><a href="#">Facebook</a></li>
-            <li class="Gg"><a href="#">Google+</a></li>
-            <li class="Yt"><a href="#">YouTube</a></li>
-            <li class="Tw"><a href="#">Twitter</a></li>
+            <li class="Vk"><a href="#">Вконтакте</a>
+            </li>
+            <li class="Fc"><a href="#">Facebook</a>
+            </li>
+            <li class="Gg"><a href="#">Google+</a>
+            </li>
+            <li class="Yt"><a href="#">YouTube</a>
+            </li>
+            <li class="Tw"><a href="#">Twitter</a>
+            </li>
           </ul>
         </div>
         <footer class="aside-footer">
           <a href="#">webtheory.net © 2014</a>
           <ul>
-            <li><a href="#">Правила</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Правила</a>
+            </li>
+            <li><a href="#">О нас</a>
+            </li>
+            <li><a href="#">Контакты</a>
+            </li>
           </ul>
         </footer>
       </aside>
-    </div> <!-- end of page wrapper -->
-  </div> <!-- end of page -->
-  <div id="upload-modal" class="modal-window"> <!-- upload-modal -->
+    </div>
+    <!-- end of page wrapper -->
+  </div>
+  <!-- end of page -->
+  <div id="upload-modal" class="modal-window">
+    <!-- upload-modal -->
     <div>
       <h3>Что добавляем?</h3>
       <ul class="upload-modal-links clearfix">
-        <li><a href="article-add.html" class="article-add-modal-link">Статью</a></li>
-        <li><a href="graphics-add.html" class="graphic-add-modal-link">Графику</a></li>
+        <li><a href="article-add.html" class="article-add-modal-link">Статью</a>
+        </li>
+        <li><a href="graphics-add.html" class="graphic-add-modal-link">Графику</a>
+        </li>
       </ul>
       <a href="#close-modal" class="close-modal-button"></a>
     </div>
-  </div> <!-- end of upload modal -->
+  </div>
+  <!-- end of upload modal -->
 </body>
+
 </html>
