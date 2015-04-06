@@ -3367,18 +3367,17 @@ code {
   display: block;
   width: 100px;
   height: 100px;
-  background: url('../img/sailorkoto-temp-sprite.png');
   position: absolute;
   top: 8px;
   left: 8px;
 }
 
 .article-add-modal-link:after {
-  background-position: -177px 0px !important;
+  background: url('../img/add-article-icon.png');
 }
 
 .graphic-add-modal-link:after {
-  background-position: -277px 0px !important;
+  background: url('../img/add-graphics-icon.png');
 }
 /*----------
 GRAPHICS-FULL
