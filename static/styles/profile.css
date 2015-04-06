@@ -970,7 +970,7 @@
   margin-bottom: 15px;
 }
 
-.articles-title, .graphics-title {
+.profile-articles-title, .graphics-title {
   line-height: 45px;
   font-size: 17px;
   text-transform: uppercase;
@@ -982,7 +982,7 @@
   box-shadow: inset 0px -1px 0px 0px rgba(227,227,227,1);
 }
 
-.articles-title a, .graphics-title a {
+.profile-articles-title a, .graphics-title a {
   display: block;
   float: right;
   font-size: 13px;
@@ -992,13 +992,13 @@
   font-weight: normal;
 }
 
-.articles-title span, .graphics-title span {
+.profile-articles-title span, .graphics-title span {
   display: block;
   float: left;
   position: relative;
 }
 
-.articles-title span:after, .graphics-title span:after {
+.profile-articles-title span:after, .graphics-title span:after {
   content: attr(data-publications-counter);
   position: absolute;
   height: 20px;
@@ -1015,7 +1015,7 @@
 
 /*********article name***********/
 
-.article-name h2 {
+.profile-article-name h2 {
   line-height: 50px;
   font-size: 18px;
   color: #000;
@@ -1024,15 +1024,15 @@
 
 /******article Stats*******/
 
-.article-info {
+.profile-article-info {
   margin-bottom: 25px;
 }
 
-.article-info ul{
+.profile-article-info ul{
   list-style: none;
 }
 
-.article-info li, .article-info a {
+.profile-article-info li, .profile-article-info a {
   display: block;
   float: left;
   color: #828282;
@@ -1040,17 +1040,17 @@
   letter-spacing: -.1px;
 }
 
-.article-info a:hover {
+.profile-article-info a:hover {
   text-decoration: underline;
 }
 
-.article-info li {
+.profile-article-info li {
   margin-right: 25px;
 }
 
 /******************article stats icons****************/
 
-.article-info li:before {
+.profile-article-info li:before {
   display: block;
   float: left;
   content: "";
@@ -1061,36 +1061,36 @@
   margin-top: 2px;
 }
 
-.article-author:before {
+.profile-article-author:before {
   background: url(../img/temp_icons/publication-user-icon.png) !important;
   width: 10px !important;
 }
 
-.article-date:before {
+.profile-article-date:before {
   background: url(../img/temp_icons/publication-clock-icon.png) !important;
   width: 10px !important;
 }
 
 /****************article text************************/
 
-.article-text p{
+.profile-article-text p{
   font-family: OpenSans, sans-serif;
   font-size: 13px;
   color: #666;
   margin-bottom: 30px;
 }
 
-.article-text p:last-child {
+.profile-article-text p:last-child {
   margin-bottom: 25px;
 }
 
 /******************Article bottom bar**********************/
 
-.read-more-button {
+.profile-read-more-button {
   float: left;
 }
 
-.read-more-button a {
+.profile-read-more-button a {
   line-height: 35px;
   background: #74aded;
   border-radius: 2px;
@@ -1101,17 +1101,17 @@
   padding: 0 15px;
 }
 
-.read-more-button a:hover {
+.profile-read-more-button a:hover {
   background: #5381b5;
 }
 
-.article-bottom-bar ul {
+.profile-article-bottom-bar ul {
   margin-left: 10px;
   float: left;
   list-style: none;
 }
 
-.article-bottom-bar li, .article-bottom-bar ul a {
+.profile-article-bottom-bar li, .profile-article-bottom-bar ul a {
   float: left;
   font-size: 13px;
   color: #bebebe;
@@ -1120,7 +1120,7 @@
 
 /******************Article bottom bar icons**********************/
 
-.article-bottom-bar li:before {
+.profile-article-bottom-bar li:before {
   display: block;
   float: left;
   content: "";
@@ -1132,18 +1132,18 @@
   margin-top: 11px;
 }
 
-.article-bottom-bar li:last-child::before {
+.profile-article-bottom-bar li:last-child::before {
   display: none;
 }
 
-.article-comments-counter:before {
+.profile-article-comments-counter:before {
   background: url(../img/temp_icons/publication-comments-icon.png) !important;
   width: 15px !important;
   height: 13px !important;
   margin-top: 10px;
 }
 
-.article-likes-counter a:before {
+.profile-article-likes-counter a:before {
   display: block;
   float: left;
   content: "";
@@ -1155,7 +1155,7 @@
   margin-top: 10px;
 }
 
-.article-likes-counter a:hover:before {
+.profile-article-likes-counter a:hover:before {
   background: url(../img/temp_icons/publication-likes-icon-hover.png);
 }
 
