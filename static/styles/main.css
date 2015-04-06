@@ -996,7 +996,7 @@ code {
 .graphics-likes:before {
   width: 15px;
   height: 13px;
-  background: url('../img/sailorkoto-temp-sprite.png') 0 0;
+  background: url('../img/spritesheet.png') -33px -93px;
 }
 
 .graphics-views {
@@ -1006,7 +1006,7 @@ code {
 .graphics-views:before {
   width: 19px;
   height: 13px;
-  background: url('../img/sailorkoto-temp-sprite.png') -15px 0;
+  background: url('../img/spritesheet.png') -200px -40px;
 }
 
 .graphics-comments {
@@ -1016,7 +1016,7 @@ code {
 .graphics-comments:before {
   width: 15px;
   height: 13px;
-  background: url('../img/sailorkoto-temp-sprite.png') -34px 0;
+  background: url('../img/spritesheet.png') -136px -80px;
 }
 /* GRAPHICS AUTHOR */
 
@@ -1274,7 +1274,7 @@ code {
   content: '';
   width: 16px;
   height: 16px;
-  background: url('../img/sailorkoto-temp-sprite.png');
+  background: url('../img/spritesheet.png');
   position: absolute;
   top: 17px;
   right: 15px;
@@ -1283,12 +1283,12 @@ code {
 
 .upload-name-icon:after {
   display: block;
-  background-position: 0 -13px;
+  background-position: -80px -93px;
 }
 
 .upload-tags-icon:after {
   display: block;
-  background-position: -16px -13px;
+  background-position: -96px -93px;
 }
 /* DROPDOWN MENU INPUTS */
 
@@ -1378,7 +1378,7 @@ code {
   display: block;
   width: 111px;
   height: 95px;
-  background: url('../img/sailorkoto-temp-sprite.png') 0 -29px;
+  background: url('../img/drag-n-drop-bg-img.png');
   position: absolute;
   top: 10px;
   left: 60px;
@@ -1473,7 +1473,7 @@ code {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: url('../img/sailorkoto-temp-sprite.png') -32px -13px;
+  background: url('../img/spritesheet.png') -165px -20px;
   top: 4px;
   left: 4px;
 }
@@ -1482,9 +1482,9 @@ code {
   content: '';
   display: block;
   position: absolute;
-  width: 8px;
+  width: 7px;
   height: 10px;
-  background: url('../img/sailorkoto-temp-sprite.png') -42px -13px;
+  background: url('../img/spritesheet.png') -168px -58px;
   top: 4px;
   left: 5px;
 }
@@ -1495,7 +1495,7 @@ code {
   position: absolute;
   width: 14px;
   height: 10px;
-  background: url('../img/sailorkoto-temp-sprite.png') -50px -13px;
+  background: url('../img/spritesheet.png') -136px -93px;
   top: 4px;
   left: 2px;
 }
@@ -1506,7 +1506,7 @@ code {
   position: absolute;
   width: 10px;
   height: 13px;
-  background: url('../img/sailorkoto-temp-sprite.png') -64px -13px;
+  background: url('../img/spritesheet.png') -166px -80px;
   top: 4px;
   left: 4px;
 }
@@ -1517,7 +1517,7 @@ code {
   position: absolute;
   width: 13px;
   height: 13px;
-  background: url('../img/sailorkoto-temp-sprite.png') -177px -102px;
+  background: url('../img/spritesheet.png') -92px -120px;
   top: 3px;
   left: 2px;
 }
@@ -1528,7 +1528,7 @@ code {
   position: absolute;
   width: 13px;
   height: 14px;
-  background: url('../img/sailorkoto-temp-sprite.png') -190px -102px;
+  background: url('../img/spritesheet.png') -162px -120px;
   top: 3px;
   left: 2px;
 }
@@ -1539,7 +1539,7 @@ code {
   position: absolute;
   width: 14px;
   height: 8px;
-  background: url('../img/sailorkoto-temp-sprite.png') -203px -102px;
+  background: url('../img/spritesheet.png') -18px -134px;
   top: 5px;
   left: 2px;
 }
@@ -1550,7 +1550,7 @@ code {
   position: absolute;
   width: 14px;
   height: 8px;
-  background: url('../img/sailorkoto-temp-sprite.png') -203px -110px;
+  background: url('../img/spritesheet.png') -119px -134px;
   top: 5px;
   left: 2px;
 }
@@ -1561,7 +1561,7 @@ code {
   position: absolute;
   width: 14px;
   height: 8px;
-  background: url('../img/sailorkoto-temp-sprite.png') -217px -102px;
+  background: url('../img/spritesheet.png') -32px -134px;
   top: 5px;
   left: 2px;
 }
@@ -1572,7 +1572,7 @@ code {
   position: absolute;
   width: 15px;
   height: 13px;
-  background: url('../img/sailorkoto-temp-sprite.png') -74px -13px;
+  background: url('../img/spritesheet.png') -150px -93px;
   top: 4px;
   left: 2px;
 }
@@ -1583,7 +1583,7 @@ code {
   position: absolute;
   width: 14px;
   height: 14px;
-  background: url('../img/sailorkoto-temp-sprite.png') -217px -110px;
+  background: url('../img/spritesheet.png') -133px -134px;
   top: 3px;
   left: 2px;
 }
@@ -1594,7 +1594,7 @@ code {
   position: absolute;
   width: 14px;
   height: 14px;
-  background: url('../img/sailorkoto-temp-sprite.png') -231px -102px;
+  background: url('../img/spritesheet.png') -46px -134px;
   top: 3px;
   left: 2px;
 }
@@ -1605,7 +1605,7 @@ code {
   position: absolute;
   width: 14px;
   height: 11px;
-  background: url('../img/sailorkoto-temp-sprite.png') -231px -116px;
+  background: url('../img/spritesheet.png') -147px -134px;
   top: 3px;
   left: 2px;
 }
@@ -1616,7 +1616,7 @@ code {
   position: absolute;
   width: 12px;
   height: 16px;
-  background: url('../img/sailorkoto-temp-sprite.png') -245px -102px;
+  background: url('../img/spritesheet.png') -60px -134px;
   top: 2px;
   left: 2px;
 }
@@ -1714,7 +1714,7 @@ code {
 .graphics-public:before {
   width: 16px;
   height: 12px;
-  background: url('../img/sailorkoto-temp-sprite.png') -49px 0;
+  background: url('../img/spritesheet.png') -48px -93px;
   top: 15px;
   left: 11px;
 }
@@ -1722,7 +1722,7 @@ code {
 .graphics-preview:before {
   width: 16px;
   height: 10px;
-  background: url('../img/sailorkoto-temp-sprite.png') -65px 0;
+  background: url('../img/spritesheet.png') -64px -93px;
   top: 16px;
   left: 13px;
 }
@@ -1749,7 +1749,7 @@ code {
   display: block;
   width: 10px;
   height: 10px;
-  background: url('../img/sailorkoto-temp-sprite.png') -81px 0;
+  background: url('../img/spritesheet.png') -114px -20px;
   position: absolute;
   top: 3px;
   left: 3px;
@@ -1851,7 +1851,7 @@ code {
   display: block;
   width: 66px;
   height: 66px;
-  background: url('../img/sailorkoto-temp-sprite.png') -111px 0px;
+  background: url('../img/play-video-img.png');
   position: absolute;
   top: 41px;
   left: 84px;
@@ -1927,14 +1927,14 @@ code {
   content: '';
   display: block;
   height: 12px;
-  background: url('../img/sailorkoto-temp-sprite.png');
+  background: url('../img/spritesheet.png');
   position: absolute;
   top: 5px;
   left: 0;
 }
 
-.edit-article-icon:after   { width: 12px; background-position: -281px -102px; }
-.remove-article-icon:after { width:  9px; background-position: -293px -102px; }
+.edit-article-icon:after   { width: 12px; background-position: -164px -93px; }
+.remove-article-icon:after { width:  9px; background-position: -96px -134px; }
 
 .article-header-icon-link:hover {
   color: #5376a1;
@@ -2044,7 +2044,7 @@ code {
   display: block;
   width: 24px;
   height: 28px;
-  background: url('../img/sailorkoto-temp-sprite.png') -257px -102px;
+  background: url('../img/spritesheet.png') -72px -134px;
   position: absolute;
   top: -5px;
   left: 0;
@@ -2084,6 +2084,8 @@ code {
   height: 40px;
   line-height: 40px;
   margin-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .article-likes-container {
@@ -2135,26 +2137,26 @@ code {
   display: block;
   width: 14px;
   height: 16px;
-  background: url('../img/sailorkoto-temp-sprite.png');
+  background: url('../img/spritesheet.png');
   position: absolute;
   top: 11px;
   left: 14px;
 }
 
 .article-like-button:after {
-  background-position: -147px -66px;
+  background-position: -36px -106px;
 }
 
 .article-dislike-button:after {
-  background-position: -161px -66px;
+  background-position: -50px -106px;
 }
 
 .article-like-button:hover:after {
-  background-position: -147px -82px;
+  background-position: -64px -106px;
 }
 
 .article-dislike-button:hover:after {
-  background-position: -161px -82px;
+  background-position: -112px -106px;
 }
 
 .article-views,
@@ -2175,13 +2177,13 @@ code {
   content: '';
   display: block;
   position: absolute;
-  background: url('../img/sailorkoto-temp-sprite.png');
+  background: url('../img/spritesheet.png');
 }
 
 .article-views:after {
   width: 18px;
   height: 12px;
-  background-position: -147px -98px;
+  background-position: 0 -124px;
   top: 13px;
   left: 0;
 }
@@ -2189,7 +2191,7 @@ code {
 .article-comments:after {
   width: 14px;
   height: 11px;
-  background-position: -147px -110px;
+  background-position: -105px -134px;
   top: 12px;
   left: 0;
 }
@@ -2224,7 +2226,7 @@ code {
   display: block;
   width: 24px;
   height: 24px;
-  background: url('../img/sailorkoto-temp-sprite.png');
+  background: url('../img/spritesheet.png');
   position: absolute;
   top: 0;
   left: 0;
@@ -2247,19 +2249,19 @@ code {
 }
 
 .vkontakte-big-button:after {
-  background-position: 0px -124px;
+  background-position: 0px -145px;
 }
 
 .facebook-big-button:after {
-  background-position: -24px -124px;
+  background-position: -105px -145px;
 }
 
 .twitter-big-button:after {
-  background-position: -48px -124px;
+  background-position: -147px -145px;
 }
 
 .google-big-button:after {
-  background-position: -72px -124px;
+  background-position: -176px 0;
 }
 
 .empty-share-button {
@@ -2660,7 +2662,7 @@ code {
   display: block;
   width: 12px;
   height: 11px;
-  background: url('../img/sailorkoto-temp-sprite.png') -91px 0px;
+  background: url('../img/spritesheet.png') -162px -47px;
   position: absolute;
   top: 2px;
   right: 0;
@@ -3024,19 +3026,19 @@ code {
 }
 
 .vkontakte-button:before {
-  background: url('../img/sailorkoto-temp-sprite.png') -111px -66px;
+  background: url('../img/spritesheet.png') 0 -106px;
 }
 
 .facebook-button:before {
-  background: url('../img/sailorkoto-temp-sprite.png') -129px -66px;
+  background: url('../img/spritesheet.png') -18px -106px;
 }
 
 .twitter-button:before {
-  background: url('../img/sailorkoto-temp-sprite.png') -111px -84px;
+  background: url('../img/spritesheet.png') -126px -106px;
 }
 
 .google-button:before {
-  background: url('../img/sailorkoto-temp-sprite.png') -129px -84px;
+  background: url('../img/spritesheet.png') -144px -106px;
 }
 
 .lesson-share-options span {
@@ -3311,14 +3313,14 @@ code {
   display: block;
   width: 14px;
   height: 14px;
-  background: url('../img/sailorkoto-temp-sprite.png') -111px -102px;
+  background: url('../img/spritesheet.png') -162px -106px;
   position: absolute;
   top: 5px;
   left: 5px;
 }
 
 .close-modal-button:hover:after {
-  background: url('../img/sailorkoto-temp-sprite.png') -125px -102px;
+  background: url('../img/spritesheet.png') -78px -120px;
 }
 
 .modal-window > div h3 {
