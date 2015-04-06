@@ -199,8 +199,10 @@ code {
 .logo {
   display: block;
   float: left;
-  padding-top: 18px;
-  height: 100%;
+  margin-top: 18px;
+  width: 114px;
+  height: 24px;
+  background: url(../img/spritesheet.png) 0 -26px;
 }
 /*Top-site-menu*/
 
