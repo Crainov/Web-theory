@@ -970,7 +970,7 @@
   margin-bottom: 15px;
 }
 
-.articles-title, .graphics-title {
+.profile-articles-title, .graphics-title {
   line-height: 45px;
   font-size: 17px;
   text-transform: uppercase;
@@ -982,7 +982,7 @@
   box-shadow: inset 0px -1px 0px 0px rgba(227,227,227,1);
 }
 
-.articles-title a, .graphics-title a {
+.profile-articles-title a, .graphics-title a {
   display: block;
   float: right;
   font-size: 13px;
@@ -992,13 +992,13 @@
   font-weight: normal;
 }
 
-.articles-title span, .graphics-title span {
+.profile-articles-title span, .graphics-title span {
   display: block;
   float: left;
   position: relative;
 }
 
-.articles-title span:after, .graphics-title span:after {
+.profile-articles-title span:after, .graphics-title span:after {
   content: attr(data-publications-counter);
   position: absolute;
   height: 20px;
@@ -1015,7 +1015,7 @@
 
 /*********article name***********/
 
-.article-name h2 {
+.profile-article-name h2 {
   line-height: 50px;
   font-size: 18px;
   color: #000;
@@ -1024,15 +1024,15 @@
 
 /******article Stats*******/
 
-.article-info {
+.profile-article-info {
   margin-bottom: 25px;
 }
 
-.article-info ul{
+.profile-article-info ul{
   list-style: none;
 }
 
-.article-info li, .article-info a {
+.profile-article-info li, .profile-article-info a {
   display: block;
   float: left;
   color: #828282;
@@ -1040,17 +1040,17 @@
   letter-spacing: -.1px;
 }
 
-.article-info a:hover {
+.profile-article-info a:hover {
   text-decoration: underline;
 }
 
-.article-info li {
+.profile-article-info li {
   margin-right: 25px;
 }
 
 /******************article stats icons****************/
 
-.article-info li:before {
+.profile-article-info li:before {
   display: block;
   float: left;
   content: "";
@@ -1061,36 +1061,36 @@
   margin-top: 2px;
 }
 
-.article-author:before {
+.profile-article-author:before {
   background: url(../img/temp_icons/publication-user-icon.png) !important;
   width: 10px !important;
 }
 
-.article-date:before {
+.profile-article-date:before {
   background: url(../img/temp_icons/publication-clock-icon.png) !important;
   width: 10px !important;
 }
 
 /****************article text************************/
 
-.article-text p{
+.profile-article-text p{
   font-family: OpenSans, sans-serif;
   font-size: 13px;
   color: #666;
   margin-bottom: 30px;
 }
 
-.article-text p:last-child {
+.profile-article-text p:last-child {
   margin-bottom: 25px;
 }
 
 /******************Article bottom bar**********************/
 
-.read-more-button {
+.profile-read-more-button {
   float: left;
 }
 
-.read-more-button a {
+.profile-read-more-button a {
   line-height: 35px;
   background: #74aded;
   border-radius: 2px;
@@ -1101,17 +1101,17 @@
   padding: 0 15px;
 }
 
-.read-more-button a:hover {
+.profile-read-more-button a:hover {
   background: #5381b5;
 }
 
-.article-bottom-bar ul {
+.profile-article-bottom-bar ul {
   margin-left: 10px;
   float: left;
   list-style: none;
 }
 
-.article-bottom-bar li, .article-bottom-bar ul a {
+.profile-article-bottom-bar li, .profile-article-bottom-bar ul a {
   float: left;
   font-size: 13px;
   color: #bebebe;
@@ -1120,7 +1120,7 @@
 
 /******************Article bottom bar icons**********************/
 
-.article-bottom-bar li:before {
+.profile-article-bottom-bar li:before {
   display: block;
   float: left;
   content: "";
@@ -1132,18 +1132,18 @@
   margin-top: 11px;
 }
 
-.article-bottom-bar li:last-child::before {
+.profile-article-bottom-bar li:last-child::before {
   display: none;
 }
 
-.article-comments-counter:before {
+.profile-article-comments-counter:before {
   background: url(../img/temp_icons/publication-comments-icon.png) !important;
   width: 15px !important;
   height: 13px !important;
   margin-top: 10px;
 }
 
-.article-likes-counter a:before {
+.profile-article-likes-counter a:before {
   display: block;
   float: left;
   content: "";
@@ -1155,7 +1155,7 @@
   margin-top: 10px;
 }
 
-.article-likes-counter a:hover:before {
+.profile-article-likes-counter a:hover:before {
   background: url(../img/temp_icons/publication-likes-icon-hover.png);
 }
 
@@ -1277,4 +1277,472 @@
   font-size: 11px;
   color: #929292;
   margin-top: 5px !important;
+}
+
+/*========================================================*/
+/***********Profile Modal Box Area*********************************/
+/*========================================================*/
+
+.modal-box  {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  text-align: center;
+  display: block;
+  background-color: rgba(30,44,76,.85);
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  transition: opacity .2s ease-in;
+}
+
+.modal-box:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  display: inline-block;
+  padding: 25px 28px 20px 28px;
+  border-radius: 3px;
+  text-align: left;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.modal-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #4f7ab4, #3b66a1);
+  background: -webkit-linear-gradient(to bottom, #4f7ab4, #3b66a1);
+  background: -moz-linear-gradient(to bottom, #4f7ab4, #3b66a1);
+  border-radius: 3px;
+  font-size: 13px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.modal-close {
+  display: block;
+  float: right;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: url(../img/temp_icons/modal-close-btn.png) !important;
+  width: 14px;
+  height: 14px;
+  margin-top: 5px !important;
+}
+
+.modal-box:target .modal-content {
+  -webkit-transition: .4s ease-in-out; 
+  -moz-transition: .4s ease-in-out; 
+  -o-transition: .4s ease-in-out; 
+  transition: .4s ease-in-out;
+}
+
+/************Success action modal********************************/
+
+.success-modal {
+  padding: 15px;
+  background: #5693d7;
+}
+
+.success-modal h1 {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+  font-weight: normal;
+}
+
+.success-modal h1:after {
+  content: "";
+  background: url(../img/temp_icons/upload-photo-check.png);
+  width: 10px;
+  height: 8px;
+  display: block;
+  float: right;
+  margin-left: 260px;
+  margin-top: 3px;
+}
+
+.modal-box:target .success-modal {
+  transform: translate(0,550%);
+  -webkit-transform: translate(0,550%); 
+  -o-transform: translate(0,550%);
+  -moz-transform: translate(0,550%);
+}
+
+/***********Send Message modal*************************/
+
+.send-message-modal {
+  width: 520px;
+}
+
+.send-message-user-modal img {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+.username-modal {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  float: left;
+}
+
+.user-last-visit-modal {
+  font-size: 11px;
+  color: #919191;
+  font-weight: normal;
+  margin-left: 120px;
+}
+
+.user-modal-specialization {
+  display: block;
+  font-size: 13px;
+  color: #919191;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.send-message-area {
+  border: 1px solid #d7d7d7;
+  resize: none;
+  outline: none;
+  -webkit-box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.2);
+  padding: 3px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #707070;
+}
+
+.send-message-modal-box input {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+  border: 0;
+  outline: none;
+  font-size: 13px;
+  color: #fff;
+  background: linear-gradient(to bottom, #4f7ab4, #3b66a1);
+  background: -webkit-linear-gradient(to bottom, #4f7ab4, #3b66a1);
+  background: -moz-linear-gradient(to bottom, #4f7ab4, #3b66a1);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 15px;
+  position: relative;
+}
+
+.send-message-modal-box input:hover {
+  background: #5a8bcc;
+  -webkit-box-shadow: inset 0px -2px 0px 0px rgba(62,104,159,1);
+  -moz-box-shadow: inset 0px -2px 0px 0px rgba(62,104,159,1);
+  box-shadow: inset 0px -2px 0px 0px rgba(62,104,159,1);
+}
+
+.send-message-modal-box span {
+  margin-top: 22px;
+  display: block;
+  float: right;
+  color: #919191;
+  font-size: 13px;
+}
+
+.modal-box:target .send-message-modal {
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%); 
+  -o-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+}
+
+/**************Send message error modal*************************/
+
+.error-send-message-modal {
+  display: block;
+  padding: 15px;
+  background: #d7565f;
+  width: 520px;
+  margin: 0 auto;
+  padding-right: 30px;
+}
+
+.error-send-message-modal a {
+  margin: 0;
+  padding: 0;
+  background: url(../img/temp_icons/close-modal-error.png) !important;
+  height: 10px;
+  width: 10px;
+  margin-top: 8px !important;
+}
+
+.error-send-message-modal h1 {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+  font-weight: normal;
+}
+
+.modal-box:target .error-send-message-modal {
+  transform: translate(0,150%);
+  -webkit-transform: translate(0,150%); 
+  -o-transform: translate(0,150%);
+  -moz-transform: translate(0,150%);
+}
+
+/******************Unsubscribe modal*********************/
+
+.modal-cancel:hover {
+  background: #99a5b5;
+}
+
+.modal-unsubscribe:hover {
+  background: #4a7bba;
+}
+
+.modal-content h1 {
+  display: inline-block;
+  font-family: OpenSans, sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.modal-content p {
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 15px;
+  margin-right: 100px;
+}
+
+.modal-box:target .unsubscribe-modal {
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%); 
+  -o-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+}
+
+/*****************Liked users modal************************/
+
+.liked-user-row {
+  margin-bottom: 15px;
+}
+
+.liked-user-row a {
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #666;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.liked-user-row img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-box:target .liked-users-modal {
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%); 
+  -o-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+}
+
+/*****************Upload avatar***********************/
+
+.upload-avatar-modal p {
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.drop-avatar-zone {
+  margin-top: 25px;
+  background: #f5f7f9;
+  border: 2px dashed #d9e0e9;
+}
+
+.drop-avatar-zone-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #c3c8cc;
+  position: relative;
+}
+
+.drop-avatar-zone-container:before {
+  display: block;
+  content: '';
+  width: 111px;
+  height: 95px;
+  margin: 30px auto;
+  margin-bottom: 25px;
+  background: url('../img/sailorkoto-temp-sprite.png') 0 -29px;
+}
+
+.drop-avatar-zone-container p {
+  color: #93a4b5;
+  margin-bottom: 20px;
+}
+
+.avatar-upload-button input[type='file'] {
+  position: fixed;
+  top: -999px;
+}
+
+.avatar-upload-button {
+  display: block;
+  width: 230px;
+  height: 43px;
+  border-radius: 2px 2px 0 0;
+  background: #4e79b3;
+  text-align: center;
+  color: #fff;
+  padding-top: 14px;
+  font-size: 13px;
+  cursor: pointer;
+  position: relative;
+  margin: 25px auto;
+  margin-top: 20px;
+}
+
+.avatar-upload-button:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background: #3e689f;
+  width: 230px;
+  height: 2px;
+  border-radius: 0 0 3px 3px;
+}
+
+.avatar-upload-button:hover {
+  background: #5a8bcc;
+}
+
+.avatar-upload-button:active {
+  bottom: 0;
+  border-radius: 2px;
+}
+
+.avatar-upload-button:active:after {
+  display: none;
+}
+
+.modal-box:target .upload-avatar-modal {
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%); 
+  -o-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+}
+
+/***************Error upload avatar***********************/
+
+.error-upload-modal {
+  display: block;
+  padding: 15px;
+  background: #d7565f;
+  width: 557px;
+  margin: 0 auto;
+  padding-right: 30px;
+}
+
+.error-upload-modal a {
+  margin: 0;
+  padding: 0;
+  background: url(../img/temp_icons/close-modal-error.png) !important;
+  height: 10px;
+  width: 10px;
+  margin-top: 8px !important;
+}
+
+.error-upload-modal h1 {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+  font-weight: normal;
+}
+
+.modal-box:target .error-upload-modal {
+  transform: translate(0,200%);
+  -webkit-transform: translate(0,200%); 
+  -o-transform: translate(0,200%);
+  -moz-transform: translate(0,200%);
+}
+
+/*========================================================*/
+/***********profile-banned.html*********************************/
+/*========================================================*/
+
+.user-banned {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: OpenSans, sans-serif;
+}
+
+.ooops {
+  font-size: 48px;
+  color: #4978cd;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.user-banned p {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #666;
+}
+
+.username-banned {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+}
+
+.user-banned ul {
+  list-style: none;
+  text-align: center;
+}
+
+.user-banned a {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 15px;
+  font-size: 13px;
+  color: #707070;
+  border-radius: 3px;
+  border: 1px solid #d4d4d4;
+  background: rgba(0,0,0,0);
+}
+
+.user-banned a:hover {
+  background: linear-gradient(to top, #f2f2f2, #f9f9f9);
+  background: -webkit-linear-gradient(to top, #f2f2f2, #f9f9f9);
+  background: -moz-linear-gradient(to top, #f2f2f2, #f9f9f9);
 }
