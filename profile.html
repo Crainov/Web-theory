@@ -67,7 +67,7 @@
         <!--end user main info-->
         <!--send mail, subscribe/unsubscribe-->
         <div class="profile-send-message-button">
-          <a href="#">Отправить сообщение</a>
+          <a href="#send-message">Отправить сообщение</a>
         </div>
         <div class="profile-unsubscribe-button">
           <a href="#unsubscribe">Отписаться</a>
@@ -235,7 +235,7 @@
             <form>
               <div class="message-text-form">
                 <input type="text" name="text-of-the-message" placeholder="Написать сообщение">
-                <input id="upload-message" type="file" name="upload-file-to-post">
+                <input id="upload" type="file" name="upload-file-to-post">
               </div>
               <div class="add-post-active">
                 Для публикации можно нажать Shift+Enter
@@ -384,7 +384,37 @@
     </div>
   </div><!--End Profile page-->
   <!--Modal Area-->
-  <div class="modal-box" id="unsubscribe">
+  <div class="modal-box" id="send-message"><!--Send message modal-->
+    <div class="modal-content send-message-modal clerfix">
+      <h1>Отправить сообщение</h1>
+      <a class="modal-close" href="#close-modal"></a>
+      <div class="send-message-user-modal clerfix">
+        <img class="clearfix" src="upload/user-post-thumb1.jpg" alt="user-thumb">
+        <div class="username-modal clearfix">
+          <span>Артемка Аллаяров</span>
+          <span class="user-last-visit-modal">Был в сети <span>15</span> минут назад</span>
+          <span class="user-modal-specialization">Веб-дизайнер</span>
+        </div>
+      </div>
+      <form class="send-message-modal-box">
+          <textarea class="send-message-area" cols="63" rows="12"></textarea>
+          <input type="button" value="Отправить" />
+          <span>shift+enter для отправки сообщения</span>
+      </form>
+     </div>
+  </div><!--Send message modal-->
+  <div class="modal-box"><!--Send message error modal-->
+    <div class="modal-content error-send-message-modal">
+      <h1>Ошибка: Текст сообщения не введен</h1>
+      <a class="modal-close" href="#close-modal"></a>
+    </div>
+  </div><!--End Send message error modal-->
+  <div class="modal-box"><!--Send message success modal-->
+    <div class="modal-content success-modal">
+      <h1>Сообщение отправлено</h1>
+    </div>
+  </div><!--End Send message succes modal-->
+  <div class="modal-box" id="unsubscribe"><!--Usubscribe modal-->
     <div class="modal-content unsubscribe-modal">
       <h1>Подтверждение</h1>
       <a class="modal-close" href="#close-modal"></a>
@@ -392,8 +422,8 @@
       <a class="modal-unsubscribe" href="#unsbscribe">Отписаться</a>
       <a class="modal-cancel" href="#cancel">Отмена</a>
      </div>
-  </div>
-  <div class="modal-box" id="liked-users">
+  </div><!--End Usubscribe modal-->
+  <div class="modal-box" id="liked-users"><!--Post liked users modal-->
     <div class="modal-content liked-users-modal">
       <h1>Оценили запись</h1>
       <a class="modal-close" href="#close-modal"></a>
@@ -412,12 +442,8 @@
         <a href="#"><img src="upload/liked-user-thumb10.jpg" alt="liked-user-thumb">romkaaa</a>
       </div>
      </div>
-  </div>
-  <div class="modal-box" id="upload-new-avatar">
-    <div class="modal-content error-upload-modal">
-      <h1>Ошибка: Неверный формат фотографии</h1>
-      <a class="modal-close" href="#close-modal"></a>
-    </div>
+  </div><!--End Post liked users modal-->
+  <div class="modal-box" id="upload-new-avatar"><!--Upload avatar modal-->
     <div class="modal-content upload-avatar-modal">
       <h1>Загрузка фотографии</h1>
       <a class="modal-close" href="#close-modal"></a>
@@ -434,12 +460,18 @@
         </div>
       </div>
     </div>
-  </div>
+  </div><!--End Upload avatar modal-->
   <div class="modal-box">
-    <div class="modal-content succes-upload-modal">
+    <div class="modal-content error-upload-modal"><!--Error Upload avatar modal-->
+      <h1>Ошибка: Неверный формат фотографии</h1>
+      <a class="modal-close" href="#close-modal"></a>
+    </div><!--End Error Upload avatar modal-->
+  </div>
+  <div class="modal-box"><!--Success Upload avatar modal-->
+    <div class="modal-content success-upload-modal">
       <h1>Фотография загружена успешно</h1>
     </div>
-  </div>
+  </div><!--End Success Upload avatar modal-->
   <!--Modal Area-->
 </body>
 </html>

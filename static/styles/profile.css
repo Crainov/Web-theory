@@ -1279,7 +1279,9 @@
   margin-top: 5px !important;
 }
 
-/*******************************************/
+/*========================================================*/
+/***********Profile Modal Box Area*********************************/
+/*========================================================*/
 
 .modal-box  {
   position: fixed;
@@ -1309,6 +1311,9 @@
   border-radius: 3px;
   text-align: left;
   background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
 }
 
 .modal-content a {
@@ -1333,6 +1338,171 @@
   height: 14px;
   margin-top: 5px !important;
 }
+
+.modal-box:target .modal-content {
+  -webkit-transition: .4s ease-in-out; 
+  -moz-transition: .4s ease-in-out; 
+  -o-transition: .4s ease-in-out; 
+  transition: .4s ease-in-out;
+}
+
+/************Success action modal********************************/
+
+.success-modal {
+  padding: 15px;
+  background: #5693d7;
+}
+
+.success-modal h1 {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+  font-weight: normal;
+}
+
+.success-modal h1:after {
+  content: "";
+  background: url(../img/temp_icons/upload-photo-check.png);
+  width: 10px;
+  height: 8px;
+  display: block;
+  float: right;
+  margin-left: 260px;
+  margin-top: 3px;
+}
+
+.modal-box:target .success-modal {
+  transform: translate(0,550%);
+  -webkit-transform: translate(0,550%); 
+  -o-transform: translate(0,550%);
+  -moz-transform: translate(0,550%);
+}
+
+/***********Send Message modal*************************/
+
+.send-message-modal {
+  width: 520px;
+}
+
+.send-message-user-modal img {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+.username-modal {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  float: left;
+}
+
+.user-last-visit-modal {
+  font-size: 11px;
+  color: #919191;
+  font-weight: normal;
+  margin-left: 120px;
+}
+
+.user-modal-specialization {
+  display: block;
+  font-size: 13px;
+  color: #919191;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.send-message-area {
+  border: 1px solid #d7d7d7;
+  resize: none;
+  outline: none;
+  -webkit-box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.2);
+  padding: 3px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #707070;
+}
+
+.send-message-modal-box input {
+  display: block;
+  float: left;
+  padding: 10px 20px;
+  border: 0;
+  outline: none;
+  font-size: 13px;
+  color: #fff;
+  background: linear-gradient(to bottom, #4f7ab4, #3b66a1);
+  background: -webkit-linear-gradient(to bottom, #4f7ab4, #3b66a1);
+  background: -moz-linear-gradient(to bottom, #4f7ab4, #3b66a1);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 15px;
+  position: relative;
+}
+
+.send-message-modal-box input:hover {
+  background: #5a8bcc;
+  -webkit-box-shadow: inset 0px -2px 0px 0px rgba(62,104,159,1);
+  -moz-box-shadow: inset 0px -2px 0px 0px rgba(62,104,159,1);
+  box-shadow: inset 0px -2px 0px 0px rgba(62,104,159,1);
+}
+
+.send-message-modal-box span {
+  margin-top: 22px;
+  display: block;
+  float: right;
+  color: #919191;
+  font-size: 13px;
+}
+
+.modal-box:target .send-message-modal {
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%); 
+  -o-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+}
+
+/**************Send message error modal*************************/
+
+.error-send-message-modal {
+  display: block;
+  padding: 15px;
+  background: #d7565f;
+  width: 520px;
+  margin: 0 auto;
+  padding-right: 30px;
+}
+
+.error-send-message-modal a {
+  margin: 0;
+  padding: 0;
+  background: url(../img/temp_icons/close-modal-error.png) !important;
+  height: 10px;
+  width: 10px;
+  margin-top: 8px !important;
+}
+
+.error-send-message-modal h1 {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+  font-weight: normal;
+}
+
+.modal-box:target .error-send-message-modal {
+  transform: translate(0,150%);
+  -webkit-transform: translate(0,150%); 
+  -o-transform: translate(0,150%);
+  -moz-transform: translate(0,150%);
+}
+
+/******************Unsubscribe modal*********************/
 
 .modal-cancel:hover {
   background: #99a5b5;
@@ -1359,19 +1529,14 @@
   margin-right: 100px;
 }
 
-.modal-box:target .modal-content {
-  -webkit-transition: .4s ease-in-out; 
-  -moz-transition: .4s ease-in-out; 
-  -o-transition: .4s ease-in-out; 
-  transition: .4s ease-in-out;
+.modal-box:target .unsubscribe-modal {
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%); 
+  -o-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
 }
 
-.modal-box:target .unsubscribe-modal {
-  transform: translate(0,150%);
-  -webkit-transform: translate(0,150%); 
-  -o-transform: translate(0,150%);
-  -moz-transform: translate(0,150%);
-}
+/*****************Liked users modal************************/
 
 .liked-user-row {
   margin-bottom: 15px;
@@ -1393,13 +1558,13 @@
 }
 
 .modal-box:target .liked-users-modal {
-  transform: translate(0,50%);
-  -webkit-transform: translate(0,50%); 
-  -o-transform: translate(0,50%);
-  -moz-transform: translate(0,50%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%); 
+  -o-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
 }
 
-/* drag n drop zone */
+/*****************Upload avatar***********************/
 
 .upload-avatar-modal p {
   font-family: OpenSans, sans-serif;
@@ -1485,42 +1650,13 @@
 }
 
 .modal-box:target .upload-avatar-modal {
-  transform: translate(0,25%);
-  -webkit-transform: translate(0,25%); 
-  -o-transform: translate(0,25%);
-  -moz-transform: translate(0,25%);
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%); 
+  -o-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
 }
 
-.succes-upload-modal {
-  padding: 15px;
-  background: #5693d7;
-}
-
-.succes-upload-modal h1 {
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  color: #fff;
-  margin: 0;
-  font-weight: normal;
-}
-
-.succes-upload-modal h1:after {
-  content: "";
-  background: url(../img/temp_icons/upload-photo-check.png);
-  width: 10px;
-  height: 8px;
-  display: block;
-  float: right;
-  margin-left: 260px;
-  margin-top: 3px;
-}
-
-.modal-box:target .succes-upload-modal {
-  transform: translate(0,550%);
-  -webkit-transform: translate(0,550%); 
-  -o-transform: translate(0,550%);
-  -moz-transform: translate(0,550%);
-}
+/***************Error upload avatar***********************/
 
 .error-upload-modal {
   display: block;
@@ -1553,4 +1689,60 @@
   -webkit-transform: translate(0,200%); 
   -o-transform: translate(0,200%);
   -moz-transform: translate(0,200%);
+}
+
+/*========================================================*/
+/***********profile-banned.html*********************************/
+/*========================================================*/
+
+.user-banned {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: OpenSans, sans-serif;
+}
+
+.ooops {
+  font-size: 48px;
+  color: #4978cd;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.user-banned p {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #666;
+}
+
+.username-banned {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+}
+
+.user-banned ul {
+  list-style: none;
+  text-align: center;
+}
+
+.user-banned a {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 15px;
+  font-size: 13px;
+  color: #707070;
+  border-radius: 3px;
+  border: 1px solid #d4d4d4;
+  background: rgba(0,0,0,0);
+}
+
+.user-banned a:hover {
+  background: linear-gradient(to top, #f2f2f2, #f9f9f9);
+  background: -webkit-linear-gradient(to top, #f2f2f2, #f9f9f9);
+  background: -moz-linear-gradient(to top, #f2f2f2, #f9f9f9);
 }
