@@ -1598,7 +1598,7 @@
   height: 95px;
   margin: 30px auto;
   margin-bottom: 25px;
-  background: url('../img/sailorkoto-temp-sprite.png') 0 -29px;
+  background: url('../img/spritesheet.png') 0 -285px;
 }
 
 .drop-avatar-zone-container p {
