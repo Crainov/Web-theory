@@ -264,7 +264,7 @@ code {
 .user-actions:before {
   content: "";
   position: absolute;
-  background: url(../img/sprites.png);
+  background: url(../img/spritesheet.png) -199px -89px;
   height: 16px;
   width: 16px;
   top: 22px;
@@ -272,7 +272,7 @@ code {
 }
 
 .user-actions:hover:before {
-  background: url(../img/sprites.png) -16px 0;
+  background: url(../img/spritesheet.png) -200px -105px;
 }
 
 .user-menu {
@@ -338,7 +338,7 @@ code {
 .open-book:before {
   content: "";
   position: absolute;
-  background: url(../img/sprites.png) 0 -16px;
+  background: url(../img/spritesheet.png) -129px -164px;
   width: 18px;
   height: 18px;
   left: 15px;
@@ -346,13 +346,13 @@ code {
 }
 
 .open-book:hover:before {
-  background: url(../img/sprites.png) -18px -16px;
+  background: url(../img/spritesheet.png) -171px -164px;
 }
 
 .upload-cloud:before {
   content: "";
   position: absolute;
-  background: url(../img/sprites.png) -36px -16px;
+  background: url(../img/spritesheet.png) -200px -141px;
   width: 18px;
   height: 12px;
   left: 15px;
@@ -360,13 +360,13 @@ code {
 }
 
 .upload-cloud:hover:before {
-  background: url(../img/sprites.png) -96px -35px;
+  background: url(../img/spritesheet.png) -189px -153px;
 }
 
 .thumbs-up:before {
   content: "";
   position: absolute;
-  background: url(../img/sprites.png) -114px -35px;
+  background: url(../img/spritesheet.png) -200px -53px;
   width: 16px;
   height: 18px;
   left: 15px;
@@ -374,13 +374,13 @@ code {
 }
 
 .thumbs-up:hover:before {
-  background: url(../img/sprites.png) -87px -16px;
+  background: url(../img/spritesheet.png) -200px -71px;
 }
 
 .project-help:before {
   content: "";
   position: absolute;
-  background: url(../img/sprites.png) -103px -16px;
+  background: url(../img/spritesheet.png) -149px -61px;
   width: 19px;
   height: 19px;
   left: 15px;
@@ -388,7 +388,7 @@ code {
 }
 
 .project-help:hover:before {
-  background: url(../img/sprites.png) -122px -16px;
+  background: url(../img/spritesheet.png) -117px -80px;
 }
 /*User-block*/
 
@@ -412,7 +412,7 @@ code {
 .user-mail:before {
   content: "";
   position: absolute;
-  background: url(../img/sprites.png) -32px 0;
+  background: url(../img/spritesheet.png) -66px -164px;
   width: 22px;
   height: 16px;
   top: 22px;
@@ -562,7 +562,7 @@ code {
 .slider-show-posts:before {
   content: "";
   position: absolute;
-  background: url(../img/sprites.png) 0 -35px;
+  background: url(../img/spritesheet.png) -176px -75px;
   width: 23px;
   height: 20px;
   top: 15px;
@@ -570,7 +570,7 @@ code {
 }
 
 .slider-show-posts:hover:before {
-  background: url(../img/sprites.png) -23px -35px
+  background: url(../img/spritesheet.png) -176px -95px;
 }
 
 .slider-show-posts:after {
@@ -593,7 +593,7 @@ code {
 .slider-show-articles:before {
   content: "";
   position: absolute;
-  background: url(../img/sprites.png) -46px -35px;
+  background: url(../img/spritesheet.png) -175px -47px;
   width: 25px;
   height: 28px;
   top: 11px;
@@ -601,7 +601,7 @@ code {
 }
 
 .slider-show-articles:hover:before {
-  background: url(../img/sprites.png) -71px -35px
+  background: url(../img/spritesheet.png) -175px -120px;
 }
 
 .slider-show-articles:after {
