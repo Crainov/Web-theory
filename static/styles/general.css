@@ -94,7 +94,7 @@ SIGNUP
 
 .modal-header {
   line-height: 50px;
-  background: url(../img/signup-header.png);
+  background: url(../img/giveinvite-header.png);
 }
 
 .modal-header span {
@@ -118,9 +118,10 @@ SIGNUP
   position: absolute;
   left: 11px;
   top: 10px;
-  background: url(../img/authorization-sprites.png);
+  background: url(../img/spritesheet.png);
   width: 12px;
-  height: 14px;
+  height: 15px;
+  background-position: 0 0;
 }
 
 .login-confirm:after {
@@ -129,8 +130,8 @@ SIGNUP
   position: absolute;
   left: 11px;
   top: 10px;
-  background: url(../img/authorization-sprites.png);
-  width: 15px;
+  background: url(../img/spritesheet.png);
+  width: 12px;
   height: 15px;
   background-position: -35px 0;
 }
@@ -141,10 +142,10 @@ SIGNUP
   position: absolute;
   left: 12px;
   top: 9px;
-  background: url(../img/authorization-sprites.png);
-  width: 12px;
-  height: 14px;
-  background-position: -11px 0;
+  background: url(../img/spritesheet.png);
+  width: 11px;
+  height: 15px;
+  background-position: -12px 0;
 }
 
 .signup-form {
