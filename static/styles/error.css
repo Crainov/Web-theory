@@ -55,7 +55,7 @@
 
 body {
   background: url(../img/bg-error.png);
-  font-family: SansPro, Helvetica Neue, Arial, sans-serif;
+  font-family: OpenSans, Arial, sans-serif;
   color: #fff;
   position: relative;
   text-align: center;
@@ -75,13 +75,26 @@ h1:before {
 }
 
 .error-403:before {
-  content: url(../img/error-403.png);
+  content: " ";
+  background: url(../img/errors-sprite.png);
+  width: 258px;
+  height: 99px;
+  background-position: -271px 0;
+  margin-left: -10px;
 }
 
 .error-404:before {
-  content: url(../img/error-404.png);
+  content: " ";
+  background: url(../img/errors-sprite.png);
+  width: 271px;
+  height: 99px;
+  background-position: 0 0;
 }
 
 .error-503:before {
-  content: url(../img/error-503.png);
+  content: " ";
+  background: url(../img/errors-sprite.png);
+  width: 255px;
+  height: 99px;
+  background-position: -529px 0;
 }
