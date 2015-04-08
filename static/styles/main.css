@@ -3179,8 +3179,8 @@ code {
   margin-top: 2px;
   width: 15px;
   height: 13px;
-  background: url(../img/sprites.png);
-  background-position: 0 -63px;
+  background: url(../img/spritesheet.png);
+  background-position: -33px -93px;
 }
 
 .aside-activ:last-child .after:after {

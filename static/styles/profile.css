@@ -12,7 +12,7 @@
 .profile-user-mail a:before {
   content: "";
   display: inline-block;
-  background: url(../img/sprites.png) -32px 0;
+  background: url(../img/spritesheet.png) -66px -164px;
   width: 22px;
   height: 16px;
   margin-bottom: -21px;
@@ -52,11 +52,9 @@
 .profile-user-photo img {
   border-radius: 40px;
 }
-
 /**************************/
 /********Profile-subheader*/
 /**************************/
-
 /***Last-visit****/
 
 .user-last-visit {
@@ -66,7 +64,6 @@
   color: #b7b7b7;
   float: left;
 }
-
 /****User stats and options****/
 
 .user-stats-options {
@@ -95,7 +92,7 @@
 }
 
 .user-stats-options a:hover {
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 .user-stats-options ul li a:after {
@@ -112,7 +109,6 @@
   background: url(../img/spritesheet.png) -132px -61px !important;
   width: 17px !important;
 }
-
 /**************************/
 /********Profile-aside*****/
 /**************************/
@@ -124,7 +120,6 @@
   margin-right: 45px;
   float: left;
 }
-
 /*******Profile-avatar*******/
 
 .profile-user-avatar img {
@@ -157,7 +152,6 @@
   position: relative;
   margin-bottom: 20px;
 }
-
 /*Profile userName, specialization, rating, occupation, salary, send-message, unsubscribe/subscribe*/
 
 .profile-user-full-name {
@@ -176,13 +170,15 @@
   font-weight: bold;
 }
 
-.profile-user-occupation, .profile-user-rating {
+.profile-user-occupation,
+.profile-user-rating {
   padding: 18px 0;
   border-bottom: 1px solid #eee;
   position: relative;
 }
 
-.profile-user-occupation:before, .profile-user-rating:before {
+.profile-user-occupation:before,
+.profile-user-rating:before {
   content: "";
   position: absolute;
   background: url(../img/spritesheet.png) -64px -61px;
@@ -192,7 +188,8 @@
   top: 20px;
 }
 
-.profile-user-salary, .profile-rating-points {
+.profile-user-salary,
+.profile-rating-points {
   font-size: 13px;
   color: #669900;
   font-weight: bold;
@@ -201,7 +198,8 @@
   margin-bottom: 5px;
 }
 
-.work-state, .profile-rating-position {
+.work-state,
+.profile-rating-position {
   font-size: 12px;
   color: #9d9e9c;
   padding-left: 60px;
@@ -246,9 +244,9 @@
   background: -webkit-linear-gradient(to bottom, #4f7ab4, #3b66a1);
   background: -moz-linear-gradient(to bottom, #4f7ab4, #3b66a1);
   border-radius: 2px;
-  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.15);
-  -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.15);
-  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 10px;
 }
 
@@ -272,10 +270,13 @@
   background: #9a9a9a;
   color: #eee;
 }
-
 /*****Subscribers block, folllowed block, title definition******/
 
-.subscribers-title, .followed-title, .skills-title, .about-title, .contacts-title {
+.subscribers-title,
+.followed-title,
+.skills-title,
+.about-title,
+.contacts-title {
   padding-top: 28px;
   font-size: 16px;
   color: #333;
@@ -283,40 +284,47 @@
   position: relative;
 }
 
-.subscribers-counter, .followed-counter {
+.subscribers-counter,
+.followed-counter {
   font-size: 14px;
   float: right;
   color: #999;
 }
 
-.subscribers-thumbs, .followed-thumbs {
+.subscribers-thumbs,
+.followed-thumbs {
   padding-top: 15px;
 }
 
-.sbs-row, .fl-row {
+.sbs-row,
+.fl-row {
   height: 68px;
 }
 
-.sbs-user, .fl-user {
+.sbs-user,
+.fl-user {
   float: left;
   margin-right: 4px;
   position: relative;
 }
 
-.sbs-user:last-child, .fl-user:last-child {
+.sbs-user:last-child,
+.fl-user:last-child {
   margin-right: 0;
 }
 
-.sbs-user a, .fl-user a {
+.sbs-user a,
+.fl-user a {
   top: 0;
   position: absolute;
   width: 64px;
   height: 64px;
 }
-
 /***************Title definition <a>*************/
 
-.skills-title a, .about-title a, .contacts-title a {
+.skills-title a,
+.about-title a,
+.contacts-title a {
   position: absolute;
   background: url(../img/spritesheet.png) -50px -153px;
   height: 10px;
@@ -324,20 +332,21 @@
   bottom: 5px;
   right: 0;
 }
-
 /***********************Skills*******************/
 
 .skills-info-current {
   margin-top: 20px;
 }
 
-.skills-info-current span, .skills-info-bet {
+.skills-info-current span,
+.skills-info-bet {
   font-size: 13px;
   font-weight: bold;
   color: #666;
 }
 
-.skills-info-current ul, .skills-info-bet ul {
+.skills-info-current ul,
+.skills-info-bet ul {
   list-style: none;
   margin-top: 10px;
 }
@@ -352,7 +361,7 @@
   border-bottom: 1px solid #dedede;
 }
 
-.skills-info-current a span{
+.skills-info-current a span {
   font-size: 13px;
   float: right;
 }
@@ -369,9 +378,9 @@
   margin-top: 10px;
 }
 
-
 .skills-info-bet ul {
-  height: 176px; /******** Temp style ************/
+  height: 176px;
+  /******** Temp style ************/
 }
 
 .skills-info-bet li {
@@ -401,7 +410,6 @@
   background: #c9d1de;
   font-weight: bold;
 }
-
 /*****************User-about******************/
 
 .user-about-nav {
@@ -433,7 +441,9 @@
   background: url(../img/spritesheet.png) -127px -13px;
 }
 
-.user-location:hover:before {background: url(../img/spritesheet.png) -138px -13px;}
+.user-location:hover:before {
+  background: url(../img/spritesheet.png) -138px -13px;
+}
 
 .user-graduate-level:before {
   display: inline-block;
@@ -445,7 +455,9 @@
   background: url(../img/spritesheet.png) -127px 0;
 }
 
-.user-graduate-level:hover:before {background: url(../img/spritesheet.png) -139px 0;}
+.user-graduate-level:hover:before {
+  background: url(../img/spritesheet.png) -139px 0;
+}
 
 .user-age:before {
   display: inline-block;
@@ -456,7 +468,9 @@
   background: url(../img/spritesheet.png) -67px 0;
 }
 
-.user-age:hover:before {background: url(../img/spritesheet.png) -77px 0;}
+.user-age:hover:before {
+  background: url(../img/spritesheet.png) -77px 0;
+}
 
 .user-qualification:before {
   display: inline-block;
@@ -467,7 +481,9 @@
   background: url(../img/spritesheet.png) -87px 0;
 }
 
-.user-qualification:hover:before {background: url(../img/spritesheet.png) -97px 0;}
+.user-qualification:hover:before {
+  background: url(../img/spritesheet.png) -97px 0;
+}
 
 .user-about-text {
   margin-top: 15px;
@@ -475,7 +491,6 @@
   font-weight: bold;
   color: #707070;
 }
-
 /*************************User Contacts************************/
 
 .user-contacts ul {
@@ -535,7 +550,6 @@
   margin-bottom: -5px;
   background: url(../img/spritesheet.png) -189px -165px;
 }
-
 /*************************Profile-footer***********************/
 
 .aside-user-footer {
@@ -579,7 +593,6 @@
 .aside-user-footer li:last-child a:after {
   display: none;
 }
-
 /******************************************************/
 /******************************************************/
 /************User Content***************/
@@ -592,15 +605,14 @@
   float: right;
   font-family: Arial, sans-serif;
 }
-
 /******************First sort list**************************/
 
-.user-content-sort ul{
+.user-content-sort ul {
   list-style: none;
   background: #fafafa;
-  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(227,227,227,1);
-  -moz-box-shadow: inset 0px -1px 0px 0px rgba(227,227,227,1);
-  box-shadow: inset 0px -1px 0px 0px rgba(227,227,227,1);
+  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(227, 227, 227, 1);
+  -moz-box-shadow: inset 0px -1px 0px 0px rgba(227, 227, 227, 1);
+  box-shadow: inset 0px -1px 0px 0px rgba(227, 227, 227, 1);
 }
 
 .user-content-sort a {
@@ -626,9 +638,9 @@
   content: "";
   height: 100%;
   width: 100%;
-  -webkit-box-shadow: inset 0px 1px 0px 1px rgba(227,227,227,1);
-  -moz-box-shadow: inset 0px 1px 0px 1px rgba(227,227,227,1);
-  box-shadow: inset 0px 1px 0px 1px rgba(227,227,227,1);
+  -webkit-box-shadow: inset 0px 1px 0px 1px rgba(227, 227, 227, 1);
+  -moz-box-shadow: inset 0px 1px 0px 1px rgba(227, 227, 227, 1);
+  box-shadow: inset 0px 1px 0px 1px rgba(227, 227, 227, 1);
   top: 0;
   left: 0;
   z-index: 1;
@@ -639,9 +651,9 @@
   content: "";
   height: 100%;
   width: 100%;
-  -webkit-box-shadow: inset 0px 1px 0px 1px rgba(227,227,227,1);
-  -moz-box-shadow: inset 0px 1px 0px 1px rgba(227,227,227,1);
-  box-shadow: inset 0px 1px 0px 1px rgba(227,227,227,1);
+  -webkit-box-shadow: inset 0px 1px 0px 1px rgba(227, 227, 227, 1);
+  -moz-box-shadow: inset 0px 1px 0px 1px rgba(227, 227, 227, 1);
+  box-shadow: inset 0px 1px 0px 1px rgba(227, 227, 227, 1);
   top: 0;
   left: 0;
   z-index: 1;
@@ -652,9 +664,9 @@
   content: "";
   height: 100%;
   width: 100%;
-  -webkit-box-shadow: inset 0px 2px 0px 0px rgba(79,135,199,1);
-  -moz-box-shadow: inset 0px 2px 0px 0px rgba(79,135,199,1);
-  box-shadow: inset 0px 2px 0px 0px rgba(79,135,199,1);
+  -webkit-box-shadow: inset 0px 2px 0px 0px rgba(79, 135, 199, 1);
+  -moz-box-shadow: inset 0px 2px 0px 0px rgba(79, 135, 199, 1);
+  box-shadow: inset 0px 2px 0px 0px rgba(79, 135, 199, 1);
   top: 0;
   left: 0;
   z-index: 2;
@@ -665,9 +677,9 @@
   content: "";
   height: 100%;
   width: 100%;
-  -webkit-box-shadow: inset 0px 2px 0px 0px rgba(79,135,199,1);
-  -moz-box-shadow: inset 0px 2px 0px 0px rgba(79,135,199,1);
-  box-shadow: inset 0px 2px 0px 0px rgba(79,135,199,1);
+  -webkit-box-shadow: inset 0px 2px 0px 0px rgba(79, 135, 199, 1);
+  -moz-box-shadow: inset 0px 2px 0px 0px rgba(79, 135, 199, 1);
+  box-shadow: inset 0px 2px 0px 0px rgba(79, 135, 199, 1);
   top: 0;
   left: 0;
   z-index: 2;
@@ -676,7 +688,6 @@
 .user-content-sort span {
   margin-left: 8px;
 }
-
 /******************************Extra sort**************************/
 
 .extra-sort {
@@ -703,30 +714,29 @@
 .extra-sort li:last-child a:hover {
   background: none;
   border-radius: 0;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(223,223,223,0);
-  -moz-box-shadow: 0px 0px 0px 1px rgba(223,223,223,0);
-  box-shadow: 0px 0px 0px 1px rgba(223,223,223,0);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(223, 223, 223, 0);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(223, 223, 223, 0);
+  box-shadow: 0px 0px 0px 1px rgba(223, 223, 223, 0);
 }
 
 .extra-sort a:hover {
   border-radius: 2px;
   background: #f9f9f9;
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(223,223,223,1);
-  -moz-box-shadow: 0px 0px 0px 1px rgba(223,223,223,1);
-  box-shadow: 0px 0px 0px 1px rgba(223,223,223,1);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(223, 223, 223, 1);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(223, 223, 223, 1);
+  box-shadow: 0px 0px 0px 1px rgba(223, 223, 223, 1);
 }
 
 .extra-sort span:before {
   content: ":";
   display: inline-block;
 }
-
 /***********************Add message******************************/
 
 .add-post {
-  -webkit-box-shadow: 0px 0px 0px 2px rgba(223,223,223,1);
-  -moz-box-shadow: 0px 0px 0px 2px rgba(223,223,223,1);
-  box-shadow: 0px 0px 0px 2px rgba(223,223,223,1);
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(223, 223, 223, 1);
+  -moz-box-shadow: 0px 0px 0px 2px rgba(223, 223, 223, 1);
+  box-shadow: 0px 0px 0px 2px rgba(223, 223, 223, 1);
   border-radius: 2px;
   height: 40px;
   overflow: hidden;
@@ -749,7 +759,6 @@
   line-height: 40px;
   padding: 0 10px;
 }
-
 /***************************Upload file************************/
 
 .message-text-form:after {
@@ -779,11 +788,10 @@
   padding: 0 10px;
   line-height: 45px;
   background: #f3f5f7;
-  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(223,223,223,1);
-  -moz-box-shadow: inset 0px 1px 0px 0px rgba(223,223,223,1);
-  box-shadow: inset 0px 1px 0px 0px rgba(223,223,223,1);
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(223, 223, 223, 1);
+  -moz-box-shadow: inset 0px 1px 0px 0px rgba(223, 223, 223, 1);
+  box-shadow: inset 0px 1px 0px 0px rgba(223, 223, 223, 1);
 }
-
 /*Send post*/
 
 .add-post-active input {
@@ -797,14 +805,15 @@
   float: right;
   margin-top: 16px;
 }
-
 /*****************Published Posts Area*******************/
 
-.user-posts a, .user-comments {
+.user-posts a,
+.user-comments {
   color: #4f7ab4;
 }
 
-.user-post, .user-comment {
+.user-post,
+.user-comment {
   margin-top: 15px;
   border-bottom: 1px solid #e3e3e3;
   position: relative;
@@ -819,7 +828,8 @@
   border-top: 1px solid #e3e3e3;
 }
 
-.user-post-avatar, .user-comment-avatar {
+.user-post-avatar,
+.user-comment-avatar {
   display: block;
   float: left;
   height: 50px;
@@ -831,7 +841,6 @@
 .user-post-avatar img {
   display: block;
 }
-
 /*************Post Content***************/
 
 .post-body {
@@ -847,32 +856,37 @@
   font-size: 12px;
 }
 
-.username-post, .username-comment {
+.username-post,
+.username-comment {
   margin-bottom: 5px;
 }
 
-.username-post a, .username-comment a{
+.username-post a,
+.username-comment a {
   font-weight: bold;
 }
 
-.username-post a:hover, .username-comment a:hover {
+.username-post a:hover,
+.username-comment a:hover {
   text-decoration: none !important;
 }
 
-.user-post-content, .user-comment-content {
+.user-post-content,
+.user-comment-content {
   color: #666;
 }
-
 /*************Publish date, and leave a comment************************/
 
-.user-post-options, .user-comment-options {
+.user-post-options,
+.user-comment-options {
   color: #999;
   font-size: 11px;
   line-height: 25px;
   display: inline-block;
 }
 
-.user-posts time:after, .user-comments time:after {
+.user-posts time:after,
+.user-comments time:after {
   content: "";
   display: inline-block;
   width: 4px;
@@ -884,17 +898,19 @@
   margin-right: 5px;
 }
 
-.user-post-options a, .user-comment-options a {
+.user-post-options a,
+.user-comment-options a {
   color: #999 !important;
 }
 
-.user-posts a:hover, .user-comments a:hover {
+.user-posts a:hover,
+.user-comments a:hover {
   text-decoration: underline;
 }
-
 /*****************Likes-box*********************/
 
-.post-likes, .comment-likes {
+.post-likes,
+.comment-likes {
   font-size: 11px;
   position: absolute;
   bottom: 5px;
@@ -905,29 +921,34 @@
   bottom: 10px;
 }
 
-.post-likes a, .comment-likes a {
+.post-likes a,
+.comment-likes a {
   display: block;
   color: #b1c9d9;
   line-height: 25px;
   padding: 0 5px;
 }
 
-.post-likes a:hover, .comment-likes a:hover {
+.post-likes a:hover,
+.comment-likes a:hover {
   text-decoration: none;
   background: #edf0f4;
   color: #94acc2;
   border-radius: 2px;
 }
 
-.post-likes span, .comment-likes span {
+.post-likes span,
+.comment-likes span {
   visibility: hidden;
 }
 
-.post-likes a:hover span, .comment-likes a:hover span {
+.post-likes a:hover span,
+.comment-likes a:hover span {
   visibility: visible;
 }
 
-.post-likes span:after, .comment-likes span:after {
+.post-likes span:after,
+.comment-likes span:after {
   visibility: visible;
   content: "";
   display: inline-block;
@@ -936,7 +957,6 @@
   height: 10px;
   margin: 0 5px;
 }
-
 /***************Comments-box*******************************/
 
 .user-post-comments {
@@ -959,7 +979,6 @@
   background: #d3d3d3;
   color: #fff;
 }
-
 /******************************************/
 /******************************************/
 /******************************************/
@@ -972,19 +991,21 @@
   margin-bottom: 15px;
 }
 
-.profile-articles-title, .graphics-title {
+.profile-articles-title,
+.graphics-title {
   line-height: 45px;
   font-size: 17px;
   text-transform: uppercase;
   color: #5685c5;
   font-weight: bold;
   letter-spacing: -1.5px;
-  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(227,227,227,1);
-  -moz-box-shadow: inset 0px -1px 0px 0px rgba(227,227,227,1);
-  box-shadow: inset 0px -1px 0px 0px rgba(227,227,227,1);
+  -webkit-box-shadow: inset 0px -1px 0px 0px rgba(227, 227, 227, 1);
+  -moz-box-shadow: inset 0px -1px 0px 0px rgba(227, 227, 227, 1);
+  box-shadow: inset 0px -1px 0px 0px rgba(227, 227, 227, 1);
 }
 
-.profile-articles-title a, .graphics-title a {
+.profile-articles-title a,
+.graphics-title a {
   display: block;
   float: right;
   font-size: 13px;
@@ -994,13 +1015,15 @@
   font-weight: normal;
 }
 
-.profile-articles-title span, .graphics-title span {
+.profile-articles-title span,
+.graphics-title span {
   display: block;
   float: left;
   position: relative;
 }
 
-.profile-articles-title span:after, .graphics-title span:after {
+.profile-articles-title span:after,
+.graphics-title span:after {
   content: attr(data-publications-counter);
   position: absolute;
   height: 20px;
@@ -1014,7 +1037,6 @@
   top: 11px;
   right: -30px;
 }
-
 /*********article name***********/
 
 .profile-article-name h2 {
@@ -1023,18 +1045,18 @@
   color: #000;
   font-weight: bold;
 }
-
 /******article Stats*******/
 
 .profile-article-info {
   margin-bottom: 25px;
 }
 
-.profile-article-info ul{
+.profile-article-info ul {
   list-style: none;
 }
 
-.profile-article-info li, .profile-article-info a {
+.profile-article-info li,
+.profile-article-info a {
   display: block;
   float: left;
   color: #828282;
@@ -1049,7 +1071,6 @@
 .profile-article-info li {
   margin-right: 25px;
 }
-
 /******************article stats icons****************/
 
 .profile-article-info li:before {
@@ -1072,10 +1093,9 @@
   background: url(../img/spritesheet.png) -166px 0 !important;
   width: 10px !important;
 }
-
 /****************article text************************/
 
-.profile-article-text p{
+.profile-article-text p {
   font-family: OpenSans, sans-serif;
   font-size: 13px;
   color: #666;
@@ -1085,7 +1105,6 @@
 .profile-article-text p:last-child {
   margin-bottom: 25px;
 }
-
 /******************Article bottom bar**********************/
 
 .profile-read-more-button {
@@ -1113,13 +1132,13 @@
   list-style: none;
 }
 
-.profile-article-bottom-bar li, .profile-article-bottom-bar ul a {
+.profile-article-bottom-bar li,
+.profile-article-bottom-bar ul a {
   float: left;
   font-size: 13px;
   color: #bebebe;
   line-height: 35px;
 }
-
 /******************Article bottom bar icons**********************/
 
 .profile-article-bottom-bar li:before {
@@ -1160,14 +1179,12 @@
 .profile-article-likes-counter a:hover:before {
   background: url(../img/spritesheet.png) 0 -93px;
 }
-
 /**************************Graphics block*********************/
 
 .pub-row {
   height: 240px;
   padding-top: 20px;
 }
-
 /*******************Graphics Item************************/
 
 .pub-graphics-item {
@@ -1184,17 +1201,15 @@
 .graphics-item-body {
   position: relative;
 }
-
 /*******************Graphics Item img background************************/
 
 .pub-graphics-item img {
   display: block;
 }
-
 /*******************Graphics Item Stats************************/
 
 .graphic-item-stats {
-  background: rgba(33,45,55,.9);
+  background: rgba(33, 45, 55, .9);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1232,7 +1247,6 @@
   color: #ccccce;
   margin-left: 15px;
 }
-
 /*******************Graphics Item stats icons************************/
 
 .graphic-item-stats li:before {
@@ -1261,7 +1275,6 @@
 .graphic-likes-counter:hover:before {
   background: url(../img/spritesheet.png) -33px -93px !important;
 }
-
 /*******************Graphics Item Title and Author************************/
 
 .graphics-item-info a {
@@ -1280,12 +1293,11 @@
   color: #929292;
   margin-top: 5px !important;
 }
-
 /*========================================================*/
 /***********Profile Modal Box Area*********************************/
 /*========================================================*/
 
-.modal-box  {
+.modal-box {
   position: fixed;
   top: 0;
   right: 0;
@@ -1294,7 +1306,7 @@
   z-index: 100;
   text-align: center;
   display: block;
-  background-color: rgba(30,44,76,.85);
+  background-color: rgba(30, 44, 76, .85);
   pointer-events: none;
   opacity: 0;
   -webkit-transition: opacity .2s ease-in;
@@ -1342,12 +1354,11 @@
 }
 
 .modal-box:target .modal-content {
-  -webkit-transition: .4s ease-in-out; 
-  -moz-transition: .4s ease-in-out; 
-  -o-transition: .4s ease-in-out; 
+  -webkit-transition: .4s ease-in-out;
+  -moz-transition: .4s ease-in-out;
+  -o-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
 }
-
 /************Success action modal********************************/
 
 .success-modal {
@@ -1375,12 +1386,11 @@
 }
 
 .modal-box:target .success-modal {
-  transform: translate(0,550%);
-  -webkit-transform: translate(0,550%); 
-  -o-transform: translate(0,550%);
-  -moz-transform: translate(0,550%);
+  transform: translate(0, 550%);
+  -webkit-transform: translate(0, 550%);
+  -o-transform: translate(0, 550%);
+  -moz-transform: translate(0, 550%);
 }
-
 /***********Send Message modal*************************/
 
 .send-message-modal {
@@ -1420,9 +1430,9 @@
   border: 1px solid #d7d7d7;
   resize: none;
   outline: none;
-  -webkit-box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.2);
-  -moz-box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.2);
-  box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
   padding: 3px;
   font-family: Arial, sans-serif;
   font-size: 13px;
@@ -1449,9 +1459,9 @@
 
 .send-message-modal-box input:hover {
   background: #5a8bcc;
-  -webkit-box-shadow: inset 0px -2px 0px 0px rgba(62,104,159,1);
-  -moz-box-shadow: inset 0px -2px 0px 0px rgba(62,104,159,1);
-  box-shadow: inset 0px -2px 0px 0px rgba(62,104,159,1);
+  -webkit-box-shadow: inset 0px -2px 0px 0px rgba(62, 104, 159, 1);
+  -moz-box-shadow: inset 0px -2px 0px 0px rgba(62, 104, 159, 1);
+  box-shadow: inset 0px -2px 0px 0px rgba(62, 104, 159, 1);
 }
 
 .send-message-modal-box span {
@@ -1463,12 +1473,11 @@
 }
 
 .modal-box:target .send-message-modal {
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%); 
-  -o-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
 }
-
 /**************Send message error modal*************************/
 
 .error-send-message-modal {
@@ -1498,12 +1507,11 @@
 }
 
 .modal-box:target .error-send-message-modal {
-  transform: translate(0,150%);
-  -webkit-transform: translate(0,150%); 
-  -o-transform: translate(0,150%);
-  -moz-transform: translate(0,150%);
+  transform: translate(0, 150%);
+  -webkit-transform: translate(0, 150%);
+  -o-transform: translate(0, 150%);
+  -moz-transform: translate(0, 150%);
 }
-
 /******************Unsubscribe modal*********************/
 
 .modal-cancel:hover {
@@ -1532,12 +1540,11 @@
 }
 
 .modal-box:target .unsubscribe-modal {
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%); 
-  -o-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
 }
-
 /*****************Liked users modal************************/
 
 .liked-user-row {
@@ -1560,12 +1567,11 @@
 }
 
 .modal-box:target .liked-users-modal {
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%); 
-  -o-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
 }
-
 /*****************Upload avatar***********************/
 
 .upload-avatar-modal p {
@@ -1652,12 +1658,11 @@
 }
 
 .modal-box:target .upload-avatar-modal {
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%); 
-  -o-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
 }
-
 /***************Error upload avatar***********************/
 
 .error-upload-modal {
@@ -1687,12 +1692,11 @@
 }
 
 .modal-box:target .error-upload-modal {
-  transform: translate(0,200%);
-  -webkit-transform: translate(0,200%); 
-  -o-transform: translate(0,200%);
-  -moz-transform: translate(0,200%);
+  transform: translate(0, 200%);
+  -webkit-transform: translate(0, 200%);
+  -o-transform: translate(0, 200%);
+  -moz-transform: translate(0, 200%);
 }
-
 /*========================================================*/
 /***********profile-banned.html*********************************/
 /*========================================================*/
@@ -1740,7 +1744,7 @@
   color: #707070;
   border-radius: 3px;
   border: 1px solid #d4d4d4;
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
 }
 
 .user-banned a:hover {
