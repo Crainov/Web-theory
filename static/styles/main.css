@@ -82,6 +82,7 @@ h3,
   font-family: OpenSans, Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
+  line-height: 18px;
   color: #333;
 }
 
@@ -95,6 +96,8 @@ h4 {
   font-family: Arial, sans-serif;
   font-weight: 600;
   font-size: 14px;
+  letter-spacing: -0.01em;
+  line-height: 11px;
   color: #333333;
 }
 
@@ -151,6 +154,10 @@ code {
 
 .mb30 {
   margin-bottom: 30px;
+}
+
+.mb42 {
+  margin-bottom: 42px;
 }
 
 .float-left {
@@ -845,7 +852,7 @@ code {
 /*===============*/
 
 .small-subheader {
-  height: 40px;
+  height: 41px;
   background: #f4f4f4;
   border-bottom: 1px solid #e4e4e4;
   font-family: Arial, sans-serif;
@@ -1826,7 +1833,7 @@ code {
   display: block;
   width: 234px;
   height: 160px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .course-not-ready {
@@ -1876,8 +1883,6 @@ code {
 }
 
 .courses-block h4 {
-  display: block;
-  height: 15px;
   margin-bottom: 10px;
 }
 
@@ -1887,6 +1892,7 @@ code {
   display: block;
   height: 10px;
   line-height: 10px;
+  letter-spacing: -0.01em;
 }
 /*=====================*/
 /*       ARTICLE       */
@@ -2848,7 +2854,7 @@ code {
 .aside-list a {
   font-size: 13px;
   display: block;
-  height: 35px;
+  height: 36px;
   line-height: 34px;
   border-bottom: 1px solid #e7e7e7;
 }
