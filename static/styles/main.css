@@ -2767,11 +2767,24 @@ code {
   line-height: 18px;
 }
 
+.test-page h1 {
+  margin-bottom: 35px;
+}
+
+.test-page p {
+  line-height: 18px;
+  margin-bottom: 26px;
+}
+
 .attention {
+  display: block;
   font-family: OpenSans, Arial, sans-serif;
   font-size: 14px;
+  height: 10px;
+  line-height: 10px;
   color: #333;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .test-button {
@@ -2813,10 +2826,13 @@ code {
 }
 
 .question-number {
+  float: left;
+  margin-top: 3px;
   font-family: OpenSans;
   font-size: 13px;
-  line-height: 21px;
+  line-height: 10px;
   color: #999;
+  height: 10px;
   margin-left: 15px;
 }
 
@@ -2824,6 +2840,10 @@ code {
   display: block;
   padding-left: 25px;
   position: relative;
+}
+
+.test-answers li:last-child {
+  margin-bottom: 19px;
 }
 
 .radio-button {
@@ -2871,6 +2891,12 @@ code {
 .radio-button:checked + label:after {
   visibility: visible;
 }
+
+.test-button-wide {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 /*==============*/
 /*SIDEBAR*/
 /*==============*/
