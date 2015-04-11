@@ -164,6 +164,10 @@ code {
   float: left;
 }
 
+.float-right {
+  float: right;
+}
+
 .gradient-button {
   font-family: OpenSans, Arial, sans-serif;
   color: #f4f6f8;
@@ -862,18 +866,33 @@ code {
 
 .small-subheader-tabs {
   list-style-type: none;
+  float: left;
 }
 
-.small-subheader-tabs a {
+.small-subheader-tabs-aside {
+  list-style-type: none;
+  float: right;
+  margin-right: 250px;
+}
+
+.small-subheader-tabs li,
+.small-subheader-tabs-aside li {
   float: left;
+}
+
+.small-subheader-tabs a,
+.small-subheader-tabs-aside a{
   display: block;
   height: 40px;
   line-height: 40px;
   color: #666;
-  padding-right: 20px;
 }
 
-.small-subheader-tabs a:hover {
+.small-subheader-tabs a { padding-right: 20px; }
+.small-subheader-tabs-aside a { padding-left: 20px; }
+
+.small-subheader-tabs a:hover,
+.small-subheader-tabs-aside a:hover {
   text-decoration: underline;
 }
 
@@ -2298,8 +2317,8 @@ code {
 /*======================*/
 
 .article-heading-block {
-  height: 24px;
-  margin-bottom: 30px;
+  height: 13px;
+  margin-bottom: 26px;
 }
 
 .article-heading-block h1 {
@@ -2307,21 +2326,22 @@ code {
 
   float: left;
   margin-right: 15px;
+  line-height: 13px !important;
 }
 
 .edit-article-button {
   display: block;
-  height: 24px;
-  width: 80px;
+  height: 13px;
   float: left;
   font-family: Verdana, Arial, sans-serif;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 13px;
   text-transform: lowercase;
 }
 
 .section-heading {
-  margin-bottom: 40px;
+  line-height: 13px;
+  margin-bottom: 46px;
 }
 
 .article-paragraph {
@@ -2329,17 +2349,20 @@ code {
   font-size: 12px;
   line-height: 20px;
   color: #666;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  vertical-align: top;
+  padding-top: 0;
 }
 
 .article-section {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .colored-link {
   display: inline-block;
   margin-bottom: -6px;
-  padding: 0 3px;
+  padding: 0 5px;
+  line-height: 21px;
   border-radius: 2px;
   color: #999;
   background: #e5e5e5;
@@ -2348,6 +2371,7 @@ code {
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .colored-link:hover {
