@@ -942,7 +942,7 @@ code {
   width: 220px;
   height: 215px;
   margin-right: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   float: left;
   font-family: Arial, sans-serif;
   position: relative;
@@ -971,6 +971,10 @@ code {
 
 .graphics-block:hover .graphics-block-thumb {
   opacity: 1;
+}
+
+.graphics-block:hover .graphics-attach {
+  visibility: visible;
 }
 
 .graphics-block:hover .graphics-hidden-info {
@@ -1012,6 +1016,7 @@ code {
   position: absolute;
   top: 177px;
   left: 0;
+  width: 100%;
   height: 13px;
   margin-bottom: 10px;
 }
@@ -1067,7 +1072,19 @@ code {
 .graphics-comments:before {
   width: 15px;
   height: 13px;
-  background: url('../img/spritesheet.png') -136px -80px;
+  background: url('../img/spritesheet.png') 0 -78px;
+}
+
+.graphics-attach {
+  float: right;
+  visibility: hidden;
+}
+
+.graphics-attach a {
+  display: block;
+  width: 11px;
+  height: 13px;
+  background: url('../img/spritesheet.png') -16px -77px;
 }
 /* GRAPHICS AUTHOR */
 
