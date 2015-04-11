@@ -122,10 +122,13 @@ article a:hover,
 
 code {
   display: block;
+  line-height: 20px;
   background: #f7f9f9;
   border: 1px solid #e1e1e8;
   border-radius: 3px;
-  padding: 5px;
+  margin-top: 13px;
+  margin-bottom: 12px;
+  padding: 1px 4px 2px 4px;
 }
 
 .yellow-code {
@@ -2092,7 +2095,8 @@ code {
 }
 
 .article-task {
-  padding-left: 40px;
+  padding-left: 35px;
+  padding-top: 4px;
   position: relative;
   margin-bottom: 15px;
   font-family: OpenSans, Arial, sans-serif;
