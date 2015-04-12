@@ -3,6 +3,11 @@
 /*==============*/
 
 @font-face {
+  font-family: "SansPro";
+  src: url("../fonts/PFBeauSansPro.otf");
+}
+
+@font-face {
   font-family: 'OpenSans';
   src: url('../fonts/OpenSansRegular.eot');
   src: url('../fonts/OpenSansRegular.eot') format('embedded-opentype'), url('../fonts/OpenSansRegular.woff2') format('woff2'), url('../fonts/OpenSansRegular.woff') format('woff'), url('../fonts/OpenSansRegular.ttf') format('truetype'), url('../fonts/OpenSansRegular.svg#OpenSans') format('svg');
@@ -884,6 +889,7 @@ code {
   width: 710px;
   float: left;
   margin-right: 30px;
+  position: relative;
 }
 
 .graphics-grid,
@@ -2203,6 +2209,7 @@ code {
 .article-share-list {
   float: right;
   list-style-type: none;
+  margin-top: 6px;
 }
 
 .article-share-list li {
@@ -3224,6 +3231,7 @@ code {
 .aside-follow li:first-child a:before {
   width: 13px;
   height: 13px;
+  margin-bottom: -1px;
 }
 
 .aside-follow li:nth-child(1) a:before {
@@ -3411,11 +3419,49 @@ GRAPHICS-FULL
 ------------*/
 
 .graphics-full-title {
-  display: block;
+  display: inline-block;
   font-size: 16px;
   color: #333;
   font-weight: bold;
   padding: 12px 0;
+}
+
+.graphics-actions {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  padding: 12px 0;
+}
+
+.graphics-actions a {
+  font: 400 13px Arial, sans-serif;
+  color: #7396c1;
+}
+
+.graphics-actions a:hover {
+  opacity: 0.75;
+}
+
+.graphics-full-edit {
+  margin-right: 15px;
+}
+
+.graphics-full-edit:before,
+.graphics-full-delete:before {
+  content: " ";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/spritesheet.png);
+  background-position: -209px -165px;
+  margin-bottom: -1px;
+  margin-right: 8px;
+}
+
+.graphics-full-delete:before {
+  width: 9px;
+  height: 12px;
+  background-position: -209px -177px;
 }
 
 .graphics-block-buttons {
@@ -5235,16 +5281,17 @@ ERRORS
 .error-403,
 .error-404,
 .error-503 {
-  font-size: 25px;
+  font-size: 31px;
   position: absolute;
   margin: 20% 0 0 40%;
   color: #fff;
-  font-weight: 600;
+  font-family: SansPro, Arial, sans-serif;
+  font-weight: 400;
 }
 
 h1:before {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .error-403:before {
@@ -5253,7 +5300,6 @@ h1:before {
   width: 258px;
   height: 99px;
   background-position: -271px 0;
-  margin-left: -10px;
 }
 
 .error-404:before {
@@ -5262,6 +5308,7 @@ h1:before {
   width: 271px;
   height: 99px;
   background-position: 0 0;
+  margin-left: 13px;
 }
 
 .error-503:before {
@@ -5270,7 +5317,7 @@ h1:before {
   width: 255px;
   height: 99px;
   background-position: -529px 0;
-}
+  margin-left: 13px;}
 /*----------
 REDIRECT
 --------------*/
@@ -5367,11 +5414,6 @@ SIGNUP
   text-align: left;
 }
 
-.modal-header {
-  line-height: 50px;
-  background: url(../img/giveinvite-header.png);
-}
-
 .modal-header span {
   color: #fff;
   margin-left: 20px;
@@ -5429,10 +5471,11 @@ SIGNUP
 }
 
 .hint {
-  line-height: 42px;
+  line-height: 41px;
   color: #999;
   font-size: 13px;
   display: block;
+  margin-top: -1px;
 }
 
 .signup-form div,
@@ -5534,7 +5577,7 @@ SIGNUP
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#9d3687', endColorstr='#763084', GradientType=0);
   /* IE6-9 */
 
-  width: 338px;
+  width: 340px;
   height: 40px;
   color: #fff;
   border-radius: 3px;
@@ -5543,6 +5586,7 @@ SIGNUP
   margin-top: 10px;
   cursor: pointer;
   font-family: OpenSans, Helvetica Neue, Arial, sans-serif;
+  border: 1px solid #733c8c;
 }
 
 .signup-form input[type="submit"]:hover {
@@ -5568,6 +5612,7 @@ PEOPLE-GIVE-INVITE
   text-align: left;
 }
 
+.signup .modal-header,
 .give-invite .modal-header,
 .give-invite-result .modal-header {
   background: url(../img/giveinvite-header.png);
@@ -5700,14 +5745,6 @@ PEOPLE-GIVE-INVITE
 LANDING
 ----------*/
 
-.education-about ul h3,
-.education-about div h3 {
-  font-size: 16px;
-  color: #333;
-  font-weight: lighter;
-  font-family: OpenSans, Arial, sans-serif;
-}
-
 .f-left {
   float: left;
 }
@@ -5778,12 +5815,40 @@ LANDING
   position: relative;
 }
 
+.subhead-shadow {
+  position: absolute;
+  bottom: 0;
+  height: 15px;
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65)));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  /* W3C */
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+  opacity: 0.2;
+  /* IE6-9 */
+}
+
 .landing-title {
   position: absolute;
   width: 960px;
   margin: 0 auto;
   top: 20%;
-  font-family: OpenSans;
+  font-family: OpenSans, sans-serif;
 }
 
 .landing-h1 {
@@ -5795,8 +5860,10 @@ LANDING
 }
 
 .landing-h2 {
-  color: #8b95a6;
+  color: #919cad;
   margin-top: 7px;
+  font-weight: lighter;
+  font-size: 14px;
 }
 
 .invite {
@@ -5831,21 +5898,27 @@ LANDING
 }
 /*LANDING-INSIDE*/
 
-.landing-inside h3,
-.landing-communication h3 {
-  font-size: 16px;
+.landing-inside h3 {
+  font: 400 16px OpenSans, sans-serif;
   color: #333;
-  font-weight: lighter;
-  font-family: OpenSans, Arial, sans-serif;
+}
+
+.landing-communication h3 {
+  font: 400 14px OpenSans, sans-serif;
+  color: #333;
+}
+
+.landing-statistics div h3 {
+  font: 400 14px OpenSans, sans-serif;
 }
 
 .landing-inside div,
-.landing-communication div,
-.landing-statistics div {
+.landing-statistics div,
+.landing-communication div {
   display: inline-block;
   width: 310px;
-  margin-left: 0;
-  margin-top: 60px;
+  margin-top: 50px;
+  margin-left: 10px;
 }
 
 .landing-inside div:before,
@@ -5878,15 +5951,16 @@ LANDING
   background-position: -830px -216px;
 }
 
-.inside-margin {
-  margin-left: 15px;
+.landing-content .inside-margin {
+  margin-left: 0px;
 }
 
 .landing-content p {
   font-size: 13px;
-  color: #808080;
-  margin-top: 32px;
+  color: #666;
+  margin-top: 25px;
   line-height: 20px;
+  font-weight: 400;
 }
 /*LANDING-EDUCATION*/
 
@@ -5934,7 +6008,7 @@ LANDING
   width: 310px;
   height: 130px;
   bottom: 0;
-  padding: 15px 0;
+  padding: 15px 18px;
 }
 
 .video-play {
@@ -5976,9 +6050,18 @@ LANDING
   text-align: left;
 }
 
+.education-about h3 {
+  font: 600 20px OpenSans, sans-serif;
+}
+
 .education-about ul,
 .education-about div {
-  margin-top: 35px;
+  margin-top: 20px;
+}
+
+.education-about ul h3,
+.education-about div h3 {
+  font: 400 16px OpenSans;
 }
 
 .education-about li {
@@ -6086,14 +6169,14 @@ LANDING
 .login {
   position: absolute;
   margin: 0 auto;
-  margin-top: 27%;
+  margin-top: 28%;
   margin-left: 40%;
   top: 0;
   width: 295px;
   height: 240px;
   border-radius: 3px;
   background: #fff;
-  box-shadow: 0 1px 2px 1px #d6d7d7;
+  box-shadow: 0px 1px 3px 0.00px rgba(10, 16, 16, 0.25);
   overflow: hidden;
   font-size: 13px;
   display: none;
@@ -6205,17 +6288,16 @@ LANDING
 
 .invite-window {
   position: absolute;
-  top: 14%;
+  top: 58%;
   left: 50%;
   margin-left: -300px;
   width: 600px;
   height: 300px;
-  border-radius: 3px;
   background: #fff;
-  box-shadow: 0 1px 2px 1px #d6d7d7;
+  border-radius: 3px;
+  box-shadow: 0px 1px 3px 0.00px rgba(10, 16, 16, 0.25);
   font-size: 13px;
   overflow: hidden;
-  display: none;
 }
 
 .invite-form {
