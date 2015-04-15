@@ -207,19 +207,12 @@ code {
 
 .header {
   height: 60px;
-<<<<<<< HEAD
   background: linear-gradient(to bottom, #496ea0, #3e5f8b);
   background: -webkit-linear-gradient(to bottom, #496ea0, #3e5f8b);
   background: -moz-linear-gradient(to bottom, #496ea0, #3e5f8b);
   -webkit-box-shadow: 1px 1px 3px 0px rgba(8, 9, 9, 0.15);
   -moz-box-shadow: 1px 1px 3px 0px rgba(8, 9, 9, 0.15);
   box-shadow: 1px 1px 3px 0px rgba(8, 9, 9, 0.15);
-=======
-  background: -webkit-linear-gradient(top, #496ea0, #3e5f8c);
-  background: linear-gradient(to bottom, #496ea0, #3e5f8c);
-  background: -webkit-linear-gradient(to bottom, #496ea0, #3e5f8c);
-  background: -moz-linear-gradient(to bottom, #496ea0, #3e5f8c);
->>>>>>> 4a5ac23ad57091e126b0f4075d1805d3f4d36752
 }
 /*Top-Nav*/
 
@@ -4003,7 +3996,6 @@ GRAPHICS-FULL
   text-align: center;
   font-size: 13px;
   color: #fff;
-<<<<<<< HEAD
   background: linear-gradient(to bottom, #5888c8, #4c75ad);
   background: -webkit-linear-gradient(to bottom, #5888c8, #4c75ad);
   background: -moz-linear-gradient(to bottom, #5888c8, #4c75ad);
@@ -4011,15 +4003,6 @@ GRAPHICS-FULL
   -webkit-box-shadow: 0px 1px 3px 0px rgba(8, 9, 9, 0.15); 
   -moz-box-shadow: 0px 1px 3px 0px rgba(8, 9, 9, 0.15);
   box-shadow: 0px 1px 3px 0px rgba(8, 9, 9, 0.15); 
-
-=======
-  background: -webkit-linear-gradient(top, #4f7ab4, #3b66a1);
-  background: linear-gradient(to bottom, #4f7ab4, #3b66a1);
-  background: -webkit-linear-gradient(to bottom, #4f7ab4, #3b66a1);
-  background: -moz-linear-gradient(to bottom, #4f7ab4, #3b66a1);
-  border-radius: 2px;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
->>>>>>> 4a5ac23ad57091e126b0f4075d1805d3f4d36752
   margin-bottom: 10px;
 }
 
