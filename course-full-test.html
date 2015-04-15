@@ -49,24 +49,25 @@
   <div class="page">
     <div class="wrapper clearfix">
       <div class="content test-page"> <!-- content -->
-
-        <h1 class="float-left">Тест к уроку</h1>
-        <span class="question-number clearfix">Вопрос #1 из 20</span>
-
+        <div class="clearfix">
+          <h1 class="float-left">Тест к уроку</h1>
+          <span class="question-number">Вопрос #1 из 20</span>
+        </div>
         <strong class="attention">Компилятор CoffeeScript устанавливается:</strong>
-        <br><br>
         <ul class="test-answers">
           <li><input class="radio-button" type="radio" name="test-question-1" id="answer-1"><label for="answer-1">Автоматически вместе с Node.js</label></li>
           <li><input class="radio-button" type="radio" name="test-question-1" id="answer-2"><label for="answer-2">При помощи инсталлятора, который можно найти на офф. сайте</label></li>
           <li><input class="radio-button" type="radio" name="test-question-1" id="answer-3"><label for="answer-3">Через Node Package Manager</label></li>
           <li><input class="radio-button" type="radio" name="test-question-1" id="answer-4"><label for="answer-4">Через Ruby Gems</label></li>
         </ul class="test-answers">
-        <br>
-        <a href="course-full-test-result.html" class="test-button blue-button clearfix">Ответить на вопрос</a>
+        <a href="course-full-test-result.html" class="test-button test-button-wide blue-button clearfix">Ответить на вопрос</a>
       </div> <!-- end of content -->
       <aside class="common-aside">
         <div class="aside-lessons-list">
-          <h3>Уроки</h3>
+          <div class="aside-lessons-list-header clearfix">
+            <h3 class="float-left">Уроки</h3>
+            <span class="lessons-amount">9 роликов</span>
+          </div>
             <ul class="aside-list">
               <li><a href="#"><span class="lesson-number">00</span>Введение</a></li>
               <li><a href="#" class="current-lesson"><span class="lesson-number">01</span>Установка компилятора</a></li>
@@ -78,7 +79,7 @@
               <li><a href="#"><span class="lesson-number">07</span>Классы</a></li>
               <li><a href="#"><span class="lesson-number">08</span>Практический пример</a></li>
             </ul>
-            <a href="#" class="gradient-button next-lesson-button">Следующее видео</a>
+            <a href="#" class="next-lesson-button">Следующее видео</a>
         </div>
         <div class="aside-about-course">
           <h3>О курсе</h3>
