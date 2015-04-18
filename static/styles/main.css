@@ -886,15 +886,20 @@ code {
 }
 
 .small-subheader-tabs a,
-.small-subheader-tabs-aside a{
+.small-subheader-tabs-aside a {
   display: block;
   height: 40px;
   line-height: 40px;
   color: #666;
 }
 
-.small-subheader-tabs a { padding-right: 20px; }
-.small-subheader-tabs-aside a { padding-left: 20px; }
+.small-subheader-tabs a {
+  padding-right: 20px;
+}
+
+.small-subheader-tabs-aside a {
+  padding-left: 20px;
+}
 
 .small-subheader-tabs a:hover,
 .small-subheader-tabs-aside a:hover {
@@ -2935,7 +2940,6 @@ code {
   padding-left: 30px;
   padding-right: 30px;
 }
-
 /*==============*/
 /*SIDEBAR*/
 /*==============*/
@@ -3519,7 +3523,7 @@ code {
   background: url('../img/spritesheet.png') -78px -120px;
 }
 
-.modal-window  h3 {
+.modal-window h3 {
   font-size: 20px;
   line-height: 15px;
   margin-bottom: 20px;
@@ -3823,7 +3827,6 @@ GRAPHICS-FULL
   -moz-box-shadow: 0px 2px 5px 0px rgba(8, 9, 9, 0.25);
   box-shadow: 0px 2px 5px 0px rgba(8, 9, 9, 0.25);
 }
-
 /*.user-avatar-profile {
   width:200px;
   height:201px;
@@ -3881,7 +3884,7 @@ GRAPHICS-FULL
 .hex .corner-2:before {
   transform: rotate(60deg) translate(-48px, -11px);    
   bottom:0;
-} */       
+} */
 
 .profile-edit-user-profile {
   font-size: 11px;
@@ -4000,9 +4003,9 @@ GRAPHICS-FULL
   background: -webkit-linear-gradient(to bottom, #5888c8, #4c75ad);
   background: -moz-linear-gradient(to bottom, #5888c8, #4c75ad);
   border-radius: 2px;
-  -webkit-box-shadow: 0px 1px 3px 0px rgba(8, 9, 9, 0.15); 
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(8, 9, 9, 0.15);
   -moz-box-shadow: 0px 1px 3px 0px rgba(8, 9, 9, 0.15);
-  box-shadow: 0px 1px 3px 0px rgba(8, 9, 9, 0.15); 
+  box-shadow: 0px 1px 3px 0px rgba(8, 9, 9, 0.15);
   margin-bottom: 10px;
 }
 
@@ -4019,7 +4022,7 @@ GRAPHICS-FULL
   line-height: 40px;
   text-align: center;
   font-size: 13px;
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   color: #9a9a9a;
   border-radius: 2px;
   margin-bottom: 10px;
@@ -4465,7 +4468,6 @@ GRAPHICS-FULL
   content: ":";
   display: inline-block;
 }
-
 /***********************Add message******************************/
 
 .add-post {
@@ -4523,7 +4525,6 @@ GRAPHICS-FULL
   background: #f3f5f7;
   box-shadow: inset 0px 1px 0px 0px rgba(223, 223, 223, 1);
 }
-
 /*Send post*/
 
 .add-post-active input {
@@ -4598,7 +4599,7 @@ GRAPHICS-FULL
   font-weight: bold;
 }
 
-.response-comment a:first-child:after ,
+.response-comment a:first-child:after,
 .response-comment a:first-child:after {
   content: "";
   display: inline-block;
@@ -4736,7 +4737,6 @@ GRAPHICS-FULL
   background: #d3d3d3;
   color: #fff;
 }
-
 /*****************Show more post************/
 
 .show-more-posts a {
@@ -4755,7 +4755,6 @@ GRAPHICS-FULL
 .show-more-posts a:hover {
   text-decoration: none;
 }
-
 /******************************************/
 /******************************************/
 /******************************************/
@@ -5581,7 +5580,8 @@ h1:before {
   width: 255px;
   height: 99px;
   background-position: -529px 0;
-  margin-left: 13px;}
+  margin-left: 13px;
+}
 /*----------
 REDIRECT
 --------------*/
@@ -6578,7 +6578,21 @@ LANDING
   color: #999;
 }
 
-.invite-form div {
+.invite-form select {
+  width: 176px;
+  height: 33px;
+  -webkit-appearance: none;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #999;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.invite-form div,
+.label-invite {
   width: 176px;
   height: 33px;
   border: 1px solid #d5d5d5;
@@ -6587,6 +6601,10 @@ LANDING
   padding-left: 40px;
   position: relative;
   overflow: hidden;
+}
+
+.label-invite {
+  padding-left: 0;
 }
 
 .invite-window .f-left {
@@ -6619,28 +6637,14 @@ LANDING
   background-position: -23px 0;
 }
 
-.who-input:before {
-  content: " ";
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  width: 35px;
+.label-invite {
+  width: 176px;
   height: 35px;
-  background: #f5f5f5;
-  border-left: 1px solid #d5d5d5;
+  overflow: hidden;
+  background: url(../img/select-invite.png) no-repeat right;
 }
 
-.who-input:after {
-  content: " ";
-  display: inline-block;
-  position: absolute;
-  right: 13px;
-  top: 13px;
-  border: 5px solid transparent;
-  border-top: 5px solid #d5d5d5;
-}
-
-.who-input:hover {
+.label-invite select:hover {
   cursor: pointer;
   opacity: 0.7;
 }
