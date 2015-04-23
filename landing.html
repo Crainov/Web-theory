@@ -189,9 +189,14 @@
       <div class="email-input f-left">
         <input type="email" name="email" placeholder="Ваш e-mail:">
       </div>
-      <div class="who-input f-left">
-        <input type="" name="whois" placeholder="Кто вы?" readonly>
-      </div>
+      <label for="select-invite" class="label-invite f-left" onclick="#select">
+        <select name="Кто вы?" id="select-invite" class="f-left" checked>
+          <option value="1">Кто вы?</option>
+          <option value="2">Парень</option>
+          <option value="3">Девушка</option>
+        </select>
+      </label>
+      <!--<input type="" name="whois" placeholder="Кто вы?" readonly>-->
       <div class="inform-input f-left">
         <textarea placeholder="Расскажите о себе..."></textarea>
         <span>Осталось 300 символов</span>
