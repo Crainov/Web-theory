@@ -886,20 +886,15 @@ code {
 }
 
 .small-subheader-tabs a,
-.small-subheader-tabs-aside a {
+.small-subheader-tabs-aside a{
   display: block;
   height: 40px;
   line-height: 40px;
   color: #666;
 }
 
-.small-subheader-tabs a {
-  padding-right: 20px;
-}
-
-.small-subheader-tabs-aside a {
-  padding-left: 20px;
-}
+.small-subheader-tabs a { padding-right: 20px; }
+.small-subheader-tabs-aside a { padding-left: 20px; }
 
 .small-subheader-tabs a:hover,
 .small-subheader-tabs-aside a:hover {
@@ -2940,6 +2935,7 @@ code {
   padding-left: 30px;
   padding-right: 30px;
 }
+
 /*==============*/
 /*SIDEBAR*/
 /*==============*/
@@ -3523,7 +3519,7 @@ code {
   background: url('../img/spritesheet.png') -78px -120px;
 }
 
-.modal-window h3 {
+.modal-window  h3 {
   font-size: 20px;
   line-height: 15px;
   margin-bottom: 20px;
@@ -3822,74 +3818,11 @@ GRAPHICS-FULL
 /*******Profile-avatar*******/
 
 .profile-user-avatar img {
-<<<<<<< HEAD
-  
-}   
-=======
   border-radius: 100px;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(8, 9, 9, 0.25);
   -moz-box-shadow: 0px 2px 5px 0px rgba(8, 9, 9, 0.25);
   box-shadow: 0px 2px 5px 0px rgba(8, 9, 9, 0.25);
-}
-/*.user-avatar-profile {
-  width:200px;
-  height:201px;
-  color: #ccc;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;            
-  background-size: auto 173px;                            
-  position: relative;
-  float:left;
-  zoom:1;
-}
-
-.hex .corner-1,
-.hex .corner-2 {
-  position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: inherit;                                
-  z-index:-2;                        
-  overflow:hidden;        
-  backface-visibility: hidden;            
-}
-    
-.hex .corner-1 {
-  z-index:-1;
-  transform: rotate(60deg);
-}
-    
-.hex .corner-2 {
-  transform: rotate(-60deg);
-}
-    
-.hex .corner-1:before,
-.hex .corner-2:before {
-  width: 173px;
-  height:    173px;
-  content: '';
-  position: absolute;
-  background: inherit;
-  top:0;
-  left: 0;
-  z-index: 1;
-  background: inherit;
-  background-repeat:no-repeat;
-  backface-visibility: hidden;                  
-}            
-    
-.hex .corner-1:before {
-  transform: rotate(-60deg) translate(-87px, 0px);    
-  transform-origin: 0 0;
-}            
-    
-.hex .corner-2:before {
-  transform: rotate(60deg) translate(-48px, -11px);    
-  bottom:0;
-} */
->>>>>>> origin/index-commit
+}   
 
 .profile-edit-user-profile {
   font-size: 11px;
@@ -3918,6 +3851,7 @@ GRAPHICS-FULL
   margin-bottom: 20px;
 }
 
+/*
 .hexagon {
   position: relative;
   width: 200px; 
@@ -3929,8 +3863,6 @@ GRAPHICS-FULL
   -webkit-box-shadow: 0px 2px 5px 0px rgba(8, 9, 9, 0.25);
   -moz-box-shadow: 0px 2px 5px 0px rgba(8, 9, 9, 0.25);
   box-shadow: 0px 2px 5px 0px rgba(8, 9, 9, 0.25);
-  -moz-transform: scale(.9999);
-  -webkit-transform: scale(.9999);
 }
 
 .hexTop,
@@ -3947,7 +3879,7 @@ GRAPHICS-FULL
   left: 29.29px;
 }
 
-/*counter transform the bg image on the caps*/
+
 .hexTop:after,
 .hexBottom:after {
   content: "";
@@ -3988,7 +3920,8 @@ GRAPHICS-FULL
   height: 115.4701px;
   z-index: 2;
   background: inherit;
-}  
+}
+*/
 
 /*Profile userName, specialization, rating, occupation, salary, send-message, unsubscribe/subscribe*/
 
@@ -4081,9 +4014,9 @@ GRAPHICS-FULL
   background: -webkit-linear-gradient(to bottom, #5888c8, #4c75ad);
   background: -moz-linear-gradient(to bottom, #5888c8, #4c75ad);
   border-radius: 2px;
-  -webkit-box-shadow: 0px 1px 3px 0px rgba(8, 9, 9, 0.15);
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(8, 9, 9, 0.15); 
   -moz-box-shadow: 0px 1px 3px 0px rgba(8, 9, 9, 0.15);
-  box-shadow: 0px 1px 3px 0px rgba(8, 9, 9, 0.15);
+  box-shadow: 0px 1px 3px 0px rgba(8, 9, 9, 0.15); 
   margin-bottom: 10px;
 }
 
@@ -4100,7 +4033,7 @@ GRAPHICS-FULL
   line-height: 40px;
   text-align: center;
   font-size: 13px;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0,0,0,0);
   color: #9a9a9a;
   border-radius: 2px;
   margin-bottom: 10px;
@@ -4156,6 +4089,7 @@ GRAPHICS-FULL
 .sbs-user a,
 .fl-user a {
   top: 0;
+  left: 0;
   position: absolute;
   width: 64px;
   height: 64px;
@@ -4546,6 +4480,7 @@ GRAPHICS-FULL
   content: ":";
   display: inline-block;
 }
+
 /***********************Add message******************************/
 
 .add-post, .add-comment {
@@ -4618,6 +4553,7 @@ GRAPHICS-FULL
   position: absolute;
   z-index: 100;
 }
+
 /*Send post*/
 
 .add-post-active input,
@@ -4693,7 +4629,7 @@ GRAPHICS-FULL
   font-weight: bold;
 }
 
-.response-comment a:first-child:after,
+.response-comment a:first-child:after ,
 .response-comment a:first-child:after {
   content: "";
   display: inline-block;
@@ -4831,6 +4767,7 @@ GRAPHICS-FULL
   background: #d3d3d3;
   color: #fff;
 }
+
 /*****************Show more post************/
 
 .show-more-posts a {
@@ -4849,6 +4786,7 @@ GRAPHICS-FULL
 .show-more-posts a:hover {
   text-decoration: none;
 }
+
 /******************************************/
 /******************************************/
 /******************************************/
@@ -5674,8 +5612,7 @@ h1:before {
   width: 255px;
   height: 99px;
   background-position: -529px 0;
-  margin-left: 13px;
-}
+  margin-left: 13px;}
 /*----------
 REDIRECT
 --------------*/
@@ -6672,21 +6609,7 @@ LANDING
   color: #999;
 }
 
-.invite-form select {
-  width: 176px;
-  height: 33px;
-  -webkit-appearance: none;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  color: #999;
-  padding-left: 10px;
-  outline: none;
-  border: none;
-  background: transparent;
-}
-
-.invite-form div,
-.label-invite {
+.invite-form div {
   width: 176px;
   height: 33px;
   border: 1px solid #d5d5d5;
@@ -6695,10 +6618,6 @@ LANDING
   padding-left: 40px;
   position: relative;
   overflow: hidden;
-}
-
-.label-invite {
-  padding-left: 0;
 }
 
 .invite-window .f-left {
@@ -6731,14 +6650,28 @@ LANDING
   background-position: -23px 0;
 }
 
-.label-invite {
-  width: 176px;
+.who-input:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  width: 35px;
   height: 35px;
-  overflow: hidden;
-  background: url(../img/select-invite.png) no-repeat right;
+  background: #f5f5f5;
+  border-left: 1px solid #d5d5d5;
 }
 
-.label-invite select:hover {
+.who-input:after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  border: 5px solid transparent;
+  border-top: 5px solid #d5d5d5;
+}
+
+.who-input:hover {
   cursor: pointer;
   opacity: 0.7;
 }
