@@ -6,33 +6,57 @@
   <link rel="stylesheet" href="static/styles/main.css">
 </head>
 <body>
-  <header class="header"><!--Header-->
+  <header class="header">
+    <!--Header-->
     <div class="wrapper">
-      <div class="top-nav">
+      <div class="top-nav clearfix">
         <!--Logo-->
         <a class="logo" href="index.html"></a>
-        <nav class="top-menu"><!-- Top site menu -->
+        <nav class="top-menu">
+          <!-- Top site menu -->
           <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="courses.html">Курсы</a></li>
-            <li><a href="articles.html">Статьи</a></li>
-            <li><a href="graphics.html">Дизайн</a></li>
-            <li><a href="#">Люди</a></li>
-            <li><a href="#" class="current-nav-item">Сообщества</a></li>
+            <li><a href="index.html">Главная</a>
+            </li>
+            <li><a href="courses.html">Курсы</a>
+            </li>
+            <li><a href="articles.html">Статьи</a>
+            </li>
+            <li><a href="graphics.html">Дизайн</a>
+            </li>
+            <li><a href="#">Люди</a>
+            </li>
+            <li><a href="#">Сообщества</a>
+            </li>
           </ul>
         </nav>
-        <div class="profile-user-block"> <!-- User mail and profile -->
-          <div class="profile-user-profile">
-            <div class="user-name"><a href="profile.html">webtheory</a></div>
-            <div class="user-photo profile-user-photo"><a href="#"><img src="upload/user-photo.png" alt="user-photo"></a></div>
+        <div class="user-block clearfix">
+          <!-- User mail and profile -->
+          <div class="user-actions">
+            <!-- Top User menu -->
+            <ul class="user-menu">
+              <li><a class="open-book" href="#">Список чтения</a>
+              </li>
+              <li><a class="upload-cloud" href="#upload-modal">Добавить работу</a>
+              </li>
+              <li><a class="thumbs-up" href="#">Понравилось</a>
+              </li>
+              <li><a class="project-help" href="#">Помочь проекту</a>
+              </li>
+            </ul>
           </div>
-          <div class="profile-user-mail">
-            <a href="#" data-messages-counter="2"></a>
+          <a class="user-mail" href="#" data-messages-counter="2"></a>
+          <div class="home-user-profile">
+            <a href="profile.html"></a>
+            <div class="user-name">webtheory</div>
+            <div class="user-photo"><img src="upload/user-photo.png" alt="user-photo">
+            </div>
           </div>
-        </div><!--  End of User mail and profile -->
+        </div>
+        <!--  End of User mail and profile -->
       </div>
     </div>
-  </header><!-- End of Header-->
+  </header>
+  <!-- End of Header-->
   <div class="small-subheader mb30"><!--SUbheader-->
     <div class="wrapper">
       <div class="user-last-visit">Заходил 15 минут назад</div>
@@ -49,12 +73,11 @@
       <aside class="profile-user-aside"><!-- Aside user block-->
         <div class="profile-user-avatar"><!-- user avatar-->
           <a href="#upload-new-avatar" class="profile-edit-user-profile">ред.</a>
-          <!--<div class="user-avatar-profile hex" style="background-image: url(../web-theory/upload/user-avatar.jpg);">
-            <div class="corner-1"></div>
-            <div class="corner-2"></div> 
-          </div>-->
-          <img src="upload/user-avatar.jpg" alt="user-avatar">
-          
+          <div class="hexagon" style="">
+            <div class="hexTop"></div>
+            <div class="hexBottom"></div>
+          </div>
+          <!--<img src="upload/user-avatar.jpg" alt="user-avatar">-->
         </div><!-- end user avatar-->
         <!--user main info-->
         <div class="profile-user-full-name">Артемка Аллаяров</div>
@@ -294,13 +317,13 @@
                 </div>
                 <div class="comment-likes"><a href="#"><span>Мне нравится</span>2</a></div>
               </div><!--end comment-->
-              <div class="add-post"><!--add comment-->
+              <div class="add-comment"><!--add comment-->
                 <form>
                   <div class="message-text-form">
                     <input type="text" name="text-of-the-message" placeholder="Комментировать">
                     <input id="upload" type="file" name="upload-file-to-post">
                   </div>
-                  <div class="add-post-active">
+                  <div class="add-comment-active">
                     Для отправки комментария можно нажать Shift+Enter
                     <input type="submit" name="submit-post" value="Отправить">
                   </div>
@@ -369,13 +392,13 @@
                 </div>
                 <div class="comment-likes"><a href="#"><span>Мне нравится</span>2</a></div>
               </div><!--end comment-->
-              <div class="add-post"><!--add comment-->
+              <div class="add-comment"><!--add comment-->
                 <form>
                   <div class="message-text-form">
                     <input type="text" name="text-of-the-message" placeholder="Комментировать">
                     <input id="upload" type="file" name="upload-file-to-post">
                   </div>
-                  <div class="add-post-active">
+                  <div class="add-comment-active">
                     Для отправки комментария можно нажать Shift+Enter
                     <input type="submit" name="submit-post" value="Отправить">
                   </div>
