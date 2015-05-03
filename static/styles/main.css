@@ -1252,6 +1252,11 @@ code {
 /*CONTENT OF GRAPHICS-ADD.HTML*/
 /*============================*/
 
+.graphics-add h1 {
+  letter-spacing: -0.02em;
+  margin-bottom: 21px;
+}
+
 .graphics-add h3 {
   margin-bottom: 17px;
 }
@@ -1300,6 +1305,10 @@ code {
 /* FORM LAYOUT CLASSES */
 
 .row-input {
+  margin-bottom: 9px;
+}
+
+.row-input-second {
   margin-bottom: 8px;
 }
 
@@ -1323,6 +1332,7 @@ code {
   height: 47px;
   border: 1px solid #dbdbdb;
   font-family: OpenSans, Arial, sans-serif;
+  letter-spacing: 0.01em;
   font-size: 13px;
   color: #666;
   padding: 15px;
@@ -1352,17 +1362,19 @@ code {
   height: 16px;
   background: url('../img/spritesheet.png');
   position: absolute;
-  top: 17px;
-  right: 15px;
   display: none;
 }
 
 .upload-name-icon:after {
+  top: 18px;
+  right: 15px;
   display: block;
   background-position: -80px -93px;
 }
 
 .upload-tags-icon:after {
+  top: 16px;
+  right: 12px;
   display: block;
   background-position: -96px -93px;
 }
@@ -1375,6 +1387,7 @@ code {
   height: 47px;
   font-family: Arial, sans-serif;
   font-size: 13px;
+  letter-spacing: 0.01em;
   color: #707070;
   padding: 15px;
   background: #f8f8f8;
@@ -1394,7 +1407,7 @@ code {
   border-right: 5px solid transparent;
   position: absolute;
   top: 21px;
-  right: 15px;
+  right: 13px;
 }
 
 .select-menu-dropdown {
@@ -1464,11 +1477,15 @@ code {
   margin-top: 3px;
   margin-bottom: 22px;
   line-height: 10px;
+  letter-spacing: -0.01em;
 }
 
 .drag-n-drop-info-container span {
   display: block;
   line-height: 8px;
+  position: relative;
+  left: -2px;
+  top: -1px;
 }
 
 .image-upload-button input[type='file'] {
@@ -1484,10 +1501,12 @@ code {
   background: #4e79b3;
   text-align: center;
   color: #fff;
-  padding-top: 14px;
   font-size: 13px;
+  line-height: 40px;
+  padding-top: 19px;
+  letter-spacing: 0.01em;
   position: absolute;
-  bottom: 2px;
+  bottom: 4px;
   left: 0;
   cursor: pointer;
 }
@@ -1531,7 +1550,7 @@ code {
   list-style-type: none;
   display: block;
   float: left;
-  padding-left: 11px;
+  padding-left: 10px;
 }
 
 .textarea-toolbar li {
@@ -1543,7 +1562,7 @@ code {
   margin-top: 12px;
   width: 20px;
   height: 20px;
-  margin-right: 5px;
+  margin-right: 3px;
   position: relative;
   border: 1px solid transparent;
 }
@@ -1709,7 +1728,8 @@ code {
 .textarea-counter {
   float: right;
   font-size: 12px;
-  line-height: 42px;
+  line-height: 45px;
+  letter-spacing: -0.03em;
   color: #666;
   padding-right: 15px;
 }
@@ -1725,7 +1745,7 @@ code {
   font-size: 13px;
   color: #666;
   outline: none;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .upload-form-textarea::-webkit-input-placeholder {
@@ -1800,7 +1820,7 @@ code {
   width: 16px;
   height: 12px;
   background: url('../img/spritesheet.png') -64px -93px;
-  top: 15px;
+  top: 16px;
   left: 11px;
 }
 
