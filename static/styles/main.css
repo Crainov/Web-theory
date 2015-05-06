@@ -2580,12 +2580,13 @@ code {
 .lesson-iframe {
   width: 710px;
   height: 400px;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 .lesson-info {
   height: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
+  letter-spacing: -0.03em !important;
 }
 
 .lesson-name {
@@ -2602,6 +2603,7 @@ code {
   height: 39px;
   border-bottom: 1px solid #e3e3e3;
   font-size: 13px;
+  letter-spacing: -0.03em !important;
 }
 
 .lesson-tabs,
@@ -2657,11 +2659,16 @@ code {
 
 .lesson-tab-content {
   padding: 15px 0px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 13px;
   color: #666;
+  letter-spacing: -0.02em !important;
 }
 /* lesson comments */
+
+.lesson-comments h3 {
+  margin-bottom: 36px !important;
+}
 
 .lesson-your-comment {
   min-height: 50px;
@@ -3120,7 +3127,8 @@ code {
 /* LESSONS LIST */
 
 .aside-lessons-list-header {
-  margin-bottom: 11px !important;
+  margin-top: 1px;
+  margin-bottom: 12px !important;
   height: 13px;
 }
 
@@ -3134,7 +3142,7 @@ code {
 }
 
 .aside-lessons-list .aside-list {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .aside-lessons-list .aside-list a {
@@ -3161,12 +3169,21 @@ code {
   border-radius: 2px;
   height: 40px;
   line-height: 39px;
+  margin-bottom: 35px;
 }
 
 .next-lesson-button:hover {
   background: #5f8ac4;
 }
 /* ABOUT THE COURSE */
+
+.aside-about-course {
+  letter-spacing: -0.03em;
+}
+
+.aside-about-course h3 {
+  margin-bottom: 16px !important;
+}
 
 .aside-about-course > span {
   font-size: 13px;
