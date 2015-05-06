@@ -2884,6 +2884,7 @@ code {
 .attention {
   display: block;
   font-family: OpenSans, Arial, sans-serif;
+  letter-spacing: -0.01em;
   font-size: 14px;
   height: 10px;
   line-height: 10px;
@@ -2908,6 +2909,8 @@ code {
 
 .green-button {
   background: #64b44f;
+  padding-left: 13px !important;
+  padding-right: 12px !important;
 }
 
 .red-button {
@@ -2916,6 +2919,9 @@ code {
 
 .blue-button {
   background: #4f7ab4;
+  padding-left: 31px !important;
+  padding-right: 32px !important;
+  letter-spacing: 0.01em;
 }
 
 .green-button:hover {
