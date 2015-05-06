@@ -986,6 +986,7 @@ code {
 
 .graphics-block:hover .graphics-attach{
   visibility: visible;
+  opacity: 1;
 }
 
 .graphics-block:hover .graphics-hidden-info{
@@ -1087,13 +1088,17 @@ code {
 .graphics-attach {
   float: right;
   visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
 }
 
 .graphics-attach a {
   display: block;
   width: 11px;
   height: 13px;
-  background: url('../img/spritesheet.png') -16px -77px;
+  background: url('../img/spritesheet.png') -15px -78px;
 }
 /* GRAPHICS AUTHOR */
 
