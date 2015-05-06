@@ -903,11 +903,12 @@ code {
 .small-subheader-tabs-aside a{
   display: block;
   height: 40px;
-  line-height: 40px;
+  line-height: 42px;
+  letter-spacing: -0.01em;
   color: #666;
 }
 
-.small-subheader-tabs a { padding-right: 20px; }
+.small-subheader-tabs a { padding-right: 15px; }
 .small-subheader-tabs-aside a { padding-left: 20px; }
 
 .small-subheader-tabs a:hover,
@@ -1905,7 +1906,7 @@ code {
 /*============================*/
 
 .courses-grid {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .courses-block {
@@ -1932,9 +1933,11 @@ code {
   background: #e7edf1;
   color: #97a5ae;
   font-size: 14px;
+  line-height: 14px;
   font-weight: 600;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 76px;
+  letter-spacing: -0.03em;
 }
 
 .course-thumb {
@@ -1974,7 +1977,7 @@ code {
 }
 
 .courses-block h4 {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .course-difficulty {
