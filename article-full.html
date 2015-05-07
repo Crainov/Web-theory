@@ -1,63 +1,89 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Web Theory</title>
   <link rel="stylesheet" href="static/styles/main.css">
 </head>
+
 <body>
-  <header class="header mb30"><!--Header-->
+  <header class="header mb30">
+    <!--Header-->
     <div class="wrapper">
       <div class="top-nav clearfix">
         <!--Logo-->
         <a class="logo" href="index.html"></a>
-        <nav class="top-menu"><!-- Top site menu -->
+        <nav class="top-menu">
+          <!-- Top site menu -->
           <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="courses.html">Курсы</a></li>
-            <li><a href="articles.html" class="current-nav-item">Статьи</a></li>
-            <li><a href="graphics.html">Дизайн</a></li>
-            <li><a href="#">Люди</a></li>
-            <li><a href="#">Сообщества</a></li>
+            <li><a href="index.html">Главная</a>
+            </li>
+            <li><a href="courses.html">Курсы</a>
+            </li>
+            <li><a href="articles.html" class="current-nav-item">Статьи</a>
+            </li>
+            <li><a href="graphics.html">Дизайн</a>
+            </li>
+            <li><a href="#">Люди</a>
+            </li>
+            <li><a href="#">Сообщества</a>
+            </li>
           </ul>
         </nav>
-        <div class="user-block clearfix"> <!-- User mail and profile -->
-          <div class="user-actions"><!-- Top User menu -->
-              <ul class="user-menu">
-                <li><a class="open-book" href="#">Список чтения</a></li>
-                <li><a class="upload-cloud" href="#upload-modal">Добавить работу</a></li>
-                <li><a class="thumbs-up" href="#">Понравилось</a></li>
-                <li><a class="project-help" href="#">Помочь проекту</a></li>
-              </ul>
+        <div class="user-block clearfix">
+          <!-- User mail and profile -->
+          <div class="user-actions">
+            <!-- Top User menu -->
+            <ul class="user-menu">
+              <li><a class="open-book" href="#">Список чтения</a>
+              </li>
+              <li><a class="upload-cloud" href="#upload-modal">Добавить работу</a>
+              </li>
+              <li><a class="thumbs-up" href="#">Понравилось</a>
+              </li>
+              <li><a class="project-help" href="#">Помочь проекту</a>
+              </li>
+            </ul>
           </div>
           <a class="user-mail" href="#" data-messages-counter="2"></a>
           <div class="home-user-profile">
             <a href="profile.html"></a>
             <div class="user-name">webtheory</div>
-            <div class="user-photo"><img src="upload/user-photo.png" alt="user-photo"></div>
+            <div class="user-photo"><img src="upload/user-photo.png" alt="user-photo">
+            </div>
           </div>
-        </div><!--  End of User mail and profile -->
+        </div>
+        <!--  End of User mail and profile -->
       </div>
     </div>
-  </header><!-- End of Header-->
-</div> <!-- End of subheader -->
+  </header>
+  <!-- End of Header-->
+  </div>
+  <!-- End of subheader -->
   <div class="page">
     <div class="wrapper clearfix">
-      <div class="content"> <!-- content -->
-        <div class="article-container"> <!-- article -->
+      <div class="content">
+        <!-- content -->
+        <div class="article-container">
+          <!-- article -->
           <div class="article-header">
             <h1 class="label-lesson">Изучение Ruby #1</h1>
             <div class="article-header-options">
               <ul class="clearfix">
-                <li><a href="#" class="article-header-icon-link edit-article-icon">Редактировать</a></li>
-                <li><a href="#" class="article-header-icon-link remove-article-icon">Удалить</a></li>
+                <li><a href="#" class="article-header-icon-link edit-article-icon">Редактировать</a>
+                </li>
+                <li><a href="#" class="article-header-icon-link remove-article-icon">Удалить</a>
+                </li>
               </ul>
             </div>
           </div>
           <div class="article-info clearfix">
             <div class="article-author-container clearfix">
-              <a href="#" class="article-author-thumb"><img src="upload/article-author-thumb-1.png" height="40" width="40" alt="article-author-thumb"></a>
-              <a href="#" class="article-author">Глеб Цырульников</a><br>
+              <a href="#" class="article-author-thumb"><img src="upload/article-author-thumb-1.png" height="40" width="40" alt="article-author-thumb">
+              </a>
+              <a href="#" class="article-author">Глеб Цырульников</a>
+              <br>
               <span class="article-post-date">12 минут назад</span>
             </div>
             <div class="article-tags-container">
@@ -68,20 +94,30 @@
           </div>
           <article class="article-text">
             <p>
-              И снова всем привет. Я продолжаю свою серию текстовых туториалов по изучению языка Ruby. Сегодня у нас в планах:<br><br>
-              &nbsp;- Установить Ruby интерпретатор<br>
-              &nbsp;- Написать простенькую программу<br><br>
-              Начнем мы, естественно, с первого пункта. Как вы помните, основным сайтом ruby-разработчика является <a href="http://ruby-lang.org/">http://ruby-lang.org/</a>. Что ж, сегодня он нам понадобится. <br><br>
-              Переходим на данный сайт, нажимаем на кнопочку Downloads (Скачать). На открывшейся странице мы можем увидеть 3 разных подхода для инсталяции интерпретатора:<br><br>
-              &nbsp;- Компиляция исходников<br>
-              &nbsp;- Использование сторонних инструментов<br>
-              &nbsp;- Установка через системы управления пакетами<br><br>
+              И снова всем привет. Я продолжаю свою серию текстовых туториалов по изучению языка Ruby. Сегодня у нас в планах:
+              <br>
+              <br> &nbsp;- Установить Ruby интерпретатор
+              <br> &nbsp;- Написать простенькую программу
+              <br>
+              <br> Начнем мы, естественно, с первого пункта. Как вы помните, основным сайтом ruby-разработчика является <a href="http://ruby-lang.org/">http://ruby-lang.org/</a>. Что ж, сегодня он нам понадобится.
+              <br>
+              <br> Переходим на данный сайт, нажимаем на кнопочку Downloads (Скачать). На открывшейся странице мы можем увидеть 3 разных подхода для инсталяции интерпретатора:
+              <br>
+              <br> &nbsp;- Компиляция исходников
+              <br> &nbsp;- Использование сторонних инструментов
+              <br> &nbsp;- Установка через системы управления пакетами
+              <br>
+              <br>
             </p>
-            <h2>Windows</h2><br>
+            <h2>Windows</h2>
+            <br>
             <p>
-              Для установки на операционных системах Windows нам понадобится утилита RubyInstaller. Официальный сайт - <a href="http://rubyinstaller.org/">http://rubyinstaller.org/</a>. Заходим на данный сайт, затем в раздел Downloads. Если вы знаете английский, то сможете понять, что нам рекомендуют установить Ruby версии 1.9.3. Устанавливаем данную версию. (У меня установлена именно эта версия).<br><br>
+              Для установки на операционных системах Windows нам понадобится утилита RubyInstaller. Официальный сайт - <a href="http://rubyinstaller.org/">http://rubyinstaller.org/</a>. Заходим на данный сайт, затем в раздел Downloads. Если вы знаете английский, то сможете понять, что нам рекомендуют установить Ruby версии 1.9.3. Устанавливаем данную версию. (У меня установлена именно эта версия).
+              <br>
+              <br>
             </p>
-            <h2>UNIX-like OS</h2><br>
+            <h2>UNIX-like OS</h2>
+            <br>
             <p>
               Для установки на unix-like ОС мы можем установить RVM (Ruby Version Manager). Команда:
             </p>
@@ -92,15 +128,19 @@
               }
             </code>
             <p>
-              Подведём итог:<br><br>
-              &nbsp;- Сегодня мы установили интерпретатор Ruby<br>
-              &nbsp;- Написали хеллоу ворлд<br>
-              &nbsp;- Вскользь и тайно пробежались по следующему уроку (только цсс).<br><br>
+              Подведём итог:
+              <br>
+              <br> &nbsp;- Сегодня мы установили интерпретатор Ruby
+              <br> &nbsp;- Написали хеллоу ворлд
+              <br> &nbsp;- Вскользь и тайно пробежались по следующему уроку (только цсс).
+              <br>
+              <br>
             </p>
             <div class="article-task">
               <h4>Задание #1</h4>
               <p>
-                Напишите стандартную таблицу умножения от 1 до 10. Используйте циклы, манипуляторы. Совет: циклы можно вкладывать друг в друга как и операторы, используйте.<br>
+                Напишите стандартную таблицу умножения от 1 до 10. Используйте циклы, манипуляторы. Совет: циклы можно вкладывать друг в друга как и операторы, используйте.
+                <br>
               </p>
               <a href="#">Узнать решение</a>
             </div>
@@ -117,21 +157,34 @@
             <div class="article-views">2 864</div>
             <div class="article-comments">39</div>
             <ul class="article-share-list clearfix">
-              <li><a href="#" class="article-share-button vkontakte-big-button">12</a></li>
-              <li><a href="#" class="article-share-button facebook-big-button empty-share-button"></a></li>
-              <li><a href="#" class="article-share-button twitter-big-button">1</a></li>
-              <li><a href="#" class="article-share-button google-big-button empty-share-button"></a></li>
+              <li><a href="#" class="article-share-button vkontakte-big-button">12</a>
+              </li>
+              <li>
+                <a href="#" class="article-share-button facebook-big-button empty-share-button"></a>
+              </li>
+              <li><a href="#" class="article-share-button twitter-big-button">1</a>
+              </li>
+              <li>
+                <a href="#" class="article-share-button google-big-button empty-share-button"></a>
+              </li>
             </ul>
           </div>
-        </div> <!-- end of article -->
-        <div class="lesson-comments"> <!-- comments -->
+        </div>
+        <!-- end of article -->
+        <div class="lesson-comments">
+          <!-- comments -->
           <h3 class="mb30">Комментарии</h3>
-          <div class="lesson-your-comment clearfix"> <!-- comment textarea -->
-            <a href="#" class="comment-author-thumb"><img src="upload/comment-author-thumb-1.png" height="50" width="50" alt="comment-author"></a>
-            <textarea class="lesson-comment-input" placeholder="Нажмите shift+enter для отправки комментария" ></textarea>
-          </div> <!-- end of comment textarea -->
-          <div class="lesson-comments-row clearfix"> <!-- comment -->
-            <a href="#" class="comment-author-thumb"><img src="upload/comment-author-thumb-1.png" height="50" width="50" alt="comment-author"></a>
+          <div class="lesson-your-comment clearfix">
+            <!-- comment textarea -->
+            <a href="#" class="comment-author-thumb"><img src="upload/comment-author-thumb-1.png" height="50" width="50" alt="comment-author">
+            </a>
+            <textarea class="lesson-comment-input" placeholder="Нажмите shift+enter для отправки комментария"></textarea>
+          </div>
+          <!-- end of comment textarea -->
+          <div class="lesson-comments-row clearfix">
+            <!-- comment -->
+            <a href="#" class="comment-author-thumb"><img src="upload/comment-author-thumb-1.png" height="50" width="50" alt="comment-author">
+            </a>
             <div class="comment-content">
               <div class="comment-content-header">
                 <a href="" class="comment-author-name">Никита Архипов</a>
@@ -141,14 +194,19 @@
                 Всем спасибо ;)
               </p>
               <ul class="comment-options clearfix">
-                <li><a href="#">Ответить</a></li>
-                <li><a href="#">Удалить</a></li>
+                <li><a href="#">Ответить</a>
+                </li>
+                <li><a href="#">Удалить</a>
+                </li>
               </ul>
             </div>
             <a href="#" class="comment-like-button">Мне нравится</a>
-          </div> <!-- end of comment -->
-          <div class="lesson-comments-row clearfix"> <!-- comment -->
-            <a href="#" class="comment-author-thumb"><img src="upload/comment-author-thumb-2.png" height="50" width="50" alt="comment-author"></a>
+          </div>
+          <!-- end of comment -->
+          <div class="lesson-comments-row clearfix">
+            <!-- comment -->
+            <a href="#" class="comment-author-thumb"><img src="upload/comment-author-thumb-2.png" height="50" width="50" alt="comment-author">
+            </a>
             <div class="comment-content">
               <div class="comment-content-header">
                 <a href="" class="comment-author-name">Eva Bozhinsky</a>
@@ -158,14 +216,19 @@
                 Thank you very much!!! It helped me a lot!!!
               </p>
               <ul class="comment-options clearfix">
-                <li><a href="#">Ответить</a></li>
-                <li><a href="#">Удалить</a></li>
+                <li><a href="#">Ответить</a>
+                </li>
+                <li><a href="#">Удалить</a>
+                </li>
               </ul>
             </div>
             <a href="#" class="comment-like-button">Мне нравится</a>
-          </div> <!-- end of comment -->
-          <div class="lesson-comments-row clearfix"> <!-- comment -->
-            <a href="#" class="comment-author-thumb"><img src="upload/comment-author-thumb-3.png" height="50" width="50" alt="comment-author"></a>
+          </div>
+          <!-- end of comment -->
+          <div class="lesson-comments-row clearfix">
+            <!-- comment -->
+            <a href="#" class="comment-author-thumb"><img src="upload/comment-author-thumb-3.png" height="50" width="50" alt="comment-author">
+            </a>
             <div class="comment-content">
               <div class="comment-content-header">
                 <a href="" class="comment-author-name">Анатолий Кураченко</a>
@@ -175,14 +238,19 @@
                 <a href="#">Никита</a>, это все без сомнений, и даже (после просмотров видео и погуляв еще по сайту) я статьи прочел. Но я имел ввиду принудительного информирования пользователя ( как у вас сейчас уже и сделано) :)
               </p>
               <ul class="comment-options clearfix">
-                <li><a href="#">Ответить</a></li>
-                <li><a href="#">Удалить</a></li>
+                <li><a href="#">Ответить</a>
+                </li>
+                <li><a href="#">Удалить</a>
+                </li>
               </ul>
             </div>
             <a href="#" class="comment-like-button">Мне нравится</a>
-          </div> <!-- end of comment -->
-          <div class="lesson-comments-row clearfix"> <!-- comment -->
-            <a href="#" class="comment-author-thumb"><img src="upload/comment-author-thumb-1.png" height="50" width="50" alt="comment-author"></a>
+          </div>
+          <!-- end of comment -->
+          <div class="lesson-comments-row clearfix">
+            <!-- comment -->
+            <a href="#" class="comment-author-thumb"><img src="upload/comment-author-thumb-1.png" height="50" width="50" alt="comment-author">
+            </a>
             <div class="comment-content">
               <div class="comment-content-header">
                 <a href="" class="comment-author-name">Никита Архипов</a>
@@ -192,29 +260,43 @@
                 <a href="#">Анатолий</a>, если прочитать все, что написано в блоке (а там написано мало), можно увидеть строку "Тест можно пройти только 1 раз, чтобы пройти тестирование заново - необходимо пройти весь курс."
               </p>
               <ul class="comment-options clearfix">
-                <li><a href="#">Ответить</a></li>
-                <li><a href="#">Удалить</a></li>
+                <li><a href="#">Ответить</a>
+                </li>
+                <li><a href="#">Удалить</a>
+                </li>
               </ul>
             </div>
             <a href="#" class="comment-like-button has-likes" data-likes="2">Мне нравится</a>
-          </div> <!-- end of comment -->
-        </div> <!-- end of comments -->
-      </div> <!-- end of content -->
+          </div>
+          <!-- end of comment -->
+        </div>
+        <!-- end of comments -->
+      </div>
+      <!-- end of content -->
       <aside class="common-aside">
-        <div class="aside-nav">
+        <div class="aside-nav aside-graphics">
           <h3>Навигация</h3>
           <ul class="home-aside-nav">
-            <li><a href="#">Моя страница</a></li>
-            <li><a href="#">Мои публикации</a></li>
-            <li><a href="#">Мои навыки</a></li>
-            <li><a href="#">Мои сообщества</a></li>
-            <li><a href="#">Диалоги</a></li>
-            <li><a href="#upload-modal">Добавить работу</a></li>
-            <li><a href="#">Настройки</a></li>
-            <li><a href="#">Выйти</a></li>
+            <li><a href="#">Моя страница</a>
+            </li>
+            <li><a href="#">Мои публикации</a>
+            </li>
+            <li><a href="#">Мои навыки</a>
+            </li>
+            <li><a href="#">Мои сообщества</a>
+            </li>
+            <li><a href="#">Диалоги</a>
+            </li>
+            <li><a href="#upload-modal">Добавить работу</a>
+            </li>
+            <li><a href="#">Настройки</a>
+            </li>
+            <li><a href="#">Выйти</a>
+            </li>
           </ul>
         </div>
-        <div class="aside-sorting"> <!-- sidebar sorting -->
+        <div class="aside-sorting">
+          <!-- sidebar sorting -->
           <h3>Настройки чтения</h3>
           <span class="sidebar-select-menu-label">Шрифт</span>
           <ul class="select-menu sidebar-select-menu">
@@ -245,7 +327,8 @@
               <li>Большие</li>
             </ul>
           </ul>
-        </div> <!-- end of sidebar sorting -->
+        </div>
+        <!-- end of sidebar sorting -->
         <div class="aside-help">
           <h3>Поможем проекту?</h3>
           <a href="#">Для поддержания и развития проекта необходимы денежные средства, которые у нас заканчиваются.
@@ -254,33 +337,48 @@
         <div class="aside-follow">
           <h3>Мы в соц.сетях</h3>
           <ul>
-            <li class="Vk"><a href="#">Вконтакте</a></li>
-            <li class="Fc"><a href="#">Facebook</a></li>
-            <li class="Gg"><a href="#">Google+</a></li>
-            <li class="Yt"><a href="#">YouTube</a></li>
-            <li class="Tw"><a href="#">Twitter</a></li>
+            <li class="Vk"><a href="#">Вконтакте</a>
+            </li>
+            <li class="Fc"><a href="#">Facebook</a>
+            </li>
+            <li class="Gg"><a href="#">Google+</a>
+            </li>
+            <li class="Yt"><a href="#">YouTube</a>
+            </li>
+            <li class="Tw"><a href="#">Twitter</a>
+            </li>
           </ul>
         </div>
         <footer class="aside-footer">
           <a href="#">webtheory.net © 2014</a>
           <ul>
-            <li><a href="#">Правила</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Правила</a>
+            </li>
+            <li><a href="#">О нас</a>
+            </li>
+            <li><a href="#">Контакты</a>
+            </li>
           </ul>
         </footer>
       </aside>
-    </div> <!-- end of page wrapper -->
-    <div id="upload-modal" class="modal-window"> <!-- upload-modal -->
+    </div>
+    <!-- end of page wrapper -->
+    <div id="upload-modal" class="modal-window">
+      <!-- upload-modal -->
       <div>
         <h3>Что добавляем?</h3>
         <ul class="upload-modal-links clearfix">
-          <li><a href="article-add.html" class="article-add-modal-link">Статью</a></li>
-          <li><a href="graphics-add.html" class="graphic-add-modal-link">Графику</a></li>
+          <li><a href="article-add.html" class="article-add-modal-link">Статью</a>
+          </li>
+          <li><a href="graphics-add.html" class="graphic-add-modal-link">Графику</a>
+          </li>
         </ul>
         <a href="#close-modal" class="close-modal-button"></a>
       </div>
-    </div> <!-- end of upload modal -->
-  </div> <!-- end of page -->
+    </div>
+    <!-- end of upload modal -->
+  </div>
+  <!-- end of page -->
 </body>
+
 </html>
